@@ -1,0 +1,60 @@
+Ejercicio DHCP
+Observa la tabla MAC de los switchs. ¿Cuántas entradas aparecen para los 
+puertos que conectan los switchs entre ellos?. ¿A quién corresponden las 
+direcciones MAC de esas entradas?
+	Aparecen 5 entradas y corresponden a los 2 PCs, a los 2 servidores, y al switch conectado a él.
+
+-------------------------------------------------------------------------------------------------------------
+Ejercicio Web
+Realiza una navegación web desde PC0, y analiza el funcionamiento de la red
+	http://192.168.200.6/index.html
+	http://www.web.com
+
+Identifica puertos origen y destino en la petición y respuesta web (Sin DNS)
+	Origen -> 1026, 80
+	Destino -> 80, 1026
+
+Identifica puertos origen y destino en la petición y respuesta web (DNS)
+	Origen -> 1027, 53
+	Destino -> 53, 1027
+
+Identifica las IPs de origen y destino y compruebe si cambian
+	Origen -> 192.168.100.7, 192.168.200.6
+	Destino -> 192.168.200.6, 192.168.100.7
+
+Identifica las MAC de origen y destino
+	Origen -> 00:0C:CF:60:60:3E, 00:90:0C:AC:0B:86
+	Destino -> 00:D0:97:C1:D9:01, 00:40:0B:A3:65:01
+
+-------------------------------------------------------------------------------------------------------------
+Ejercicio FTP
+Intenta listar el contenido del servidor FTP (dir). Si no puedes, modifica lo 
+mínimo la configuración del usuario en el servidor FTP para permitir dicha 
+operación
+	Marco la opcion List y Read
+
+Descarga del servidor FTP el fichero asa842-k8.bin (get nombre_fichero). 
+Si no puedes, modifica lo mínimo la configuración del usuario en el servidor 
+FTP para permitir dicha operación
+	No hay que cambiar nada
+
+Intentar subir el fichero creado al servidor FTP (put nombre_fichero). Si 
+no puedes, modifica lo mínimo la configuración del usuario en el servidor FTP 
+para permitir dicha operación
+	Marco la opcion Write
+
+Intentar borrar el fichero que acabas de subir al servidor FTP (delete
+nombre_fichero). Si no puedes, modifica lo mínimo la configuración del 
+usuario en el servidor FTP para permitir dicha operación
+	Marco la opcion Delete
+
+-------------------------------------------------------------------------------------------------------------
+Ejercicio – Detección errores
+Comprueba que todos los PCs y servidores pueden hacer pings entre ellos. 
+Si detectas algún problema, localiza el error, anótalo y corrígelo
+	La ruta estatica estaba mal, el siguiente salto es 20.20.20.221
+
+Intenta acceder al servidor web utilizando su IP (30.30.30.242) desde el 
+resto de PCs. Si no funciona, localiza el error, anótalo y corrígelo
+	
+

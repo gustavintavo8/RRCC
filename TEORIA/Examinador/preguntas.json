@@ -1,0 +1,3490 @@
+[
+  {
+    "pregunta": "¿Qué es una red de computadores?",
+    "opciones": [
+      "Conjunto de servidores conectados a una red de comunicación",
+      "Conjunto de sistemas finales autónomos interconectados para intercambiar información",
+      "Conjunto de elementos de conmutación que permiten la transmisión de datos",
+      "Conjunto de enlaces que facilitan el acceso a Internet"
+    ],
+    "respuesta_correcta": "Conjunto de sistemas finales autónomos interconectados para intercambiar información",
+    "_comentario": "Una red de computadores está formada por sistemas finales autónomos que se interconectan para intercambiar información a través de redes de comunicación."
+  },
+  {
+    "pregunta": "¿Qué define a una red de comunicación?",
+    "opciones": [
+      "Es una red de dispositivos conectados entre sí para la comunicación",
+      "Es un conjunto de enlaces y elementos de conmutación que facilitan el intercambio de información entre sistemas finales",
+      "Es una red dedicada exclusivamente al tráfico de correo electrónico",
+      "Es una infraestructura física para el acceso a la nube"
+    ],
+    "respuesta_correcta": "Es un conjunto de enlaces y elementos de conmutación que facilitan el intercambio de información entre sistemas finales",
+    "_comentario": "Una red de comunicación se compone de enlaces y elementos de conmutación que permiten el intercambio de información entre sistemas finales, utilizando protocolos, algoritmos de encaminamiento y otros mecanismos."
+  },
+  {
+    "pregunta": "La tabla de encaminamiento",
+    "opciones": [
+      "Indica el siguiente salto que debe realizar la información en base a la dirección física de destino",
+      "Indica el siguiente salto que debe realizar la información en base a la dirección IP de destino",
+      "La respuesta a es cierta y además la tabla es cubierta por un algoritmo de encaminamiento",
+      "La respuesta b es cierta y además la tabla es cubierta por un algoritmo de control de flujo"
+    ],
+    "respuesta_correcta": "Indica el siguiente salto que debe realizar la información en base a la dirección IP de destino",
+    "_comentario": "La tabla de encaminamiento se utiliza en la capa de red para determinar la próxima ruta hacia el destino final de los datos, basándose en la dirección IP de destino. No está relacionada con la dirección física o con algoritmos de control de flujo."
+  },
+  {
+    "pregunta": "El tiempo de vida es",
+    "opciones": [
+      "El tiempo que se espera por la recepción de un asentimiento",
+      "El tiempo que puede viajar un datagrama por la red",
+      "El tiempo que dura una conexión entre un origen y un destino",
+      "El tiempo que puede estar transmitiendo una máquina de forma ininterrumpida"
+    ],
+    "respuesta_correcta": "El tiempo que puede viajar un datagrama por la red",
+    "_comentario": "El tiempo de vida (TTL, Time To Live) es un campo en el encabezado de los paquetes IP que limita el tiempo o los saltos que un datagrama puede permanecer en la red para evitar bucles de enrutamiento."
+  },
+  {
+    "pregunta": "Respecto a los algoritmos de encaminamiento:",
+    "opciones": [
+      "En el encaminamiento estático se pueden utilizar datos dinámicos para calcular los costes de los enlaces entre los nodos de la red.",
+      "En los algoritmos de estado de enlace se utiliza inundación para propagar los costes de los enlaces entre nodos vecinos.",
+      "En los algoritmos de encaminamiento globales los nodos intercambian información de encaminamiento entre ellos, mientras que los algoritmos locales y descentralizados no la intercambian.",
+      "Ninguna de las respuestas anteriores es cierta."
+    ],
+    "respuesta_correcta": "En los algoritmos de estado de enlace se utiliza inundación para propagar los costes de los enlaces entre nodos vecinos.",
+    "_comentario": "Los algoritmos de estado de enlace, como OSPF (Open Shortest Path First), utilizan inundación para propagar la información de encaminamiento entre los nodos vecinos. Esta técnica permite que los routers compartan información sobre los costes de los enlaces y calculen las rutas más cortas a través de la red."
+  },
+  {
+    "pregunta": "En el protocolo DHCP:",
+    "opciones": [
+      "La máquina que no tiene dirección IP difunde una petición a toda la red para buscar servidores que le proporcionen dicha dirección IP.",
+      "Todos los servidores que pueden ofrecer direcciones IP le envían una dirección IP a la máquina que hizo la solicitud.",
+      "La respuesta a es correcta y además la máquina que difunde la petición solo va a recibir la dirección IP de un servidor.",
+      "La respuesta a y b son ciertas."
+    ],
+    "respuesta_correcta": "La respuesta a y b son ciertas.",
+    "_comentario": "El protocolo DHCP (Dynamic Host Configuration Protocol) permite a las máquinas obtener automáticamente una dirección IP y otros parámetros de configuración de red. Cuando una máquina sin dirección IP difunde una solicitud DHCP, los servidores DHCP disponibles responden ofreciendo direcciones IP a la máquina solicitante."
+  },
+  {
+    "pregunta": "En la capa de enlace en la norma IEEE 802",
+    "opciones": [
+      "Hay un LLC por cada protocolo en la capa MAC",
+      "El procesamiento de la dirección IP lo realiza la capa de control de enlace lógico",
+      "El control del flujo lo realiza la capa de control de enlace lógico",
+      "Todas las respuestas anteriores son ciertas"
+    ],
+    "respuesta_correcta": "El control del flujo lo realiza la capa de control de enlace lógico",
+    "_comentario": "En la norma IEEE 802, la subcapa LLC (Logical Link Control) se encarga del control de flujo y la segmentación de datos, mientras que el procesamiento de direcciones IP pertenece a capas superiores como la capa de red."
+  },
+  {
+    "pregunta": "Respecto a los métodos de control de congestión:",
+    "opciones": [
+      "En los paquetes reguladores, los routers situados entre el emisor y el router congestionado pueden almacenar parte del tráfico recibido para reducir el que se envía al router congestionado.",
+      "Cuando se utilizan paquetes reguladores salto a salto o bits de advertencia, la reducción de tráfico solo se realiza en el origen.",
+      "Las respuestas a y b son ciertas.",
+      "Ninguna de las respuestas anteriores es cierta."
+    ],
+    "respuesta_correcta": "Ninguna de las respuestas anteriores es cierta.",
+    "_comentario": "El control de congestión en las redes de computadoras se refiere a las técnicas utilizadas para evitar la congestión y garantizar un flujo eficiente de datos. Algunas de las estrategias comunes incluyen la gestión de colas, el control de flujo y la asignación de recursos."
+  },
+  {
+    "pregunta": "En el protocolo Ethernet, cuando una máquina tiene información para transmitir",
+    "opciones": [
+      "Intenta transmitir tanto si el medio está libre u ocupado",
+      "Transmite si el canal está libre y si está ocupado espera escuchando hasta que esté libre",
+      "Transmite si el canal está libre y si está ocupado lo vuelve a intentar después de un tiempo aleatorio",
+      "Detiene las transmisiones de otras máquinas y después se pone a transmitir"
+    ],
+    "respuesta_correcta": "Transmite si el canal está libre y si está ocupado lo vuelve a intentar después de un tiempo aleatorio",
+    "_comentario": "En el protocolo Ethernet, se utiliza el algoritmo CSMA/CD (Carrier Sense Multiple Access with Collision Detection), donde una estación transmite si el canal está libre y, si está ocupado, espera un tiempo aleatorio antes de intentar nuevamente."
+  },
+  {
+    "pregunta": "En el protocolo ARP:",
+    "opciones": [
+      "Se envía una solicitud a toda la red buscando un servidor que realice la traducción de dirección IP a dirección física.",
+      "Se envía una solicitud a toda la red buscando un servidor que realice la traducción de dirección física a dirección IP.",
+      "Se envía una solicitud a toda la red para que la máquina con la dirección IP a traducir responda con su dirección física.",
+      "Se envía una solicitud a toda la red para que la máquina con la dirección física a traducir responda con su dirección IP."
+    ],
+    "respuesta_correcta": "Se envía una solicitud a toda la red para que la máquina con la dirección IP a traducir responda con su dirección física.",
+    "_comentario": "El protocolo ARP (Address Resolution Protocol) se utiliza para traducir direcciones IP en direcciones físicas (MAC) en una red local. Cuando una máquina necesita la dirección física de otra máquina con una dirección IP específica, envía una solicitud ARP a la red para obtener la información necesaria."
+  },
+  {
+    "pregunta": "En el protocolo paso de testigo en bus:",
+    "opciones": [
+      "Cuando una estación libera el testigo lo deposita en el bus al que están conectadas todas las estaciones y la primera que lo ve es la que lo captura.",
+      "Cuando el sucesor de la estación que libera el testigo no está en el bus, el testigo se entrega al monitor.",
+      "Las estaciones se incorporan al anillo lógico después de recibir una trama de invitación de entrada, pero solo puede entrar una estación por invitación.",
+      "Todas las respuestas anteriores son ciertas."
+    ],
+    "respuesta_correcta": "Cuando el sucesor de la estación que libera el testigo no está en el bus, el testigo se entrega al monitor.",
+    "_comentario": "El protocolo de paso de testigo en bus es una técnica utilizada en redes de computadoras para controlar el acceso al medio de transmisión. Cuando una estación libera el testigo, si el sucesor no está presente en el bus, el testigo se entrega al monitor para garantizar un funcionamiento eficiente del protocolo."
+  },
+  {
+    "pregunta": "Respecto al control de acceso al medio:",
+    "opciones": [
+      "Las técnicas de reserva no tienen colisiones, pero las de contienda sí pueden tenerlas.",
+      "Las técnicas de contienda no tienen colisiones, pero las de paso de testigo sí pueden tenerlas.",
+      "Las técnicas de paso de testigo no tienen colisiones, pero las de enmienda sí pueden tenerlas.",
+      "Ninguna de las respuestas anteriores es cierta."
+    ],
+    "respuesta_correcta": "Las técnicas de reserva no tienen colisiones, pero las de contienda sí pueden tenerlas.",
+    "_comentario": "El control de acceso al medio se refiere a las técnicas utilizadas para coordinar el acceso de múltiples estaciones a un medio de transmisión compartido. Las técnicas de reserva, como el protocolo de paso de testigo en bus, evitan las colisiones al asignar de antemano el acceso al medio, mientras que las técnicas de contienda, como CSMA/CD en Ethernet, pueden experimentar colisiones si varias estaciones intentan transmitir al mismo tiempo."
+  },
+  {
+    "pregunta": "Respecto a la multiplexación:",
+    "opciones": [
+      "Para multiplexar con TDM se necesita que las señales sean digitales.",
+      "Para multiplexar con FDM se necesita que el ancho de banda de la línea multiplexada sea mayor que la suma de los anchos de banda de las fuentes.",
+      "Para multiplexar con FDM se necesita que la velocidad de transmisión de la línea multiplexada sea mayor que la suma de las velocidades de las fuentes.",
+      "Las respuestas a y b son ciertas."
+    ],
+    "respuesta_correcta": "Para multiplexar con FDM se necesita que el ancho de banda de la línea multiplexada sea mayor que la suma de los anchos de banda de las fuentes.",
+    "_comentario": "La multiplexación es el proceso de combinar múltiples señales en un solo medio de transmisión. En la multiplexación por división de frecuencia (FDM), se requiere que el ancho de banda de la línea multiplexada sea mayor que la suma de los anchos de banda de las fuentes para evitar la interferencia entre las señales."
+  },
+  {
+    "pregunta": "Respecto a las transmisiones analógicas y digitales:",
+    "opciones": [
+      "La transmisión analógica puede enviar datos digitales en señales analógicas.",
+      "La transmisión digital no puede enviar datos analógicos.",
+      "Las respuestas a y b son ciertas.",
+      "Ninguna de las respuestas anteriores son ciertas."
+    ],
+    "respuesta_correcta": "La transmisión analógica puede enviar datos digitales en señales analógicas.",
+    "_comentario": "En las transmisiones analógicas, los datos digitales se convierten en señales analógicas para su transmisión. Por otro lado, en las transmisiones digitales, los datos se transmiten en forma de pulsos digitales, lo que permite una mayor precisión y resistencia al ruido en comparación con las señales analógicas."
+  },
+  {
+    "pregunta": "Respecto a las siguientes afirmaciones:",
+    "opciones": [
+      "El espectro es el conjunto de frecuencias que constituyen una señal.",
+      "El ancho de banda es el número de bits por segundo que se pueden transmitir por un medio.",
+      "La capacidad de un canal es inversamente proporcional a su ancho de banda.",
+      "La respuesta a y b son ciertas."
+    ],
+    "respuesta_correcta": "El espectro es el conjunto de frecuencias que constituyen una señal.",
+    "_comentario": "El espectro de una señal se refiere al rango de frecuencias que componen la señal. Por otro lado, el ancho de banda se refiere a la cantidad de datos que se pueden transmitir por un medio de comunicación en un período de tiempo determinado. La capacidad de un canal de comunicación está relacionada con su ancho de banda, ya que un canal con mayor ancho de banda puede transmitir más datos en un tiempo dado."
+  },
+  {
+    "pregunta": "Respecto al control de la congestión en TCP:",
+    "opciones": [
+      "El RTT disminuye cuando hay que retransmitir un segmento.",
+      "El RTO no varía cuando hay que retransmitir un segmento.",
+      "El RTO disminuye cuando hay que retransmitir un segmento.",
+      "El RTO aumenta cuando hay que retransmitir un segmento."
+    ],
+    "respuesta_correcta": "El RTO aumenta cuando hay que retransmitir un segmento.",
+    "_comentario": "El RTO (Retransmission TimeOut) es el tiempo que espera TCP antes de retransmitir un segmento que no ha sido confirmado. Cuando se produce una retransmisión, el RTO suele aumentar para evitar la congestión en la red y garantizar una transmisión eficiente de los datos."
+  },
+
+  {
+    "pregunta": "Respecto al control de congestión en TCP",
+    "opciones": [
+      "Se puede pasar a recuperación rápida desde el arranque lento cuando se alcanza el umbral",
+      "Se puede pasar a recuperación rápida desde evitación de la congestión cuando se reciben 3 ACKs duplicados",
+      "El único estado desde el que se puede pasar a recuperación rápida es el arranque lento, cuando se reciben 3 ACKs duplicados",
+      "Las respuestas a y b son correctas"
+    ],
+    "respuesta_correcta": "Las respuestas a y b son correctas",
+    "_comentario": "En TCP, la recuperación rápida puede activarse al recibir 3 ACKs duplicados, ya sea desde el estado de arranque lento o desde evitación de la congestión, dependiendo del momento en que ocurre. Este mecanismo permite gestionar las pérdidas de paquetes sin reiniciar por completo la conexión."
+  },
+  {
+    "pregunta": "El control de errores en la capa Internet",
+    "opciones": [
+      "Lo realiza el protocolo IP",
+      "Lo realiza el protocolo TCP",
+      "No se realiza control de errores",
+      "Lo realiza el protocolo ICMP"
+    ],
+    "respuesta_correcta": "No se realiza control de errores",
+    "_comentario": "En la capa Internet, el protocolo IP no incluye control de errores. Este control se delega a capas superiores, como la capa de transporte (TCP), o se gestiona mediante otros protocolos como ICMP para reportar problemas."
+  },
+  {
+    "pregunta": "El control del flujo en redes LAN",
+    "opciones": [
+      "Lo realiza la subcapa de control de enlace lógico",
+      "Lo realizan tanto la subcapa de control de acceso al medio como la de control de enlace lógico",
+      "No se realizar control de flujo",
+      "Lo realiza la subcapa de control de acceso al medio"
+    ],
+    "respuesta_correcta": "Lo realizan tanto la subcapa de control de acceso al medio como la de control de enlace lógico",
+    "_comentario": "El control del flujo en redes LAN es un proceso colaborativo entre la subcapa de control de acceso al medio (MAC) y la subcapa de control de enlace lógico (LLC), asegurando una transmisión de datos eficiente y coordinada."
+  },
+  {
+    "pregunta": "El proceso de segmentación se realiza",
+    "opciones": [
+      "En la capa Internet",
+      "En la capa de transporte",
+      "En la capa física",
+      "En la capa de acceso a la red"
+    ],
+    "respuesta_correcta": "En la capa de transporte",
+    "_comentario": "La segmentación, que implica dividir los datos de la aplicación en segmentos más pequeños para su transmisión, se lleva a cabo en la capa de transporte. Esto facilita el manejo eficiente de los datos en la red."
+  },
+  {
+    "pregunta": "El protocolo ARP",
+    "opciones": [
+      "Traduce direcciones físicas a direcciones IP",
+      "Permite utilizar direcciones virtuales dentro de una red LAN",
+      "Obtiene los parámetros de configuración de acceso a la red para una máquina",
+      "Traduce direcciones IP a direcciones físicas"
+    ],
+    "respuesta_correcta": "Traduce direcciones IP a direcciones físicas",
+    "_comentario": "El protocolo ARP (Address Resolution Protocol) es fundamental en redes IP para traducir direcciones IP, que son direcciones lógicas, en direcciones MAC, que son direcciones físicas. Esto permite la comunicación dentro de la misma red LAN."
+  },
+  {
+    "pregunta": "El protocolo DHCP",
+    "opciones": [
+      "Traduce direcciones IP a direcciones físicas",
+      "Traduce direcciones físicas a direcciones IP",
+      "Permite utilizar direcciones virtuales dentro de una red LAN",
+      "Obtiene los parámetros de configuración de acceso a la red para una máquina"
+    ],
+    "respuesta_correcta": "Obtiene los parámetros de configuración de acceso a la red para una máquina",
+    "_comentario": "El protocolo DHCP (Dynamic Host Configuration Protocol) es esencial para la administración de redes, ya que asigna automáticamente direcciones IP y otros parámetros de configuración de red a los dispositivos, facilitando su conexión y comunicación en la red."
+  },
+  {
+    "pregunta": "El protocolo IP",
+    "opciones": [
+      "Garantiza la entrega de los datos",
+      "Se utiliza en la capa de acceso a la red",
+      "Cada datagrama se encamina de forma independiente",
+      "Las respuestas a y c son ciertas"
+    ],
+    "respuesta_correcta": "Cada datagrama se encamina de forma independiente",
+    "_comentario": "El protocolo IP (Internet Protocol) no garantiza la entrega de los datos, ya que es no fiable y no orientado a la conexión. Además, cada datagrama se encamina de forma independiente, lo que permite flexibilidad en las rutas de transmisión."
+  },
+  {
+    "pregunta": "El protocolo IP es",
+    "opciones": [
+      "No orientado a la conexión y no fiable",
+      "Orientado a la conexión y no fiable",
+      "No orientado a la conexión y fiable",
+      "Orientado a la conexión y fiable"
+    ],
+    "respuesta_correcta": "No orientado a la conexión y no fiable",
+    "_comentario": "El protocolo IP es fundamental para la transmisión de datos en la red, pero no establece una conexión previa entre los dispositivos de comunicación ni garantiza la entrega de los paquetes, lo que lo hace no orientado a la conexión y no fiable."
+  },
+  {
+    "pregunta": "El protocolo TCP",
+    "opciones": [
+      "No puede detectar duplicados",
+      "Envía asentimientos para los segmentos que llegaron de forma correcta",
+      "No utiliza reenvíos",
+      "Las respuestas a y c son ciertas"
+    ],
+    "respuesta_correcta": "Envía asentimientos para los segmentos que llegaron de forma correcta",
+    "_comentario": "TCP es un protocolo fiable que utiliza asentimientos (ACKs) para confirmar la recepción correcta de los segmentos y también utiliza reenvíos cuando detecta pérdida de datos o errores."
+  },
+  {
+    "pregunta": "El protocolo TCP",
+    "opciones": [
+      "Puede transportar asentimientos con las tramas de datos",
+      "El número de ACK de una trama contiene el número de la siguiente trama a recibir",
+      "Las opciones a) y b) son ciertas",
+      "Las tramas de datos no pueden transportar asentimientos"
+    ],
+    "respuesta_correcta": "Las opciones a) y b) son ciertas",
+    "_comentario": "NO ES FIJO.TCP permite el transporte de asentimientos (ACKs) junto con las tramas de datos, y el número de ACK en una trama indica el número de secuencia de la siguiente trama esperada, lo que facilita la confirmación de la recepción y el control de flujo."
+  },
+  {
+    "pregunta": "El protocolo TCP",
+    "opciones": [
+      "Es un protocolo de la capa de red no orientado a la conexión",
+      "Es un protocolo de la capa de transporte no orientado a la conexión",
+      "Es un protocolo de la capa de transporte orientado a la conexión",
+      "Es un protocolo de la capa de red orientado a la conexión"
+    ],
+    "respuesta_correcta": "Es un protocolo de la capa de transporte orientado a la conexión",
+    "_comentario": "TCP es un protocolo de la capa de transporte que establece una conexión antes de la transmisión de datos, asegurando la entrega fiable y en orden de los mismos."
+  },
+  {
+    "pregunta": "El protocolo UDP",
+    "opciones": [
+      "No puede detectar duplicados",
+      "Envía asentimientos para los segmentos que llegaron de forma correcta",
+      "Utiliza reenvíos",
+      "Las opciones b) y c) son ciertas"
+    ],
+    "respuesta_correcta": "No puede detectar duplicados",
+    "_comentario": "UDP es un protocolo de la capa de transporte no orientado a la conexión y no fiable, lo que significa que no realiza la detección de duplicados, no envía asentimientos ni utiliza reenvíos."
+  },
+  {
+    "pregunta": "El protocolo UDP",
+    "opciones": [
+      "Envía menos información suplementaria que el protocolo TCP y es no orientado a la conexión",
+      "Envía más información suplementaria que el protocolo TCP y es no orientado a la conexión",
+      "Envía menos información suplementaria que el protocolo TCP y es orientado a la conexión",
+      "Envía más información suplementaria que el protocolo TCP y es orientado a la conexión"
+    ],
+    "respuesta_correcta": "Envía menos información suplementaria que el protocolo TCP y es no orientado a la conexión",
+    "_comentario": "UDP es un protocolo ligero y no orientado a la conexión, lo que significa que no establece una conexión antes de enviar datos y envía menos información suplementaria en comparación con TCP, haciendo que sea más rápido pero menos fiable."
+  },
+  {
+    "pregunta": "El tiempo de vida es",
+    "opciones": [
+      "El tiempo que se espera por la recepción de un asentimiento",
+      "El tiempo que puede viajar un datagrama por la red",
+      "El tiempo que puede estar transmitiendo una máquina de forma ininterrumpida",
+      "El tiempo que dura una conexión entre un origen y un destino"
+    ],
+    "respuesta_correcta": "El tiempo que puede viajar un datagrama por la red",
+    "_comentario": "El tiempo de vida, o TTL (Time To Live), es un campo en el encabezado de los paquetes IP que limita el tiempo o los saltos que un datagrama puede permanecer en la red para evitar que circule indefinidamente."
+  },
+  {
+    "pregunta": "El tiempo que un datagrama puede circular por la red",
+    "opciones": [
+      "Se decrementa en cada encaminador por el que pase",
+      "Se aumenta en cada puente por el que pase",
+      "Se aumenta en cada encaminador por el que pase",
+      "Se decrementa en cada puente por el que pase"
+    ],
+    "respuesta_correcta": "Se decrementa en cada encaminador por el que pase",
+    "_comentario": "El valor del campo TTL de un datagrama IP se decrementa en uno por cada encaminador (router) por el que pasa, lo que ayuda a prevenir bucles infinitos en la red."
+  },
+  {
+    "pregunta": "En el encaminamiento IP",
+    "opciones": [
+      "En cada salto del datagrama se modifican las direcciones IP origen y destino",
+      "En cada salto del datagrama se modifica sólo la dirección IP de destino",
+      "En cada salto del datagrama se modifican las direcciones físicas origen y destino",
+      "En cada salto del datagrama se modifica sólo la dirección física de destino"
+    ],
+    "respuesta_correcta": "En cada salto del datagrama se modifican las direcciones físicas origen y destino",
+    "_comentario": "Durante el encaminamiento IP, las direcciones IP origen y destino permanecen constantes para garantizar que el datagrama llegue al destino correcto. Sin embargo, las direcciones físicas (MAC) origen y destino se modifican en cada salto para reflejar el siguiente dispositivo (router) en la ruta y el dispositivo emisor."
+  },
+  {
+    "pregunta": "En el protocolo Ethernet",
+    "opciones": [
+      "No se producen colisiones",
+      "Cuando se produce una colisión se detiene la transmisión, pero no se avisa a las demás máquinas de ello",
+      "Cuando se produce una colisión se detiene la transmisión y se avisa a las demás máquinas para que no intenten transmitir",
+      "Las máquinas no pueden detectar colisiones"
+    ],
+    "respuesta_correcta": "Cuando se produce una colisión se detiene la transmisión y se avisa a las demás máquinas para que no intenten transmitir",
+    "_comentario": "En el protocolo Ethernet, cuando se detecta una colisión, se utiliza el algoritmo de detección de colisiones CSMA/CD (Carrier Sense Multiple Access with Collision Detection) para detener la transmisión y notificar a todas las máquinas en la red para que cesen sus intentos de transmisión temporalmente, evitando así más colisiones."
+  },
+  {
+    "pregunta": "En el protocolo Ethernet, cuando una máquina tiene información para transmitir",
+    "opciones": [
+      "Transmite si el canal está libre y si está ocupado lo vuelve a intentar después de un tiempo aleatorio",
+      "Detiene las transmisiones de otras máquinas y después se pone a transmitir",
+      "Intenta transmitir tanto si el medio está libre u ocupado",
+      "Transmite si el canal está libre y si está ocupado espera escuchando hasta que esté libre"
+    ],
+    "respuesta_correcta": "Transmite si el canal está libre y si está ocupado lo vuelve a intentar después de un tiempo aleatorio",
+    "_comentario": "Este comportamiento es parte del algoritmo CSMA/CD (Carrier Sense Multiple Access with Collision Detection) utilizado en Ethernet, donde una estación escucha el medio antes de transmitir. Si detecta que el medio está libre, transmite; si está ocupado, espera un tiempo aleatorio antes de volver a intentarlo."
+  },
+  {
+    "pregunta": "En el protocolo Ethernet",
+    "opciones": [
+      "Las direcciones origen y destino son direcciones físicas",
+      "Las direcciones origen y destino son direcciones IP",
+      "La dirección destino siempre es la dirección física del router",
+      "Las opciones a) y c) son ciertas"
+    ],
+    "respuesta_correcta": "Las direcciones origen y destino son direcciones físicas",
+    "_comentario": "En Ethernet, las direcciones utilizadas para identificar el origen y el destino de los marcos son direcciones MAC (Media Access Control), que son direcciones físicas únicas asignadas a cada dispositivo de red."
+  },
+  {
+    "pregunta": "En el protocolo TCP",
+    "opciones": [
+      "Se utiliza la suma de comprobación para controlar el flujo de información",
+      "Se utiliza la suma de comprobación para detectar errores",
+      "Se utiliza la suma de comprobación para descartar segmentos",
+      "Las respuestas b y c son ciertas"
+    ],
+    "respuesta_correcta": "Se utiliza la suma de comprobación para detectar errores",
+    "_comentario": "En el protocolo TCP, la suma de comprobación se utiliza para verificar la integridad de los datos transmitidos, detectando errores en los segmentos durante la transmisión."
+  },
+  {
+    "pregunta": "En los niveles de direccionamiento",
+    "opciones": [
+      "Los puertos se utilizan para identificar a las máquinas de una red WAN",
+      "La dirección física se utiliza para identificar a las máquinas de una red LAN",
+      "La dirección IP es lo mismo que la dirección física",
+      "Las opciones a) y b) son ciertas"
+    ],
+    "respuesta_correcta": "La dirección física se utiliza para identificar a las máquinas de una red LAN",
+    "_comentario": "La dirección física, también conocida como dirección MAC, es única para cada dispositivo de red y se utiliza para identificar dispositivos dentro de una red de área local (LAN). Los puertos, por otro lado, se utilizan en el contexto de protocolos de capa de transporte como TCP y UDP para identificar aplicaciones específicas en las máquinas."
+  },
+  {
+    "pregunta": "En redes punto a punto",
+    "opciones": [
+      "El canal es compartido por todas las máquinas de la red",
+      "Se necesita un mecanismo de control de acceso al medio compartido",
+      "Se utilizan conexiones entre cada par de máquinas de la red",
+      "Las respuestas a y b son ciertas"
+    ],
+    "respuesta_correcta": "Se utilizan conexiones entre cada par de máquinas de la red",
+    "_comentario": "En redes punto a punto, cada conexión se establece directamente entre dos máquinas, sin necesidad de compartir un canal común o utilizar mecanismos de control de acceso al medio como en las redes de difusión."
+  },
+  {
+    "pregunta": "La capa de enlace en la norma IEEE 802",
+    "opciones": [
+      "Es la misma que en el modelo OSI",
+      "Se divide en dos subcapas: control de acceso al medio y sesión",
+      "Se divide en tres subcapas: control del enlace lógico, control de acceso al medio y sesión",
+      "Se divide en dos subcapas: control del enlace lógico y control de acceso al medio"
+    ],
+    "respuesta_correcta": "Se divide en dos subcapas: control del enlace lógico y control de acceso al medio",
+    "_comentario": "La capa de enlace de datos en la norma IEEE 802 se divide en dos subcapas: la subcapa de control del enlace lógico (LLC) que se encarga de la comunicación entre la capa de red y la capa de enlace de datos, y la subcapa de control de acceso al medio (MAC) que gestiona el acceso al medio físico para la transmisión de datos."
+  },
+  {
+    "pregunta": "La capa encargada de controlar la comunicación entre los sistemas finales (origen y destino de la comunicación) es:",
+    "opciones": [
+      "La capa de trasporte",
+      "La capa de red",
+      "La capa de enlace",
+      "Las opciones a) y b) son ciertas"
+    ],
+    "respuesta_correcta": "La capa de trasporte",
+    "_comentario": "La capa de transporte es responsable de la entrega de mensajes entre los sistemas finales, proporcionando servicios como la segmentación, el control de flujo y la corrección de errores, directamente a las aplicaciones de usuario en los sistemas finales."
+  },
+  {
+    "pregunta": "La capa encargada de la transmisión de bits por el medio de transmisión es:",
+    "opciones": [
+      "La capa de red",
+      "La capa de enlace",
+      "La capa física",
+      "La capa de transporte"
+    ],
+    "respuesta_correcta": "La capa física",
+    "_comentario": "La capa física se encarga de la transmisión y recepción de los bits sin procesar a través del medio físico de transmisión. Incluye especificaciones como los niveles de voltaje, las tasas de bits, los medios físicos y más."
+  },
+  {
+    "pregunta": "La capa encargada del control del flujo es:",
+    "opciones": [
+      "La capa de transporte",
+      "La capa de red",
+      "La capa de enlace",
+      "Las opciones a) y c) son ciertas"
+    ],
+    "respuesta_correcta": "Las opciones a) y c) son ciertas",
+    "_comentario": "La capa de transporte es la principal responsable del control del flujo, asegurando que los datos se envíen a una velocidad que pueda ser procesada por el receptor. Aunque la capa de enlace de datos también puede realizar control de flujo, es más común y destacado en la capa de transporte."
+  },
+  {
+    "pregunta": "La capa encargada del encaminamiento por la subred de comunicaciones es:",
+    "opciones": [
+      "La capa de trasporte",
+      "La capa de red",
+      "La capa de enlace",
+      "Las opciones a) y b) son ciertas"
+    ],
+    "respuesta_correcta": "La capa de red",
+    "_comentario": "La capa de red es responsable del encaminamiento de paquetes a través de la subred de comunicaciones, seleccionando rutas en una red interconectada que pueden abarcar múltiples enlaces y nodos."
+  },
+  {
+    "pregunta": "La dirección física es procesada por",
+    "opciones": [
+      "La capa de control de enlace lógico",
+      "La capa física",
+      "La capa de control de acceso al medio",
+      "La capa de red"
+    ],
+    "respuesta_correcta": "La capa de control de acceso al medio",
+    "_comentario": "La dirección física, o dirección MAC, es procesada por la subcapa de control de acceso al medio (MAC) de la capa de enlace de datos. Esta subcapa se encarga de la dirección y del control de acceso para los medios de transmisión."
+  },
+  {
+    "pregunta": "La dirección MAC se utiliza para",
+    "opciones": [
+      "Determinar la red de destino de la información",
+      "Determinar la máquina de destino dentro de la red LAN",
+      "Determinar la máquina de destino dentro de la red WAN",
+      "Para determinar tanto la red de destino como la máquina de destino dentro de la red Internet"
+    ],
+    "respuesta_correcta": "Determinar la máquina de destino dentro de la red LAN",
+    "_comentario": "La dirección MAC (Media Access Control) es una dirección única asignada a cada dispositivo de red. Se utiliza para identificar máquinas dentro de una red LAN, ya que opera en la capa de enlace de datos y no se utiliza para determinar redes WAN o Internet."
+  },
+  {
+    "pregunta": "La tabla de encaminamiento",
+    "opciones": [
+      "Indica el siguiente salto que debe realizar la información en base a la dirección física de destino",
+      "Indica el siguiente salto que debe realizar la información en base a la dirección IP de destino",
+      "La opción a) es cierta y además la tabla es cubierta por un algoritmo de encaminamiento",
+      "La opción b) es cierta y además la tabla es cubierta por un algoritmo de control de flujo"
+    ],
+    "respuesta_correcta": "Indica el siguiente salto que debe realizar la información en base a la dirección IP de destino",
+    "_comentario": "Las tablas de encaminamiento se utilizan en la capa de red para determinar el siguiente salto que debe tomar un paquete basándose en su dirección IP de destino. Estas tablas son gestionadas por algoritmos de encaminamiento, no de control de flujo."
+  },
+  {
+    "pregunta": "Una colisión se produce cuando:",
+    "opciones": [
+      "Dos paquetes de datos intentan compartir el mismo medio de transmisión al mismo tiempo",
+      "Se quema el cable por el que circulan los datos",
+      "Dos ordenadores colisionan en una caída",
+      "Dos paquetes se dirigen a un destinatario"
+    ],
+    "respuesta_correcta": "Dos paquetes de datos intentan compartir el mismo medio de transmisión al mismo tiempo",
+    "_comentario": "En redes, una colisión ocurre cuando dos dispositivos intentan enviar paquetes de datos simultáneamente por el mismo canal de comunicación, lo que puede causar interferencia y pérdida de datos. Esto es común en redes con un medio compartido."
+  },
+  {
+    "pregunta": "Un datagrama",
+    "opciones": [
+      "Sólo se descarta si tiene errores",
+      "Tiene un tiempo máximo para circular por la red",
+      "Tiene un tiempo mínimo para circular por la red",
+      "No tiene campo de control de errores en la cabecera"
+    ],
+    "respuesta_correcta": "Tiene un tiempo máximo para circular por la red",
+    "_comentario": "Los datagramas tienen un campo denominado 'Time to Live' (TTL) o 'tiempo de vida', que limita el tiempo o los saltos que pueden dar por la red para evitar que circulen indefinidamente en caso de bucles de encaminamiento."
+  },
+  {
+    "pregunta": "El encaminamiento estático",
+    "opciones": [
+      "Se configura manualmente y es adecuado para redes de gran tamaño con cambios frecuentes en su topología",
+      "Utiliza un protocolo de encaminamiento para el intercambio de información entre los routers que forman la red",
+      "Se configura manualmente y puede ser adecuado para redes de tamaño pequeño que no presenten cambios frecuentes en su topología",
+      "Utiliza el protocolo RIP para la configuración de la tabla de encaminamiento"
+    ],
+    "respuesta_correcta": "Se configura manualmente y puede ser adecuado para redes de tamaño pequeño que no presenten cambios frecuentes en su topología",
+    "_comentario": "El encaminamiento estático se configura manualmente por un administrador de red. Es más adecuado para redes más pequeñas o para situaciones en las que la topología de la red no cambia frecuentemente, ya que cualquier cambio en la red requiere una reconfiguración manual."
+  },
+  {
+    "pregunta": "En un sistema autónomo (AS)",
+    "opciones": [
+      "Existe al menos una ruta entre cada par de nodos y se emplea el protocolo BGP para el enrutamiento dentro del AS",
+      "Las redes y routers son adminstradas por varias organizaciones y se emplea un protocolo de enrutamiento exterior (ERP) dentro del AS",
+      "Se utiliza un protocolo de encaminamiento exterior (ERP) y los equipos son administrados por una única organización",
+      "Se utiliza un protocolo de encaminamiento interior (IRP) y los equipos son administrados por una única organización"
+    ],
+    "respuesta_correcta": "Se utiliza un protocolo de encaminamiento interior (IRP) y los equipos son administrados por una única organización",
+    "_comentario": "En un sistema autónomo (AS), todas las redes y routers están bajo la administración de una única organización, y se utilizan protocolos de encaminamiento interior (Interior Routing Protocols, IRP) para el enrutamiento dentro del AS. El protocolo BGP es comúnmente utilizado para el enrutamiento entre AS (encaminamiento exterior)."
+  },
+  {
+    "pregunta": "En un protocolo de estado de enlace",
+    "opciones": [
+      "Los routers no pueden disponer de la información completa de la topología de la red, ya que mantienen una base de datos más simple que los protocolos de vector-distancia",
+      "Los routers disponen de la información completa de la topología de la red, con una base de datos más compleja que los protocolos de vector-distancia",
+      "Los routers utilizan el protocolo de Bellman-Ford distribuido para buscar el camino más corto a un destino determinado",
+      "Los routers tienen configurado BGP (Border Gateway Protocol) como protocolo de encaminamiento"
+    ],
+    "respuesta_correcta": "Los routers disponen de la información completa de la topología de la red, con una base de datos más compleja que los protocolos de vector-distancia",
+    "_comentario": "En los protocolos de estado de enlace, cada router mantiene una base de datos que representa toda la topología de la red. Esto permite a cada router calcular el mejor camino a cualquier destino en la red utilizando algoritmos como el de Dijkstra."
+  },
+  {
+    "pregunta": "Diferencias entre protocolos de vector-distancia (DV) y estado de enlace (LS)",
+    "opciones": [
+      "DV no tiene conocimiento de la topología de la red, mientras que LS sí tiene una visión de la topología de red completa. DV converge mediante intercambios periódicos de las tablas de routing entre vecinos. En LS las actualizaciones proviene de cambios en la topología. Los tiempos de convergencia son menores en LS que en DV",
+      "No hay prácticamente diferencias entre los protocolos DV y LV",
+      "DV no tiene conocimiento de la topología de la red, mientras que LS sí tiene una visión de la topología de red completa. LS converge mediante intercambios periódicos de las tablas de routing entre vecinos. En DV las actualizaciones proviene de cambios en la topología. Los tiempos de convergencia son menores en DV que en LS",
+      "DV sí tiene conocimiento de la topología de la red, mientras que LS no tiene una visión de la topología de red completa. DV converge mediante intercambios periódicos de las tablas de routing entre vecinos. En LS las actualizaciones proviene de cambios en la topología. Los tiempos de convergencia son menores en LS que en DV"
+    ],
+    "respuesta_correcta": "DV no tiene conocimiento de la topología de la red, mientras que LS sí tiene una visión de la topología de red completa. DV converge mediante intercambios periódicos de las tablas de routing entre vecinos. En LS las actualizaciones proviene de cambios en la topología. Los tiempos de convergencia son menores en LS que en DV",
+    "_comentario": "Los protocolos de estado de enlace, como OSPF, tienen una visión completa de la topología de la red y pueden calcular rutas óptimas con mayor precisión y rapidez que los protocolos de vector-distancia, como RIP, que solo conocen la distancia a los destinos sin tener una visión completa de la topología."
+  },
+  {
+    "pregunta": "Respecto a datagramas y circuitos virtuales",
+    "opciones": [
+      "Los circuitos virtuales y los datagramas pertenecen a la conmutación de paquetes",
+      "Los circuitos virtuales toman las decisiones de encaminamiento en cada nodo para cada paquete que se recibe",
+      "Los datagramas utilizan una tabla de encaminamiento para consultar las decisiones de encaminamiento, pero los circuitos virtuales no",
+      "Ninguna respuesta de las anteriores es cierta"
+    ],
+    "respuesta_correcta": "Ninguna respuesta de las anteriores es cierta",
+    "_comentario": "Los circuitos virtuales y los datagramas representan enfoques diferentes en redes. Los circuitos virtuales establecen un camino dedicado antes de transmitir datos, mientras que los datagramas no requieren un camino dedicado, cada paquete se encamina de manera independiente."
+  },
+  {
+    "pregunta": "Respecto a datagramas y circuitos virtuales",
+    "opciones": [
+      "Los circuitos virtuales pertenecen a la conmutación de circuitos y los datagramas a la conmutación de paquetes",
+      "Los circuitos virtuales toman las decisiones de encaminamiento en cada nodo para cada paquete que se recibe",
+      "Los datagramas utilizan una tabla de encaminamiento para consultar las decisiones de encaminamiento, pero los circuitos virtuales no",
+      "Todas las respuestas anteriores son falsas"
+    ],
+    "respuesta_correcta": "Todas las respuestas anteriores son falsas",
+    "_comentario": "Los circuitos virtuales pertenecen a la conmutación de paquetes, no de circuitos, y las decisiones de encaminamiento en circuitos virtuales se toman una vez al establecer la conexión, no en cada nodo. Además, los datagramas y circuitos virtuales utilizan tablas de encaminamiento para gestionar el tráfico."
+  },
+  {
+    "pregunta": "Respecto al modelo cliente-servidor",
+    "opciones": [
+      "El servidor debe comenzar su ejecución antes que los clientes",
+      "Los clientes pueden comunicarse directamente entre ellos",
+      "La respuesta a es cierta y, además, el servidor es el que inicia la comunicación",
+      "Las respuestas a y b son ciertas"
+    ],
+    "respuesta_correcta": "La respuesta a es cierta y, además, el servidor es el que inicia la comunicación",
+    "_comentario": "La respuesta a es cierta y, además, el servidor es el que inicia la comunicación"
+  },
+  {
+    "pregunta": "Respecto al modelo cliente-servidor",
+    "opciones": [
+      "El servidor es el que inicia la comunicación",
+      "El servidor tiene que tener una dirección IP bien conocida",
+      "El cliente debe tener asociado un puerto bien conocido",
+      "Todas las respuestas anteriores son ciertas"
+    ],
+    "respuesta_correcta": "El servidor tiene que tener una dirección IP bien conocida",
+    "_comentario": "En el modelo cliente-servidor, el cliente inicia la comunicación enviando una solicitud al servidor, el cual debe tener una dirección IP bien conocida para que el cliente pueda conectarse. Los puertos bien conocidos suelen estar asociados al servidor, no al cliente."
+  },
+  {
+    "pregunta": "Un protocolo:",
+    "opciones": [
+      "Define los tipos y formatos de las PDUs",
+      "Define lo que una entidad debe hacer cuando recibe un mensaje",
+      "Las respuestas a y b son ciertas",
+      "Ninguna de las respuestas anteriores es cierta"
+    ],
+    "respuesta_correcta": "Las respuestas a y b son ciertas",
+    "_comentario": "Un protocolo especifica tanto los tipos y formatos de las PDUs como el comportamiento esperado de las entidades al enviar o recibir mensajes, asegurando una comunicación coherente y eficiente."
+  },
+  {
+    "pregunta": "En ventana deslizante",
+    "opciones": [
+      "Por cada PDU enviada, el emisor y el receptor aumentan en uno el tamaño actual de su ventana",
+      "Por cada PDU enviada, el emisor y el receptor disminuyen en uno el tamaño actual de su ventana",
+      "Por cada PDU enviada, el emisor aumenta en uno el tamaño actual de su ventana, y el receptor disminuye",
+      "Por cada PDU enviada, el emisor disminuye en uno el tamaño actual de su ventana, y el receptor aumenta"
+    ],
+    "respuesta_correcta": "Por cada PDU enviada, el emisor y el receptor aumentan en uno el tamaño actual de su ventana",
+    "_comentario": "En el protocolo de ventana deslizante, tanto el emisor como el receptor ajustan dinámicamente el tamaño de sus ventanas para controlar el flujo de datos y evitar saturaciones en la red."
+  },
+  {
+    "pregunta": "El protocolo TCP",
+    "opciones": [
+      "Puede detectar duplicados utilizando la suma de comprobación",
+      "Utiliza reenvíos cuando considera que los segmentos se han perdido",
+      "Utiliza asentimientos para controlar el flujo de información",
+      "Las respuestas b y c son ciertas"
+    ],
+    "respuesta_correcta": "Las respuestas b y c son ciertas",
+    "_comentario": "TCP es un protocolo fiable que utiliza reenvíos cuando detecta pérdida de segmentos y emplea asentimientos (ACK) para controlar el flujo de información y garantizar la entrega de los datos."
+  },
+  {
+    "pregunta": "La ventana deslizante utilizada en el protocolo TCP",
+    "opciones": [
+      "Tiene un tamaño fijo que se negocia en el establecimiento de la conexión",
+      "Tiene un tamaño variable y puede ser disminuida por el emisor",
+      "Tiene un tamaño variable y puede ser aumentada por el receptor",
+      "Tiene un tamaño variable que puede ser modificado tanto por el emisor como por el receptor"
+    ],
+    "respuesta_correcta": "Tiene un tamaño variable y puede ser aumentada por el receptor",
+    "_comentario": "En el protocolo TCP, la ventana deslizante tiene un tamaño dinámico que puede ser ajustado por el receptor para optimizar el flujo de datos y evitar congestiones."
+  },
+  {
+    "pregunta": "Respecto a la fragmentación y el reensamblado en IPv4",
+    "opciones": [
+      "La fragmentación se realiza cuando el tamaño del datagrama es mayor que la MTU de enlace",
+      "La fragmentación sólo se puede hacer en el origen y el reensamblado sólo se puede hacer en el destino",
+      "Tanto la fragmentación como el reensamblado se pueden realizar en cualquier nodo de la red",
+      "Las respuestas a y c son ciertas"
+    ],
+    "respuesta_correcta": "La fragmentación se realiza cuando el tamaño del datagrama es mayor que la MTU de enlace",
+    "_comentario": "En IPv4, la fragmentación se realiza cuando el datagrama excede el tamaño de la MTU (Maximum Transmission Unit) del enlace. El reensamblado siempre ocurre en el destino para reconstruir el mensaje original."
+  },
+  {
+    "pregunta": "Respecto a la gráfica de la Figura 1",
+    "opciones": [
+      "Tras el ciclo 9 ha vencido el RTO y tras el ciclo 13 se ha recibido un ACK nuevo",
+      "Tras el ciclo 13 se ha recibido un ACK nuevo y tras el ciclo 18 ha vencido el RTO",
+      "Tras el ciclo 9 ha vencido el RTO y tras el ciclo 13 se han recibido 3 ACKs duplicados",
+      "Ninguna de las respuestas anteriores es cierta"
+    ],
+    "respuesta_correcta": "Tras el ciclo 9 ha vencido el RTO y tras el ciclo 13 se han recibido 3 ACKs duplicados",
+    "_comentario": "La gráfica de TCP Reno muestra cómo el tamaño de la ventana se ve afectado por eventos como tiempo de retransmisión agotado (RTO) y la recepción de ACKs duplicados. En el ciclo 9, el RTO reinicia la ventana, y en el ciclo 13, los ACKs duplicados causan una reducción en el tamaño de la ventana."
+  },
+  {
+    "pregunta": "Respecto a la gráfica de la Figura 1",
+    "opciones": [
+      "Tras el ciclo 13 se ha recibido un ACK duplicado y se pasa al estado de evitación de la congestión",
+      "Tras el ciclo 18 ha vencido el RTO y se pasa al estado de arranque lento",
+      "En el ciclo 11 el umbral es 16",
+      "Las respuestas a y b son ciertas"
+    ],
+    "respuesta_correcta": "Las respuestas a y b son ciertas",
+    "_comentario": "En la Figura 1, se observa cómo el tamaño de la ventana cambia según los eventos en TCP Reno. Después del ciclo 13, la recepción de un ACK duplicado activa la evitación de la congestión, mientras que tras el ciclo 18, la expiración del RTO provoca un reinicio al estado de arranque lento."
+  },
+  {
+    "pregunta": "El protocolo DHCP",
+    "opciones": [
+      "Traduce direcciones físicas a direcciones IP",
+      "Traduce direcciones IP a direcciones físicas",
+      "Obtiene los parámetros de configuración de acceso a la red para una máquina",
+      "Permite utilizar direcciones virtuales dentro de una red LAN"
+    ],
+    "respuesta_correcta": "Obtiene los parámetros de configuración de acceso a la red para una máquina",
+    "_comentario": "El protocolo DHCP (Dynamic Host Configuration Protocol) asigna automáticamente parámetros de red, como direcciones IP, puerta de enlace y servidores DNS, a los dispositivos que lo solicitan."
+  },
+  {
+    "pregunta": "En la conmutación de paquetes",
+    "opciones": [
+      "No se impone límite al tamaño de los datos",
+      "Cada vez que dos equipos se quieren comunicar, se establece una ruta física entre ellos",
+      "Cada vez que dos equipos se quieren comunicar, no se establece una ruta física",
+      "Las respuestas a y c son ciertas"
+    ],
+    "respuesta_correcta": "Las respuestas a y c son ciertas",
+    "_comentario": "En la conmutación de paquetes, no se establece una ruta física fija entre los equipos. En su lugar, los datos se dividen en paquetes que se envían independientemente a través de la red. Además, no hay un límite intrínseco al tamaño de los datos, pero puede haber restricciones según el protocolo utilizado."
+  },
+  {
+    "pregunta": "El protocolo IP",
+    "opciones": [
+      "No garantiza la entrega de los datos",
+      "Cada datagrama se encamina de forma independiente",
+      "Se utiliza en la capa de acceso a la red",
+      "Las respuestas a y b son ciertas"
+    ],
+    "respuesta_correcta": "Las respuestas a y b son ciertas",
+    "_comentario": "El protocolo IP no garantiza la entrega de los datos, ya que no es un protocolo fiable. Además, cada datagrama se encamina de forma independiente, lo que permite flexibilidad en la red pero puede resultar en desorden en la llegada de los paquetes."
+  },
+  {
+    "pregunta": "La capacidad máxima de un canal de transmisión cuyo espectro está situado entre 4 MHz y 6 MHz y tiene una relación señal-ruido de 18db es aproximadamente",
+    "opciones": [
+      "12",
+      "8",
+      "24",
+      "Ninguna de las respuestas anteriores es cierta"
+    ],
+    "respuesta_correcta": "Ninguna de las respuestas anteriores es cierta",
+    "_comentario": "La capacidad máxima de un canal de transmisión se calcula utilizando la fórmula de Shannon: C = B * log2(1 + SNR), donde B es el ancho de banda (2 MHz en este caso, ya que 6 MHz - 4 MHz = 2 MHz) y SNR es la relación señal-ruido (10^1.8 ≈ 63.1 en este caso). Al aplicar la fórmula, el resultado no coincide con las opciones dadas."
+  },
+  {
+    "pregunta": "En el control de errores",
+    "opciones": [
+      "Cuando se utiliza ARQ con vuelta atrás N se retransmite solamente la trama N dañada o perdida",
+      "Cuando se utiliza ARQ con rechazo selectivo se deben retransmitir todas las tramas desde la dañada o perdida",
+      "Cuando se utiliza ARQ con parada y espera no se utiliza control de flujo",
+      "Ninguna de las respuestas anteriores es cierta"
+    ],
+    "respuesta_correcta": "Ninguna de las respuestas anteriores es cierta",
+    "_comentario": "En los esquemas de control de errores, ARQ con vuelta atrás N retransmite todas las tramas desde la dañada, ARQ con rechazo selectivo retransmite solo las tramas específicas dañadas, y ARQ con parada y espera sí incluye control de flujo. Por lo tanto, ninguna opción es completamente correcta."
+  },
+  {
+    "pregunta": "En el control de flujo mediante ventana deslizante",
+    "opciones": [
+      "El emisor nunca podría enviar varias PDUs antes de bloquearse",
+      "El receptor puede enviar asentimientos junto con las PDUs de datos",
+      "El emisor debe recibir un asentimiento por cada PDU enviada",
+      "Las respuestas b y c son ciertas"
+    ],
+    "respuesta_correcta": "El receptor puede enviar asentimientos junto con las PDUs de datos",
+    "_comentario": "En el control de flujo mediante ventana deslizante, el receptor puede combinar asentimientos (ACKs) con las PDUs de datos para optimizar el uso del canal y reducir el número de transmisiones adicionales."
+  },
+  {
+    "pregunta": "En el protocolo CSMA p-persistente, cuando una estación tiene información para transmitir",
+    "opciones": [
+      "Intenta transmitir con probabilidad p tanto si el canal está libre u ocupado",
+      "Transmite con probabilidad p si el canal está libre y con probabilidad q si está ocupado",
+      "Si el canal está libre transmite con probabilidad p en la ranura actual y si no lo consigue transmite con probabilidad q en la siguiente ranura",
+      "Ninguna de las respuestas anteriores es cierta"
+    ],
+    "respuesta_correcta": "Si el canal está libre transmite con probabilidad p en la ranura actual y si no lo consigue transmite con probabilidad q en la siguiente ranura",
+    "_comentario": "En el protocolo CSMA p-persistente, una estación escucha el canal y transmite con una probabilidad p si el canal está libre. Si el canal está ocupado o no se puede transmitir, se espera la siguiente oportunidad."
+  },
+  {
+    "pregunta": "En redes de difusión",
+    "opciones": [
+      "El canal es compartido por todas las máquinas de la red",
+      "Se necesita un mecanismo de control de acceso al medio compartido",
+      "Se utilizan conexiones entre cada par de máquinas de la red",
+      "Las respuestas a y b son ciertas"
+    ],
+    "respuesta_correcta": "Las respuestas a y b son ciertas",
+    "_comentario": "En redes de difusión, como Ethernet, el canal es compartido por todas las máquinas, y para evitar colisiones se necesitan mecanismos de control de acceso al medio como CSMA/CD."
+  },
+  {
+    "pregunta": "Durante la monitorización de una red que utiliza el protocolo paso de testigo se identifica que una trama que pasa por el nodo monitor tiene los bits A = 1, C = 0 y el bit de monitor (M) = 1. ¿Cuál de las siguientes afirmaciones es cierta en base a la presente monitorización?",
+    "opciones": [
+      "La trama será retirada por el monitor",
+      "El bit M está indicando que la trama la generó el monitor",
+      "Los bits A y C están indicando que el destinatario no estaba presente",
+      "Ninguna de las respuestas anteriores es cierta"
+    ],
+    "respuesta_correcta": "Ninguna de las respuestas anteriores es cierta",
+    "_comentario": "En el protocolo paso de testigo, los bits A (Acknowledgment) y C (Copy) se utilizan para gestionar la recepción y copia de datos, mientras que el bit M (Monitor) identifica las tramas relacionadas con el nodo monitor. En este caso, ninguna de las opciones describe correctamente el evento señalado."
+  },
+  {
+    "pregunta": "Respecto a la arquitectura peer-to-peer",
+    "opciones": [
+      "Los pares están conectados internamente pero no pueden cambiar sus direcciones",
+      "Los pares se comunican directamente entre ellos para intercambiar la información",
+      "Los pares siempre necesitan un servidor intermedio para comunicarse",
+      "Las respuestas a y b son ciertas"
+    ],
+    "respuesta_correcta": "Los pares se comunican directamente entre ellos para intercambiar la información",
+    "_comentario": "En la arquitectura peer-to-peer, los pares se comunican directamente sin necesidad de servidores intermedios, lo que permite un intercambio de información más descentralizado y eficiente."
+  },
+  {
+    "pregunta": "En el protocolo paso de testigo en bus, una estación tiene el testigo y al intentar su emisión del testigo dice no ha finalizado. Si el monitor tiene que retirar el testigo, se presenta el testigo a:",
+    "opciones": [
+      "No se puede enviar la trama",
+      "Se puede enviar la trama y el testigo será eliminado después del envío correcto del testigo cuando no había fallos detectados",
+      "El monitor indica al bus que la estación puede intentar enviar un paquete nuevo",
+      "En el protocolo paso de testigo en bus no hay tiempo de protección del testigo"
+    ],
+    "respuesta_correcta": "Se puede enviar la trama y el testigo será eliminado después del envío correcto del testigo cuando no había fallos detectados",
+    "_comentario": "En el protocolo paso de testigo, el monitor puede intervenir en caso de que el testigo no sea utilizado correctamente, garantizando la integridad y continuidad del proceso de transmisión en el bus."
+  },
+  {
+    "pregunta": "En una codificación diferencial",
+    "opciones": [
+      "Los datos se representan por el paso de un nivel de corriente del elemento de transmisión de red",
+      "Los datos se representan por el valor de la señal a mitad del intervalo de duración de un bit",
+      "Los datos se representan por la transición de corriente de nivel a nivel",
+      "Depende tanto de la velocidad de modulación, las transiciones y la posición en la señal"
+    ],
+    "respuesta_correcta": "Los datos se representan por la transición de corriente de nivel a nivel",
+    "_comentario": "En la codificación diferencial, los datos no se representan directamente por el nivel de la señal, sino por las transiciones entre niveles, lo que facilita la detección de errores y la sincronización."
+  },
+  {
+    "pregunta": "Las redes LAN",
+    "opciones": [
+      "Normalmente utilizan sistemas de difusión",
+      "Utilizan algoritmos de encaminamiento para tomar las decisiones de encaminamiento dentro de la red",
+      "Abarcan una extensa área geográfica",
+      "Las respuestas a y b son ciertas"
+    ],
+    "respuesta_correcta": "Normalmente utilizan sistemas de difusión",
+    "_comentario": "Las redes LAN (Local Area Network) suelen utilizar sistemas de difusión, donde los datos se envían a todas las máquinas conectadas en el segmento de red. No necesitan algoritmos de encaminamiento complejos, ya que operan en áreas geográficas limitadas."
+  },
+  {
+    "pregunta": "En la conmutación de circuitos",
+    "opciones": [
+      "La primera vez que dos equipos se quieren comunicar se establece una ruta física, y todas sus comunicaciones futuras seguirán esa misma ruta",
+      "La primera vez que dos equipos se quieren comunicar se establece una ruta lógica, y todas sus comunicaciones futuras seguirán esa misma ruta",
+      "Cada vez que dos equipos se quieren comunicar se establece una ruta física, que puede ser distinta de las anteriores comunicaciones",
+      "Cada vez que dos equipos se quieren comunicar se establece una ruta lógica, que puede ser distinta de las anteriores comunicaciones"
+    ],
+    "respuesta_correcta": "Cada vez que dos equipos se quieren comunicar se establece una ruta física, que puede ser distinta de las anteriores comunicaciones",
+    "_comentario": "En la conmutación de circuitos, se establece una ruta física dedicada entre los equipos antes de que comience la comunicación. Sin embargo, esta ruta puede variar en futuras comunicaciones según la disponibilidad de los recursos de la red."
+  },
+  {
+    "pregunta": "Respecto a la arquitectura peer-to-peer",
+    "opciones": [
+      "Los pares están siempre conectados y pueden cambiar sus direcciones",
+      "Los pares tienen una comunicación asimétrica entre ellos",
+      "Los pares siempre necesitan un servidor intermedio para comunicarse",
+      "Ninguna de las respuestas anteriores es correcta"
+    ],
+    "respuesta_correcta": "Ninguna de las respuestas anteriores es correcta",
+    "_comentario": "En la arquitectura peer-to-peer, los pares no necesitan un servidor intermedio para comunicarse y la comunicación es simétrica, lo que significa que cada nodo puede actuar como cliente y servidor simultáneamente."
+  },
+  {
+    "pregunta": "En el protocolo ARP",
+    "opciones": [
+      "Todas las máquinas que reciben la solicitud almacenan la información que viaja en dicha solicitud",
+      "Solo la máquina que posee la dirección IP a traducir almacena la información que viaja en la solicitud",
+      "Solo las máquinas que no conocen la información que viaja en la solicitud la almacenan",
+      "La respuesta b es cierta y además la máquina que posee la dirección IP a traducir envía una respuesta al equipo que realizó la solicitud"
+    ],
+    "respuesta_correcta": "La respuesta b es cierta y además la máquina que posee la dirección IP a traducir envía una respuesta al equipo que realizó la solicitud",
+    "_comentario": "En el protocolo ARP (Address Resolution Protocol), solo la máquina que tiene la dirección IP correspondiente responde a la solicitud, enviando su dirección MAC al solicitante. Este proceso permite la traducción de direcciones IP a direcciones físicas en redes locales."
+  },
+  {
+    "pregunta": "En el protocolo Aloha ranurado",
+    "opciones": [
+      "Las estaciones no escuchan el medio para saber si hay otra estación transmitiendo",
+      "Si una estación decide transmitir cuando otra ya lo está haciendo siempre se producirá colisión",
+      "Cuando una estación quiere transmitir siempre lo hace de forma inmediata",
+      "Todas las respuestas anteriores son ciertas"
+    ],
+    "respuesta_correcta": "Todas las respuestas anteriores son ciertas",
+    "_comentario": "En el protocolo Aloha ranurado, las estaciones transmiten en ranuras de tiempo fijas sin verificar si el canal está ocupado, lo que puede llevar a colisiones frecuentes si dos estaciones transmiten en la misma ranura."
+  },
+  {
+    "pregunta": "La transmisión digital",
+    "opciones": [
+      "Siempre utiliza señales digitales, independientemente del tipo de dato a enviar",
+      "Si los datos son digitales solo se utilizan señales digitales",
+      "Si los datos son analógicos solo se utilizan señales analógicas",
+      "Puede utilizar señales analógicas o digitales para enviar los datos digitales"
+    ],
+    "respuesta_correcta": "Puede utilizar señales analógicas o digitales para enviar los datos digitales",
+    "_comentario": "En la transmisión digital, los datos digitales pueden ser transportados utilizando señales digitales o analógicas mediante técnicas de modulación, dependiendo del medio de transmisión."
+  },
+  {
+    "pregunta": "Respecto al control de congestión en redes",
+    "opciones": [
+      "Para evitar congestión en redes con circuitos virtuales se debe realizar una reserva de recursos en tiempo real",
+      "Solo el equipo destino puede activar el bit de advertencia para avisar al origen de que hay problemas de congestión",
+      "Los paquetes reguladores se utilizan para regular el número de recursos virtuales que se pueden crear cuando hay congestión",
+      "Las respuestas a y c son ciertas"
+    ],
+    "respuesta_correcta": "Las respuestas a y c son ciertas",
+    "_comentario": "En redes con circuitos virtuales, el control de congestión puede implicar la reserva de recursos en tiempo real para garantizar una calidad de servicio. Además, los paquetes reguladores ayudan a gestionar la congestión al limitar la creación de nuevos recursos virtuales."
+  },
+  {
+    "pregunta": "En la Figura 2, PC1 y PC2 pertenecen a la sala A, y PC3 pertenece a la sala B. PC1 quiere enviarle un paquete a PC3. En base a las direcciones IP y máscaras de la figura, ¿qué valor tendrá el Gateway de PC1?",
+    "opciones": [
+      "192.168.45.10",
+      "192.168.45.10 o 192.168.50.1",
+      "192.168.45.0",
+      "192.168.50.0"
+    ],
+    "respuesta_correcta": "192.168.45.10",
+    "_comentario": "El Gateway configurado en PC1 debe ser la dirección IP del router que conecta la red de la sala A (192.168.45.0/24), que es 192.168.45.10, para que pueda comunicarse con dispositivos fuera de su red local, como PC3 en la sala B."
+  },
+  {
+    "pregunta": "En el protocolo paso de testigo en anillo, una estación tiene el testigo y el tiempo de retención del testigo aún no ha finalizado. Si al enviar una trama se excede el tiempo de retención del testigo:",
+    "opciones": [
+      "No se puede enviar la trama",
+      "Se puede enviar la trama y ninguna más en esa retención del testigo, puesto que, al comenzar el envío, aún no había finalizado el tiempo de retención del testigo",
+      "Se puede enviar el trozo de trama que dé tiempo y el resto de la trama se envía cuando se vuelva a tener el testigo",
+      "En el protocolo paso de testigo en anillo no hay tiempo de retención de testigo"
+    ],
+    "respuesta_correcta": "Se puede enviar el trozo de trama que dé tiempo y el resto de la trama se envía cuando se vuelva a tener el testigo",
+    "_comentario": "En el protocolo paso de testigo en anillo, el tiempo de retención del testigo es una medida para garantizar un uso equitativo del medio. Si el tiempo expira durante el envío de una trama, la trama se interrumpe y se completa cuando la estación recupere el testigo."
+  },
+  {
+    "pregunta": "La división en el tiempo síncrona...",
+    "opciones": [
+      "Es adecuada pra el tráfico en ráfagas",
+      "Es adecuada para el tráfico en tiempo real",
+      "Es adecuada para el tráfico en tiempo real y en ráfagas",
+      "No es adecuada para ningún tipo de tráfico"
+    ],
+    "respuesta_correcta": "Es adecuada para el tráfico en tiempo real",
+    "_comentario": "La división en el tiempo síncrona es una técnica de acceso al medio que asigna ranuras de tiempo a cada estación para transmitir en un orden predeterminado. Es adecuada para el tráfico en tiempo real, como voz y vídeo, donde se requiere una transmisión constante y predecible."
+  },
+  {
+    "pregunta": "Los switches...",
+    "opciones": [
+      "Nunca retransmiten un mensaje por todas las salidas expecto por la que llegó el mensaje",
+      "Separan en dominios de difusión y colisión",
+      "No envia peticiones ARP cuando no conoce las ?",
+      "Todas son incorrectas"
+    ],
+    "respuesta_correcta": "Todas son incorrectas",
+    "_comentario": "Los switches pueden retransmitir mensajes por múltiples salidas, no separan dominios de difusión y colisión, y pueden enviar peticiones ARP para aprender direcciones MAC desconocidas."
+  },
+  {
+    "pregunta": "Una dirección IP",
+    "opciones": [
+      "Sus 32 bits están compuestos por la parte de host y máscara",
+      "Sus 32 bits están compuestos por la parte de red y máscara",
+      "Sus 32 bits están compuestos por la parte de red y host",
+      "Todas las respuestas anteriores son incorrectas"
+    ],
+    "respuesta_correcta": "Sus 32 bits están compuestos por la parte de red y host",
+    "_comentario": "Una dirección IP de 32 bits se divide en dos partes: la parte de red, que identifica la red a la que pertenece el dispositivo, y la parte de host, que identifica el dispositivo dentro de la red."
+  },
+  {
+    "pregunta": "El algoritmo de encaminamiento por inundación...",
+    "opciones": [
+      "No garantiza encontrar la ruta óptima",
+      "Garantiza encontrar la ruta óptima",
+      "No garantiza encontrar la ruta óptima pero evita bucles",
+      "Todas las respuestas anteriores son incorrectas"
+    ],
+    "respuesta_correcta": "Garantiza encontrar la ruta óptima",
+    "_comentario": "El algoritmo de encaminamiento por inundación garantiza encontrar la ruta óptima, ya que envía paquetes a todos los nodos de la red hasta llegar al destino. Sin embargo, puede generar tráfico innecesario y consumir recursos de la red."
+  },
+  {
+    "pregunta": "El algoritmo de encaminamiento por inundación...",
+    "opciones": [
+      "Necesita conocer el tamaño máximo de la red o distancia al recetpor",
+      "No garantiza encontrar la ruta óptima",
+      "Necesita  conocer la tabla de encaminamiento",
+      "Ninguna de las respuestas anteriores es correcta"
+    ],
+    "respuesta_correcta": "Necesita conocer el tamaño máximo de la red o distancia al recetpor",
+    "_comentario": "El algoritmo de encaminamiento por inundación no necesita conocer la topología de la red ni la tabla de encaminamiento, ya que envía paquetes a todos los nodos de la red hasta llegar al destino. Sin embargo, puede generar tráfico innecesario y consumir recursos de la red."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una función principal de la capa de enlace de datos en el modelo OSI?",
+    "opciones": [
+      "Enrutamiento de paquetes entre redes",
+      "Detección y corrección de errores en tramas",
+      "Asignación de direcciones IP",
+      "Gestión de sesiones de comunicación"
+    ],
+    "respuesta_correcta": "Detección y corrección de errores en tramas",
+    "_comentario": "La capa de enlace de datos se encarga de la detección y corrección de errores que pueden ocurrir en el nivel físico."
+  },
+  {
+    "pregunta": "En el modelo TCP/IP, ¿qué capa es responsable del direccionamiento IP y el enrutamiento de paquetes?",
+    "opciones": [
+      "Capa de aplicación",
+      "Capa de transporte",
+      "Capa de internet",
+      "Capa de enlace"
+    ],
+    "respuesta_correcta": "Capa de internet",
+    "_comentario": "La capa de internet en el modelo TCP/IP corresponde a la capa de red en el modelo OSI y es responsable del direccionamiento IP y el enrutamiento."
+  },
+  {
+    "pregunta": "¿Qué protocolo permite la asignación dinámica de direcciones IP a dispositivos en una red?",
+    "opciones": ["DNS", "FTP", "DHCP", "HTTP"],
+    "respuesta_correcta": "DHCP",
+    "_comentario": "El Protocolo de Configuración Dinámica de Host (DHCP) asigna automáticamente direcciones IP a dispositivos en una red."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre el Protocolo de Control de Transmisión (TCP) es verdadera?",
+    "opciones": [
+      "Es un protocolo sin conexión y no garantiza la entrega de datos.",
+      "Utiliza técnicas de control de flujo y congestión.",
+      "Opera en la capa de red del modelo OSI.",
+      "No establece una conexión antes de transmitir datos."
+    ],
+    "respuesta_correcta": "Utiliza técnicas de control de flujo y congestión.",
+    "_comentario": "TCP es un protocolo orientado a conexión que implementa control de flujo y congestión para asegurar una transmisión fiable de datos."
+  },
+  {
+    "pregunta": "¿Qué dispositivo de red opera en la capa de red y es responsable de dirigir paquetes entre redes?",
+    "opciones": ["Concentrador (Hub)", "Switch", "Router", "Repetidor"],
+    "respuesta_correcta": "Router",
+    "_comentario": "Un router opera en la capa de red y se encarga de dirigir paquetes entre diferentes redes basándose en direcciones IP."
+  },
+  {
+    "pregunta": "En una dirección IPv4, ¿cuántos bits están disponibles para representar la dirección?",
+    "opciones": ["32 bits", "64 bits", "128 bits", "256 bits"],
+    "respuesta_correcta": "32 bits",
+    "_comentario": "Una dirección IPv4 utiliza 32 bits, lo que permite aproximadamente 4.3 mil millones de direcciones únicas."
+  },
+  {
+    "pregunta": "¿Qué técnica permite dividir un dominio de colisión en segmentos más pequeños para reducir la congestión?",
+    "opciones": [
+      "Subredes (Subnetting)",
+      "Multiplexación",
+      "Modulación",
+      "Segmentación de tramas"
+    ],
+    "respuesta_correcta": "Subredes (Subnetting)",
+    "_comentario": "El subnetting divide una red en subredes más pequeñas, reduciendo el tamaño del dominio de colisión y mejorando el rendimiento."
+  },
+  {
+    "pregunta": "¿Cuál es el propósito principal del Protocolo de Mensajes de Control de Internet (ICMP)?",
+    "opciones": [
+      "Transferir archivos entre dispositivos",
+      "Proporcionar servicios de correo electrónico",
+      "Informar errores y diagnósticos en la comunicación IP",
+      "Asignar direcciones IP dinámicamente"
+    ],
+    "respuesta_correcta": "Informar errores y diagnósticos en la comunicación IP",
+    "_comentario": "ICMP se utiliza para enviar mensajes de error y operativos sobre el estado de la comunicación IP, como en los comandos 'ping' y 'traceroute'."
+  },
+  {
+    "pregunta": "En Ethernet, ¿qué método de acceso al medio se utiliza para evitar colisiones?",
+    "opciones": ["Token Ring", "CSMA/CD", "TDMA", "FDMA"],
+    "respuesta_correcta": "CSMA/CD",
+    "_comentario": "Ethernet utiliza el método CSMA/CD (Acceso Múltiple por Detección de Portadora con Detección de Colisiones) para gestionar el acceso al medio y reducir colisiones."
+  },
+  {
+    "pregunta": "¿Qué capa del modelo OSI es responsable de establecer, gestionar y terminar sesiones entre aplicaciones?",
+    "opciones": [
+      "Capa de aplicación",
+      "Capa de presentación",
+      "Capa de sesión",
+      "Capa de transporte"
+    ],
+    "respuesta_correcta": "Capa de sesión",
+    "_comentario": "La capa de sesión controla el diálogo entre computadoras, estableciendo, gestionando y terminando sesiones de comunicación."
+  },
+  {
+    "pregunta": "¿Qué tipo de señal varía suavemente en el tiempo y no tiene discontinuidades?",
+    "opciones": [
+      "Señal digital",
+      "Señal analógica",
+      "Señal periódica",
+      "Señal de ruido"
+    ],
+    "respuesta_correcta": "Señal analógica",
+    "_comentario": "Las señales analógicas varían suavemente en el tiempo, a diferencia de las señales digitales que son discretas."
+  },
+  {
+    "pregunta": "¿Qué tipo de transmisión permite enviar y recibir datos en ambos sentidos pero no al mismo tiempo?",
+    "opciones": ["Simplex", "Semidúplex", "Dúplex", "Asíncrona"],
+    "respuesta_correcta": "Semidúplex",
+    "_comentario": "La transmisión semidúplex permite la comunicación en ambos sentidos, pero no simultáneamente."
+  },
+  {
+    "pregunta": "Según el criterio de Nyquist, ¿cuál es la fórmula para calcular la capacidad de un canal sin ruido?",
+    "opciones": [
+      "C = B * log2(S/N)",
+      "C = 2 * B * log2(M)",
+      "C = B / log2(M)",
+      "C = S * N / B"
+    ],
+    "respuesta_correcta": "C = 2 * B * log2(M)",
+    "_comentario": "El criterio de Nyquist define la capacidad máxima de un canal sin ruido en función del ancho de banda y el número de niveles de señal."
+  },
+  {
+    "pregunta": "¿Qué medio de transmisión guiado utiliza pares de hilos de cobre aislados y trenzados?",
+    "opciones": [
+      "Fibra óptica",
+      "Cable coaxial",
+      "Par trenzado",
+      "Ondas de radio"
+    ],
+    "respuesta_correcta": "Par trenzado",
+    "_comentario": "El par trenzado es un medio de transmisión guiado ampliamente utilizado en redes locales."
+  },
+  {
+    "pregunta": "¿Qué técnica de multiplexación divide el tiempo en ranuras temporales para asignarlas a diferentes fuentes?",
+    "opciones": [
+      "Multiplexación por división de frecuencias (FDM)",
+      "Multiplexación por división en el tiempo (TDM)",
+      "Multiplexación estadística (STDM)",
+      "Multiplexación por división en la fase (PDM)"
+    ],
+    "respuesta_correcta": "Multiplexación por división en el tiempo (TDM)",
+    "_comentario": "La TDM divide el tiempo en ranuras temporales preasignadas a cada fuente de datos."
+  },
+  {
+    "pregunta": "¿Qué característica principal describe el conjunto de frecuencias que constituyen una señal?",
+    "opciones": [
+      "Ancho de banda efectivo",
+      "Frecuencia",
+      "Espectro",
+      "Amplitud"
+    ],
+    "respuesta_correcta": "Espectro",
+    "_comentario": "El espectro es el conjunto de frecuencias que forman una señal."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una característica de las señales digitales?",
+    "opciones": [
+      "Tienen valores continuos",
+      "Varían suavemente en el tiempo",
+      "Tienen valores discretos",
+      "Requieren mayor ancho de banda que las señales analógicas"
+    ],
+    "respuesta_correcta": "Tienen valores discretos",
+    "_comentario": "Las señales digitales toman valores discretos, representados típicamente como 0 y 1."
+  },
+  {
+    "pregunta": "¿Cuál es la relación entre el ancho de banda y la velocidad de transmisión?",
+    "opciones": [
+      "A mayor ancho de banda, menor velocidad",
+      "A menor ancho de banda, mayor velocidad",
+      "A mayor ancho de banda, mayor velocidad",
+      "El ancho de banda no afecta la velocidad"
+    ],
+    "respuesta_correcta": "A mayor ancho de banda, mayor velocidad",
+    "_comentario": "Un mayor ancho de banda permite transmitir más datos por segundo, aumentando la velocidad de transmisión."
+  },
+  {
+    "pregunta": "¿Qué tipo de señal utiliza frecuencias de 1 GHz a 300 GHz y puede emplearse en enlaces satelitales?",
+    "opciones": ["Ondas de radio", "Microondas", "Infrarrojos", "Fibra óptica"],
+    "respuesta_correcta": "Microondas",
+    "_comentario": "Las microondas utilizan frecuencias altas y son comunes en enlaces satelitales y de larga distancia."
+  },
+  {
+    "pregunta": "¿Qué técnica de codificación utiliza transiciones en mitad del intervalo de duración de un bit para sincronización?",
+    "opciones": ["NRZ", "Manchester", "Bipolar AMI", "NRZ-I"],
+    "respuesta_correcta": "Manchester",
+    "_comentario": "El esquema Manchester utiliza transiciones en mitad del intervalo del bit para transmitir y sincronizar datos."
+  },
+  {
+    "pregunta": "En el protocolo Ethernet, cuando una máquina tiene información para transmitir",
+    "opciones": [
+      "Transmite si el canal está libre y si está ocupado lo vuelve a intentar después de un tiempo aleatorio",
+      "Detiene las transmisiones de otras máquinas y después se pone a transmitir",
+      "Intenta transmitir tanto si el medio está libre u ocupado",
+      "Transmite si el canal está libre y si está ocupado espera escuchando hasta que esté libre"
+    ],
+    "respuesta_correcta": "Transmite si el canal está libre y si está ocupado lo vuelve a intentar después de un tiempo aleatorio",
+    "_comentario": "Este comportamiento es parte del algoritmo CSMA/CD (Carrier Sense Multiple Access with Collision Detection) utilizado en Ethernet, donde una estación escucha el medio antes de transmitir. Si detecta que el medio está libre, transmite; si está ocupado, espera un tiempo aleatorio antes de volver a intentarlo."
+  },
+  {
+    "pregunta": "¿Qué tipo de señal varía suavemente en el tiempo y no tiene discontinuidades?",
+    "opciones": [
+      "Señal digital",
+      "Señal analógica",
+      "Señal periódica",
+      "Señal de ruido"
+    ],
+    "respuesta_correcta": "Señal analógica",
+    "_comentario": "Las señales analógicas varían suavemente en el tiempo, a diferencia de las señales digitales que son discretas."
+  },
+  {
+    "pregunta": "¿Qué tipo de transmisión permite enviar y recibir datos en ambos sentidos pero no al mismo tiempo?",
+    "opciones": ["Simplex", "Semidúplex", "Dúplex", "Asíncrona"],
+    "respuesta_correcta": "Semidúplex",
+    "_comentario": "La transmisión semidúplex permite la comunicación en ambos sentidos, pero no simultáneamente."
+  },
+  {
+    "pregunta": "Según el criterio de Nyquist, ¿cuál es la fórmula para calcular la capacidad de un canal sin ruido?",
+    "opciones": [
+      "C = B * log2(S/N)",
+      "C = 2 * B * log2(M)",
+      "C = B / log2(M)",
+      "C = S * N / B"
+    ],
+    "respuesta_correcta": "C = 2 * B * log2(M)",
+    "_comentario": "El criterio de Nyquist define la capacidad máxima de un canal sin ruido en función del ancho de banda y el número de niveles de señal."
+  },
+  {
+    "pregunta": "¿Qué medio de transmisión guiado utiliza pares de hilos de cobre aislados y trenzados?",
+    "opciones": [
+      "Fibra óptica",
+      "Cable coaxial",
+      "Par trenzado",
+      "Ondas de radio"
+    ],
+    "respuesta_correcta": "Par trenzado",
+    "_comentario": "El par trenzado es un medio de transmisión guiado ampliamente utilizado en redes locales."
+  },
+  {
+    "pregunta": "¿Qué técnica de multiplexación divide el tiempo en ranuras temporales para asignarlas a diferentes fuentes?",
+    "opciones": [
+      "Multiplexación por división de frecuencias (FDM)",
+      "Multiplexación por división en el tiempo (TDM)",
+      "Multiplexación estadística (STDM)",
+      "Multiplexación por división en la fase (PDM)"
+    ],
+    "respuesta_correcta": "Multiplexación por división en el tiempo (TDM)",
+    "_comentario": "La TDM divide el tiempo en ranuras temporales preasignadas a cada fuente de datos."
+  },
+  {
+    "pregunta": "¿Qué característica principal describe el conjunto de frecuencias que constituyen una señal?",
+    "opciones": [
+      "Ancho de banda efectivo",
+      "Frecuencia",
+      "Espectro",
+      "Amplitud"
+    ],
+    "respuesta_correcta": "Espectro",
+    "_comentario": "El espectro es el conjunto de frecuencias que forman una señal."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una característica de las señales digitales?",
+    "opciones": [
+      "Tienen valores continuos",
+      "Varían suavemente en el tiempo",
+      "Tienen valores discretos",
+      "Requieren mayor ancho de banda que las señales analógicas"
+    ],
+    "respuesta_correcta": "Tienen valores discretos",
+    "_comentario": "Las señales digitales toman valores discretos, representados típicamente como 0 y 1."
+  },
+  {
+    "pregunta": "¿Cuál es la relación entre el ancho de banda y la velocidad de transmisión?",
+    "opciones": [
+      "A mayor ancho de banda, menor velocidad",
+      "A menor ancho de banda, mayor velocidad",
+      "A mayor ancho de banda, mayor velocidad",
+      "El ancho de banda no afecta la velocidad"
+    ],
+    "respuesta_correcta": "A mayor ancho de banda, mayor velocidad",
+    "_comentario": "Un mayor ancho de banda permite transmitir más datos por segundo, aumentando la velocidad de transmisión."
+  },
+  {
+    "pregunta": "¿Qué tipo de señal utiliza frecuencias de 1 GHz a 300 GHz y puede emplearse en enlaces satelitales?",
+    "opciones": ["Ondas de radio", "Microondas", "Infrarrojos", "Fibra óptica"],
+    "respuesta_correcta": "Microondas",
+    "_comentario": "Las microondas utilizan frecuencias altas y son comunes en enlaces satelitales y de larga distancia."
+  },
+  {
+    "pregunta": "¿Qué técnica de codificación utiliza transiciones en mitad del intervalo de duración de un bit para sincronización?",
+    "opciones": ["NRZ", "Manchester", "Bipolar AMI", "NRZ-I"],
+    "respuesta_correcta": "Manchester",
+    "_comentario": "El esquema Manchester utiliza transiciones en mitad del intervalo del bit para transmitir y sincronizar datos."
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de la capa física en el modelo OSI?",
+    "opciones": [
+      "Establecer conexiones entre aplicaciones",
+      "Mover bits a través del enlace físico",
+      "Gestionar direcciones IP",
+      "Controlar el acceso al medio compartido"
+    ],
+    "respuesta_correcta": "Mover bits a través del enlace físico",
+    "_comentario": "La capa física se encarga de transmitir los bits a través del medio de transmisión."
+  },
+  {
+    "pregunta": "¿Qué medio de transmisión tiene la mayor capacidad de ancho de banda en distancias largas?",
+    "opciones": [
+      "Par trenzado",
+      "Cable coaxial",
+      "Fibra óptica",
+      "Ondas de radio"
+    ],
+    "respuesta_correcta": "Fibra óptica",
+    "_comentario": "La fibra óptica permite capacidades de transmisión muy altas en largas distancias."
+  },
+  {
+    "pregunta": "¿Qué tipo de ruido afecta más a las señales digitales?",
+    "opciones": [
+      "Ruido blanco",
+      "Ruido térmico",
+      "Interferencia electromagnética",
+      "Distorsión armónica"
+    ],
+    "respuesta_correcta": "Interferencia electromagnética",
+    "_comentario": "La interferencia electromagnética puede alterar significativamente los valores discretos de las señales digitales."
+  },
+  {
+    "pregunta": "¿Qué parámetro de una señal sinusoidal mide su intensidad máxima?",
+    "opciones": ["Frecuencia", "Amplitud", "Fase", "Ancho de banda"],
+    "respuesta_correcta": "Amplitud",
+    "_comentario": "La amplitud es el valor máximo de la señal en términos de intensidad."
+  },
+  {
+    "pregunta": "¿Qué técnica de modulación representa los valores binarios modificando la frecuencia de la portadora?",
+    "opciones": ["ASK", "FSK", "PSK", "AM"],
+    "respuesta_correcta": "FSK",
+    "_comentario": "El desplazamiento de frecuencia (FSK) utiliza diferentes frecuencias para representar los valores binarios."
+  },
+  {
+    "pregunta": "¿Qué ley describe la relación entre el ancho de banda, la señal y el ruido en un canal con ruido?",
+    "opciones": [
+      "Ley de Fourier",
+      "Teorema de Shannon",
+      "Criterio de Nyquist",
+      "Ley de Ohm"
+    ],
+    "respuesta_correcta": "Teorema de Shannon",
+    "_comentario": "El teorema de Shannon calcula la capacidad de un canal en presencia de ruido térmico."
+  },
+  {
+    "pregunta": "¿Cuál es una función principal de la capa de enlace en el modelo OSI?",
+    "opciones": [
+      "Encaminar paquetes de red",
+      "Controlar el acceso al medio compartido",
+      "Gestionar la dirección IP del dispositivo",
+      "Codificar los bits en señales"
+    ],
+    "respuesta_correcta": "Controlar el acceso al medio compartido",
+    "_comentario": "La capa de enlace gestiona el acceso al medio compartido y otras funciones relacionadas con la transmisión de datos a nivel de enlace."
+  },
+  {
+    "pregunta": "¿Qué técnica de delimitación utiliza caracteres especiales para marcar el inicio y fin de una trama?",
+    "opciones": [
+      "Violaciones de código",
+      "Relleno de bits",
+      "Inserción de caracteres",
+      "Control de paridad"
+    ],
+    "respuesta_correcta": "Inserción de caracteres",
+    "_comentario": "La inserción de caracteres utiliza caracteres especiales para marcar los límites de una trama."
+  },
+  {
+    "pregunta": "¿Qué protocolo de control de flujo requiere que el emisor espere una confirmación antes de enviar la siguiente trama?",
+    "opciones": [
+      "Ventana deslizante",
+      "Parada y espera",
+      "ARQ con rechazo selectivo",
+      "CSMA/CD"
+    ],
+    "respuesta_correcta": "Parada y espera",
+    "_comentario": "El protocolo de parada y espera asegura que el emisor espere una confirmación antes de enviar más datos."
+  },
+  {
+    "pregunta": "¿Qué técnica de control de flujo etiqueta las tramas con un número de secuencia?",
+    "opciones": [
+      "Ventana deslizante",
+      "Parada y espera",
+      "Relleno de bits",
+      "Inserción de caracteres"
+    ],
+    "respuesta_correcta": "Ventana deslizante",
+    "_comentario": "La técnica de ventana deslizante etiqueta las tramas para gestionar el flujo de datos y detectar errores."
+  },
+  {
+    "pregunta": "¿Qué tipo de error ocurre cuando una trama llega al receptor pero algunos bits están corruptos?",
+    "opciones": [
+      "Pérdida de tramas",
+      "Corrupción de bits",
+      "Colisión",
+      "Reenvío"
+    ],
+    "respuesta_correcta": "Corrupción de bits",
+    "_comentario": "La corrupción de bits implica que la trama llega al destino, pero algunos bits están alterados."
+  },
+  {
+    "pregunta": "¿Qué tipo de código de detección de errores utiliza un bit adicional para indicar si el número de bits 1 es par o impar?",
+    "opciones": [
+      "Códigos de Hamming",
+      "Bit de paridad",
+      "CRC",
+      "Suma de verificación"
+    ],
+    "respuesta_correcta": "Bit de paridad",
+    "_comentario": "El bit de paridad se utiliza para detectar errores al verificar si el número de bits 1 en una trama es par o impar."
+  },
+  {
+    "pregunta": "¿Qué algoritmo de corrección de errores se basa en agregar bits adicionales para corregir errores en una palabra de datos?",
+    "opciones": [
+      "Códigos de Hamming",
+      "CRC",
+      "Suma de verificación",
+      "Inserción de bits"
+    ],
+    "respuesta_correcta": "Códigos de Hamming",
+    "_comentario": "Los códigos de Hamming permiten detectar y corregir errores agregando bits adicionales."
+  },
+  {
+    "pregunta": "¿Qué técnica de ARQ permite almacenar tramas fuera de orden y retransmitir solo las que están dañadas?",
+    "opciones": [
+      "ARQ de parada y espera",
+      "ARQ con rechazo selectivo",
+      "ARQ con ventana deslizante",
+      "ARQ simple"
+    ],
+    "respuesta_correcta": "ARQ con rechazo selectivo",
+    "_comentario": "El ARQ con rechazo selectivo permite retransmitir únicamente las tramas dañadas y almacenar las tramas fuera de orden."
+  },
+  {
+    "pregunta": "¿Qué topología de red conecta todos los dispositivos a un nodo central?",
+    "opciones": ["Bus", "Estrella", "Anillo", "Malla"],
+    "respuesta_correcta": "Estrella",
+    "_comentario": "La topología estrella conecta todos los dispositivos a un nodo central, que gestiona la comunicación."
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza para resolver direcciones MAC a partir de direcciones IP?",
+    "opciones": ["DHCP", "RARP", "ARP", "ICMP"],
+    "respuesta_correcta": "ARP",
+    "_comentario": "El protocolo ARP permite obtener direcciones MAC a partir de direcciones IP."
+  },
+  {
+    "pregunta": "¿Qué protocolo reemplazó al RARP para asignar direcciones IP dinámicamente?",
+    "opciones": ["DHCP", "ARP", "ICMP", "CSMA/CD"],
+    "respuesta_correcta": "DHCP",
+    "_comentario": "El protocolo DHCP reemplazó al RARP y es ampliamente utilizado para asignar direcciones IP dinámicas."
+  },
+  {
+    "pregunta": "¿Qué subcapa del modelo OSI se encarga de direccionar MACs en el medio compartido?",
+    "opciones": [
+      "Subcapa física",
+      "Subcapa de control de acceso al medio",
+      "Subcapa de enlace lógico",
+      "Subcapa de red"
+    ],
+    "respuesta_correcta": "Subcapa de control de acceso al medio",
+    "_comentario": "La subcapa MAC gestiona las direcciones físicas en el medio compartido."
+  },
+  {
+    "pregunta": "¿Qué técnica de acceso al medio utiliza señales RTS y CTS para evitar colisiones?",
+    "opciones": ["CSMA/CD", "CSMA/CA", "MACA", "ALOHA"],
+    "respuesta_correcta": "MACA",
+    "_comentario": "El protocolo MACA utiliza señales RTS y CTS para coordinar la transmisión y evitar colisiones en redes inalámbricas."
+  },
+  {
+    "pregunta": "¿Qué estándar IEEE define las comunicaciones inalámbricas de corto alcance como WiFi?",
+    "opciones": ["802.11", "802.3", "802.16", "802.15"],
+    "respuesta_correcta": "802.11",
+    "_comentario": "El estándar IEEE 802.11 define las comunicaciones WiFi."
+  },
+  {
+    "pregunta": "¿Qué técnica de multiplexación divide el tiempo en ranuras para asignarlas a diferentes estaciones?",
+    "opciones": [
+      "Multiplexación por división de frecuencia",
+      "Multiplexación por división en el tiempo",
+      "Multiplexación estadística",
+      "Multiplexación por reserva"
+    ],
+    "respuesta_correcta": "Multiplexación por división en el tiempo",
+    "_comentario": "La multiplexación por división en el tiempo divide el tiempo en ranuras asignadas a diferentes estaciones."
+  },
+  {
+    "pregunta": "¿Qué técnica de acceso al medio utiliza retroceso exponencial binario tras una colisión?",
+    "opciones": ["CSMA/CD", "MACA", "CSMA/CA", "ALOHA"],
+    "respuesta_correcta": "CSMA/CD",
+    "_comentario": "El CSMA/CD aplica retroceso exponencial binario para decidir el tiempo de espera tras una colisión."
+  },
+  {
+    "pregunta": "¿Qué estándar IEEE está diseñado para comunicaciones de largo alcance en zonas rurales?",
+    "opciones": ["802.16", "802.11", "802.15", "802.3"],
+    "respuesta_correcta": "802.16",
+    "_comentario": "El estándar 802.16, conocido como WiMax, está diseñado para comunicaciones en áreas rurales y de largo alcance."
+  },
+  {
+    "pregunta": "¿Qué técnica de ARQ almacena tramas fuera de orden y retransmite solo las dañadas?",
+    "opciones": [
+      "Rechazo simple",
+      "Rechazo selectivo",
+      "Parada y espera",
+      "Ventana deslizante"
+    ],
+    "respuesta_correcta": "Rechazo selectivo",
+    "_comentario": "El rechazo selectivo retransmite solo las tramas dañadas, permitiendo almacenar las correctas fuera de orden."
+  },
+  {
+    "pregunta": "¿Qué subcapa del modelo OSI se encarga de definir servicios como asociación y autenticación en WiFi?",
+    "opciones": ["LLC", "MAC", "Física", "Red"],
+    "respuesta_correcta": "MAC",
+    "_comentario": "La subcapa MAC en WiFi define servicios como asociación, autenticación y reasociación."
+  },
+  {
+    "pregunta": "¿Qué método de detección de errores utiliza un polinomio para calcular un residuo en la trama?",
+    "opciones": [
+      "Códigos de Hamming",
+      "CRC",
+      "Suma de verificación",
+      "Bit de paridad"
+    ],
+    "respuesta_correcta": "CRC",
+    "_comentario": "El CRC utiliza polinomios para generar un residuo que permite detectar errores en la transmisión."
+  },
+  {
+    "pregunta": "¿Qué topología de red tiene como principal desventaja que un fallo en un nodo afecta toda la red?",
+    "opciones": ["Bus", "Anillo", "Estrella", "Malla"],
+    "respuesta_correcta": "Anillo",
+    "_comentario": "En una red con topología de anillo, un fallo en cualquier nodo puede interrumpir toda la red."
+  },
+  {
+    "pregunta": "¿Qué protocolo en WiFi combina seguridad con cifrado más avanzado, como WPA3?",
+    "opciones": ["WEP", "WPA", "WPA2", "MACA"],
+    "respuesta_correcta": "WPA3",
+    "_comentario": "El WPA3 es el estándar más avanzado en seguridad para redes WiFi, proporcionando cifrado robusto."
+  },
+  {
+    "pregunta": "¿Cuál es la principal función del protocolo TCP en la capa de transporte?",
+    "opciones": [
+      "Proporcionar un servicio de entrega de datos sin conexión y sin garantía",
+      "Establecer una conexión segura y confiable entre dos extremos de comunicación",
+      "Encaminamiento de paquetes a través de múltiples redes",
+      "Convertir direcciones IP en direcciones físicas"
+    ],
+    "respuesta_correcta": "Establecer una conexión segura y confiable entre dos extremos de comunicación",
+    "_comentario": "TCP (Transmission Control Protocol) ofrece un servicio de transporte confiable, orientado a conexión, garantizando la entrega ordenada de los datos."
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza comúnmente para aplicaciones en tiempo real que no requieren confiabilidad en la entrega?",
+    "opciones": ["TCP", "UDP", "IP", "ICMP"],
+    "respuesta_correcta": "UDP",
+    "_comentario": "UDP (User Datagram Protocol) es un protocolo de transporte sin conexión que no garantiza la entrega, ideal para aplicaciones en tiempo real como streaming o VoIP."
+  },
+  {
+    "pregunta": "En el contexto de TCP, ¿qué es una ventana deslizante?",
+    "opciones": [
+      "Un mecanismo para controlar la congestión en la red",
+      "Un método para asignar direcciones IP dinámicamente",
+      "Una técnica para controlar el flujo de datos entre emisor y receptor",
+      "Una estrategia de enrutamiento basada en costos"
+    ],
+    "respuesta_correcta": "Una técnica para controlar el flujo de datos entre emisor y receptor",
+    "_comentario": "La ventana deslizante permite a TCP regular la cantidad de datos que se pueden enviar sin recibir un ACK, controlando el flujo y evitando sobrecargar el receptor."
+  },
+  {
+    "pregunta": "¿Qué mecanismo utiliza TCP para establecer una conexión antes de transmitir datos?",
+    "opciones": [
+      "Handshake de dos vías",
+      "Handshake de tres vías",
+      "Handshake de cuatro vías",
+      "No requiere handshake"
+    ],
+    "respuesta_correcta": "Handshake de tres vías",
+    "_comentario": "TCP utiliza un handshake de tres vías para establecer una conexión confiable antes de la transferencia de datos."
+  },
+  {
+    "pregunta": "En TCP, ¿qué sucede cuando el temporizador de retransmisión expira para un segmento no reconocido?",
+    "opciones": [
+      "El segmento se descarta y se cierra la conexión",
+      "El segmento se retransmite al receptor",
+      "Se envía una señal RESET al receptor",
+      "No se toma ninguna acción"
+    ],
+    "respuesta_correcta": "El segmento se retransmite al receptor",
+    "_comentario": "Si no se recibe un ACK antes de que expire el temporizador, TCP retransmite el segmento para asegurar la entrega."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un problema asociado con el control de congestión?",
+    "opciones": [
+      "Pérdida de paquetes debido a buffers llenos en los routers",
+      "Asignación dinámica de direcciones IP",
+      "Fragmentación de paquetes en la capa de enlace",
+      "Interferencia electromagnética en medios físicos"
+    ],
+    "respuesta_correcta": "Pérdida de paquetes debido a buffers llenos en los routers",
+    "_comentario": "La congestión ocurre cuando los routers no pueden manejar la cantidad de tráfico, resultando en pérdida de paquetes."
+  },
+  {
+    "pregunta": "¿Qué técnica de control de congestión ajusta la ventana de congestión en función de la detección de pérdidas?",
+    "opciones": [
+      "Control de flujo",
+      "Ventana deslizante",
+      "Algoritmo de evitación de congestión",
+      "Supresión de eco"
+    ],
+    "respuesta_correcta": "Algoritmo de evitación de congestión",
+    "_comentario": "TCP ajusta la ventana de congestión (cwnd) para evitar congestionamiento, reduciéndola al detectar pérdidas y aumentándola de forma controlada."
+  },
+  {
+    "pregunta": "En UDP, ¿cómo se asegura la integridad de los datos?",
+    "opciones": [
+      "A través de ACKs y retransmisiones",
+      "Mediante un campo de suma de verificación en el encabezado",
+      "Estableciendo una conexión antes de enviar datos",
+      "No se asegura la integridad en UDP"
+    ],
+    "respuesta_correcta": "Mediante un campo de suma de verificación en el encabezado",
+    "_comentario": "UDP incluye una suma de verificación para detectar errores en los datos recibidos."
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo principal del control de flujo en TCP?",
+    "opciones": [
+      "Evitar que el receptor se vea abrumado por datos demasiado rápidos",
+      "Regular la velocidad de envío para evitar congestión en la red",
+      "Garantizar que los paquetes lleguen en orden",
+      "Asignar direcciones IP a dispositivos en la red"
+    ],
+    "respuesta_correcta": "Evitar que el receptor se vea abrumado por datos demasiado rápidos",
+    "_comentario": "El control de flujo asegura que el emisor no envíe más datos de los que el receptor puede manejar."
+  },
+  {
+    "pregunta": "En el protocolo TCP, ¿qué es el número de secuencia inicial (ISN)?",
+    "opciones": [
+      "Un número fijo asignado a cada conexión",
+      "Un valor aleatorio que ayuda a asegurar la conexión",
+      "La cantidad total de datos a transmitir",
+      "El número de puertos utilizados en la conexión"
+    ],
+    "respuesta_correcta": "Un valor aleatorio que ayuda a asegurar la conexión",
+    "_comentario": "El ISN es un número aleatorio que sincroniza la comunicación y ayuda a proteger contra ataques de suplantación."
+  },
+  {
+    "pregunta": "¿Qué campo en el encabezado TCP indica el tamaño de la ventana de recepción del receptor?",
+    "opciones": ["Puerto de origen", "ACK", "Ventana", "Urgent pointer"],
+    "respuesta_correcta": "Ventana",
+    "_comentario": "El campo de ventana en el encabezado TCP especifica la cantidad de datos que el receptor está dispuesto a aceptar."
+  },
+  {
+    "pregunta": "¿Qué protocolo de transporte es más adecuado para aplicaciones de streaming de video en vivo?",
+    "opciones": ["TCP", "UDP", "ICMP", "SMTP"],
+    "respuesta_correcta": "UDP",
+    "_comentario": "UDP es ideal para aplicaciones donde la velocidad es crucial y la pérdida de algunos paquetes es aceptable."
+  },
+  {
+    "pregunta": "En el contexto de TCP, ¿qué es el algoritmo de 'Slow Start'?",
+    "opciones": [
+      "Un método para iniciar la conexión lentamente y aumentar la velocidad gradualmente",
+      "Una técnica para cerrar la conexión de manera segura",
+      "Un protocolo para asignar direcciones IP dinámicamente",
+      "Un mecanismo para detectar errores en los datos transmitidos"
+    ],
+    "respuesta_correcta": "Un método para iniciar la conexión lentamente y aumentar la velocidad gradualmente",
+    "_comentario": "El algoritmo 'Slow Start' controla la congestión iniciando la transmisión a baja velocidad y aumentando gradualmente."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre UDP es falsa?",
+    "opciones": [
+      "Es un protocolo sin conexión",
+      "No garantiza el orden de entrega de los paquetes",
+      "Proporciona control de congestión",
+      "Es adecuado para aplicaciones sensibles al tiempo"
+    ],
+    "respuesta_correcta": "Proporciona control de congestión",
+    "_comentario": "UDP no implementa control de congestión; es responsabilidad de la aplicación manejarlo si es necesario."
+  },
+  {
+    "pregunta": "¿Qué campo usan tanto TCP como UDP para identificar a la aplicación destino en el host receptor?",
+    "opciones": [
+      "Dirección IP",
+      "Número de secuencia",
+      "Número de puerto",
+      "Checksum"
+    ],
+    "respuesta_correcta": "Número de puerto",
+    "_comentario": "Los números de puerto permiten que el sistema operativo dirija los datos al proceso o aplicación correcta."
+  },
+  {
+    "pregunta": "En TCP, ¿qué sucede durante el cierre de una conexión con el algoritmo de 'Four-way handshake'?",
+    "opciones": [
+      "Se intercambian cuatro segmentos para cerrar la conexión de manera ordenada",
+      "Se envían cuatro paquetes SYN para establecer una nueva conexión",
+      "La conexión se cierra inmediatamente sin intercambio de segmentos",
+      "Se utiliza una retransmisión rápida para asegurar el cierre"
+    ],
+    "respuesta_correcta": "Se intercambian cuatro segmentos para cerrar la conexión de manera ordenada",
+    "_comentario": "El cierre de una conexión TCP implica el intercambio de cuatro segmentos para liberar los recursos adecuadamente."
+  },
+  {
+    "pregunta": "¿Cuál es la función principal del campo 'Checksum' en los protocolos TCP y UDP?",
+    "opciones": [
+      "Controlar el flujo de datos",
+      "Encaminamiento de paquetes a través de la red",
+      "Detectar errores en el encabezado y datos",
+      "Establecer una conexión segura"
+    ],
+    "respuesta_correcta": "Detectar errores en el encabezado y datos",
+    "_comentario": "El campo 'Checksum' permite verificar la integridad de los datos y el encabezado después de la transmisión."
+  },
+  {
+    "pregunta": "¿Qué término describe el retraso total experimentado por un paquete desde el emisor hasta el receptor?",
+    "opciones": ["Ancho de banda", "Throughput", "Latencia", "Jitter"],
+    "respuesta_correcta": "Latencia",
+    "_comentario": "La latencia es el tiempo que tarda un paquete en ir del origen al destino."
+  },
+  {
+    "pregunta": "En el control de congestión de TCP, ¿qué evento provoca que la ventana de congestión se reduzca drásticamente?",
+    "opciones": [
+      "Recepción de un ACK duplicado",
+      "Expiración del temporizador de retransmisión",
+      "Recepción de datos fuera de orden",
+      "Inicio de una nueva conexión"
+    ],
+    "respuesta_correcta": "Expiración del temporizador de retransmisión",
+    "_comentario": "La expiración del temporizador indica una posible congestión, por lo que TCP reduce la ventana de congestión para aliviarla."
+  },
+  {
+    "pregunta": "¿Qué mecanismo utiliza TCP para recuperar paquetes perdidos detectados mediante ACKs duplicados?",
+    "opciones": [
+      "Retransmisión lenta",
+      "Retransmisión rápida",
+      "Evitación de congestión",
+      "Aumento exponencial de la ventana"
+    ],
+    "respuesta_correcta": "Retransmisión rápida",
+    "_comentario": "La retransmisión rápida permite a TCP retransmitir un segmento perdido sin esperar a que expire el temporizador."
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza para transmitir mensajes de error y control en la capa de red?",
+    "opciones": ["TCP", "UDP", "ICMP", "ARP"],
+    "respuesta_correcta": "ICMP",
+    "_comentario": "ICMP (Internet Control Message Protocol) se utiliza para enviar mensajes de error y de información operativa."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una característica del protocolo SCTP?",
+    "opciones": [
+      "Orientado a conexión y sin entrega fiable",
+      "Soporte para múltiples flujos de datos independientes",
+      "No garantiza el orden de entrega",
+      "Es un protocolo de aplicación"
+    ],
+    "respuesta_correcta": "Soporte para múltiples flujos de datos independientes",
+    "_comentario": "SCTP (Stream Control Transmission Protocol) permite múltiples flujos de datos en una sola conexión."
+  },
+  {
+    "pregunta": "En TCP, ¿qué estado indica que una conexión ha sido cerrada desde un extremo pero aún no confirmada por el otro?",
+    "opciones": ["CLOSE_WAIT", "FIN_WAIT_1", "ESTABLISHED", "SYN_SENT"],
+    "respuesta_correcta": "FIN_WAIT_1",
+    "_comentario": "El estado FIN_WAIT_1 indica que ha sido enviado un segmento FIN y el extremo espera una confirmación."
+  },
+  {
+    "pregunta": "¿Qué es el 'Silly Window Syndrome' en TCP?",
+    "opciones": [
+      "Un problema causado por ventanas de recepción muy pequeñas",
+      "Un error en el establecimiento de conexiones",
+      "Una técnica de control de congestión",
+      "Un método para aumentar el rendimiento"
+    ],
+    "respuesta_correcta": "Un problema causado por ventanas de recepción muy pequeñas",
+    "_comentario": "El 'Silly Window Syndrome' ocurre cuando se envían cantidades muy pequeñas de datos, reduciendo la eficiencia."
+  },
+  {
+    "pregunta": "¿Qué técnica puede utilizar TCP para evitar el 'Silly Window Syndrome'?",
+    "opciones": [
+      "Algoritmo de Nagle",
+      "Slow Start",
+      "Fast Retransmit",
+      "Ventanas deslizantes"
+    ],
+    "respuesta_correcta": "Algoritmo de Nagle",
+    "_comentario": "El algoritmo de Nagle agrupa pequeños paquetes en uno más grande para mejorar la eficiencia."
+  },
+  {
+    "pregunta": "¿Qué protocolo de transporte utiliza conexiones virtuales llamadas 'asociaciones'?",
+    "opciones": ["TCP", "UDP", "SCTP", "FTP"],
+    "respuesta_correcta": "SCTP",
+    "_comentario": "SCTP utiliza asociaciones que pueden incluir múltiples direcciones IP y flujos de datos."
+  },
+  {
+    "pregunta": "En TCP, ¿qué es el algoritmo de 'Congestion Avoidance'?",
+    "opciones": [
+      "Una estrategia para cerrar conexiones inactivas",
+      "Un método para aumentar rápidamente la ventana de congestión",
+      "Una técnica para prevenir la congestión aumentando la ventana linealmente",
+      "Un protocolo para asignar direcciones IP"
+    ],
+    "respuesta_correcta": "Una técnica para prevenir la congestión aumentando la ventana linealmente",
+    "_comentario": "Tras el 'Slow Start', TCP utiliza 'Congestion Avoidance' para crecer la ventana de congestión de manera controlada."
+  },
+  {
+    "pregunta": "¿Qué protocolo es más adecuado para aplicaciones como correo electrónico y transferencia de archivos que requieren confiabilidad?",
+    "opciones": ["TCP", "UDP", "ICMP", "HTTP"],
+    "respuesta_correcta": "TCP",
+    "_comentario": "TCP proporciona entrega confiable y es adecuado para aplicaciones que no toleran la pérdida de datos."
+  },
+  {
+    "pregunta": "¿Qué es el 'Throughput' en el contexto de redes de computadoras?",
+    "opciones": [
+      "La latencia total de la red",
+      "La cantidad de datos transferidos exitosamente en un tiempo determinado",
+      "La variación en el retraso de paquetes",
+      "El número de errores por segundo"
+    ],
+    "respuesta_correcta": "La cantidad de datos transferidos exitosamente en un tiempo determinado",
+    "_comentario": "El 'Throughput' mide el rendimiento efectivo de transmisión de datos en la red."
+  },
+  {
+    "pregunta": "¿Cuál es el propósito del campo 'Urgent Pointer' en el encabezado TCP?",
+    "opciones": [
+      "Indicar la posición de datos urgentes en el flujo",
+      "Establecer prioridades en la entrega de paquetes",
+      "Controlar el tamaño de la ventana de recepción",
+      "Marcar el final de la conexión"
+    ],
+    "respuesta_correcta": "Indicar la posición de datos urgentes en el flujo",
+    "_comentario": "El 'Urgent Pointer' se utiliza para señalar que hay datos urgentes que deben ser procesados de inmediato."
+  },
+  {
+    "pregunta": "En TCP, ¿qué es el 'Delayed ACK'?",
+    "opciones": [
+      "Una técnica para retrasar el envío de ACKs y reducir tráfico",
+      "Un error que causa pérdida de paquetes",
+      "Una estrategia para acelerar la retransmisión",
+      "Un mecanismo para cerrar conexiones inactivas"
+    ],
+    "respuesta_correcta": "Una técnica para retrasar el envío de ACKs y reducir tráfico",
+    "_comentario": "El 'Delayed ACK' espera un breve periodo antes de enviar un ACK para ver si hay datos salientes que puedan combinarse."
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza para asignar dinámicamente direcciones IP a dispositivos en una red?",
+    "opciones": ["ARP", "DHCP", "DNS", "SMTP"],
+    "respuesta_correcta": "DHCP",
+    "_comentario": "DHCP (Dynamic Host Configuration Protocol) asigna direcciones IP y otros parámetros de red automáticamente."
+  },
+  {
+    "pregunta": "¿Qué es el 'Jitter' en comunicaciones de red?",
+    "opciones": [
+      "El tiempo que tarda un paquete en llegar a su destino",
+      "La variación en el retraso de llegada de paquetes consecutivos",
+      "La pérdida total de paquetes en la red",
+      "El ancho de banda máximo de un enlace"
+    ],
+    "respuesta_correcta": "La variación en el retraso de llegada de paquetes consecutivos",
+    "_comentario": "El 'Jitter' es crítico en aplicaciones de tiempo real, ya que las variaciones pueden afectar la calidad."
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de la capa de red en el modelo OSI?",
+    "opciones": [
+      "Proporcionar servicios de encriptación de datos",
+      "Definir los medios físicos de transmisión",
+      "Encaminar paquetes de datos entre redes",
+      "Gestionar sesiones entre aplicaciones"
+    ],
+    "respuesta_correcta": "Encaminar paquetes de datos entre redes",
+    "_comentario": "La capa de red se encarga del encaminamiento y envío de paquetes a través de múltiples redes desde el origen hasta el destino final."
+  },
+  {
+    "pregunta": "¿Qué protocolo es fundamental en la capa de red para el direccionamiento y encaminamiento de paquetes?",
+    "opciones": ["TCP", "UDP", "IP", "FTP"],
+    "respuesta_correcta": "IP",
+    "_comentario": "El Protocolo de Internet (IP) es clave en la capa de red para el direccionamiento y encaminamiento de paquetes entre redes."
+  },
+  {
+    "pregunta": "¿Cuál es el tamaño de una dirección IPv4?",
+    "opciones": ["32 bits", "64 bits", "128 bits", "256 bits"],
+    "respuesta_correcta": "32 bits",
+    "_comentario": "Las direcciones IPv4 tienen un tamaño de 32 bits, lo que permite alrededor de 4.3 mil millones de direcciones únicas."
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza para asignar direcciones IP de forma automática en una red?",
+    "opciones": ["DNS", "DHCP", "ARP", "ICMP"],
+    "respuesta_correcta": "DHCP",
+    "_comentario": "El Protocolo de Configuración Dinámica de Host (DHCP) asigna direcciones IP y otros parámetros de configuración de red automáticamente."
+  },
+  {
+    "pregunta": "¿Qué es el protocolo ICMP y para qué se utiliza?",
+    "opciones": [
+      "Protocolo para transferir archivos entre servidores",
+      "Protocolo para enrutamiento entre dominios",
+      "Protocolo para enviar mensajes de control y errores",
+      "Protocolo para resolución de nombres de dominio"
+    ],
+    "respuesta_correcta": "Protocolo para enviar mensajes de control y errores",
+    "_comentario": "ICMP (Internet Control Message Protocol) se utiliza para enviar mensajes de control y notificación de errores en la capa de red."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una dirección IP de clase C?",
+    "opciones": ["10.0.0.1", "172.16.0.1", "192.168.1.1", "224.0.0.1"],
+    "respuesta_correcta": "192.168.1.1",
+    "_comentario": "Las direcciones IP de clase C van desde 192.0.0.0 hasta 223.255.255.255."
+  },
+  {
+    "pregunta": "¿Qué es la máscara de subred y para qué se utiliza?",
+    "opciones": [
+      "Una dirección IP alternativa para routers",
+      "Un conjunto de reglas para seguridad de red",
+      "Un valor que determina qué parte de la dirección IP es red y cuál host",
+      "Un protocolo de enrutamiento dinámico"
+    ],
+    "respuesta_correcta": "Un valor que determina qué parte de la dirección IP es red y cuál host",
+    "_comentario": "La máscara de subred indica qué bits de la dirección IP corresponden a la red y cuáles al identificador de host dentro de esa red."
+  },
+  {
+    "pregunta": "¿Qué protocolo permite la traducción de direcciones IP privadas a públicas?",
+    "opciones": ["NAT", "ARP", "RARP", "DHCP"],
+    "respuesta_correcta": "NAT",
+    "_comentario": "NAT (Network Address Translation) permite que múltiples dispositivos en una red privada compartan una única dirección IP pública."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes protocolos es un protocolo de enrutamiento interno de pasarela (IGP)?",
+    "opciones": ["BGP", "OSPF", "SMTP", "FTP"],
+    "respuesta_correcta": "OSPF",
+    "_comentario": "OSPF (Open Shortest Path First) es un protocolo IGP utilizado para el enrutamiento dentro de un sistema autónomo."
+  },
+  {
+    "pregunta": "En el contexto de redes, ¿qué es el 'subnetting'?",
+    "opciones": [
+      "La división de una red en dos o más subredes",
+      "La combinación de varias redes en una más grande",
+      "El proceso de enrutamiento entre múltiples redes",
+      "La asignación dinámica de direcciones IP"
+    ],
+    "respuesta_correcta": "La división de una red en dos o más subredes",
+    "_comentario": "El subnetting es el proceso de dividir una red en subredes más pequeñas para mejorar el rendimiento y la gestión."
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza mensajes de solicitud y respuesta para resolver direcciones IP a direcciones MAC?",
+    "opciones": ["DHCP", "DNS", "ARP", "ICMP"],
+    "respuesta_correcta": "ARP",
+    "_comentario": "ARP (Address Resolution Protocol) resuelve direcciones IP en direcciones físicas o MAC en redes locales."
+  },
+  {
+    "pregunta": "¿Cuál es la principal ventaja de IPv6 sobre IPv4?",
+    "opciones": [
+      "Mayor velocidad de transmisión",
+      "Enrutamiento más sencillo",
+      "Espacio de direcciones mucho más grande",
+      "Mejor compatibilidad con dispositivos antiguos"
+    ],
+    "respuesta_correcta": "Espacio de direcciones mucho más grande",
+    "_comentario": "IPv6 utiliza direcciones de 128 bits, aumentando significativamente el número de direcciones disponibles en comparación con IPv4."
+  },
+  {
+    "pregunta": "En IPv4, ¿qué dirección se utiliza para enviar un paquete a todos los hosts en la red local?",
+    "opciones": [
+      "Dirección loopback",
+      "Dirección de broadcast",
+      "Dirección multicast",
+      "Dirección anycast"
+    ],
+    "respuesta_correcta": "Dirección de broadcast",
+    "_comentario": "La dirección de broadcast (por ejemplo, 255.255.255.255) se utiliza para enviar paquetes a todos los hosts en la misma red local."
+  },
+  {
+    "pregunta": "¿Qué significa que un protocolo de enrutamiento sea 'sin clase' (classless)?",
+    "opciones": [
+      "Que no utiliza clases predefinidas de direcciones IP",
+      "Que no soporta máscaras de subred variables",
+      "Que es obsoleto y ya no se utiliza",
+      "Que no distingue entre direcciones públicas y privadas"
+    ],
+    "respuesta_correcta": "Que no utiliza clases predefinidas de direcciones IP",
+    "_comentario": "Los protocolos sin clase, como CIDR, permiten utilizar máscaras de subred de longitud variable, sin depender de clases A, B o C."
+  },
+  {
+    "pregunta": "¿Qué es la fragmentación en IPv4?",
+    "opciones": [
+      "La división de paquetes grandes en fragmentos más pequeños",
+      "La combinación de paquetes pequeños en uno más grande",
+      "La eliminación de paquetes duplicados",
+      "La encriptación de datos para seguridad"
+    ],
+    "respuesta_correcta": "La división de paquetes grandes en fragmentos más pequeños",
+    "_comentario": "La fragmentación permite que paquetes que exceden el tamaño máximo de la unidad de transmisión (MTU) se dividan para su transmisión."
+  },
+  {
+    "pregunta": "¿Qué campo en el encabezado IP determina el tiempo de vida de un paquete?",
+    "opciones": ["Versión", "Protocolo", "TTL", "Checksum"],
+    "respuesta_correcta": "TTL",
+    "_comentario": "El campo TTL (Time To Live) indica el número máximo de saltos o tiempo que un paquete puede permanecer en la red."
+  },
+  {
+    "pregunta": "¿Qué técnica de enrutamiento utiliza la ruta más corta calculada con el algoritmo de Dijkstra?",
+    "opciones": [
+      "Enrutamiento por vector de distancia",
+      "Enrutamiento estático",
+      "Enrutamiento por estado de enlace",
+      "Enrutamiento por inundación"
+    ],
+    "respuesta_correcta": "Enrutamiento por estado de enlace",
+    "_comentario": "El enrutamiento por estado de enlace, como OSPF, utiliza el algoritmo de Dijkstra para calcular las rutas más eficientes."
+  },
+  {
+    "pregunta": "En IPv6, ¿qué representa la dirección '::1'?",
+    "opciones": [
+      "Dirección de broadcast",
+      "Dirección de localhost",
+      "Dirección multicast",
+      "Dirección anycast"
+    ],
+    "respuesta_correcta": "Dirección de localhost",
+    "_comentario": "En IPv6, '::1' es la dirección loopback equivalente a '127.0.0.1' en IPv4."
+  },
+  {
+    "pregunta": "¿Para qué se utiliza el protocolo BGP en redes de computadoras?",
+    "opciones": [
+      "Para enrutamiento interno dentro de un sistema autónomo",
+      "Para transferir archivos entre servidores",
+      "Para el enrutamiento entre sistemas autónomos en Internet",
+      "Para asignación dinámica de direcciones IP"
+    ],
+    "respuesta_correcta": "Para el enrutamiento entre sistemas autónomos en Internet",
+    "_comentario": "BGP (Border Gateway Protocol) es el protocolo de enrutamiento utilizado para intercambiar información de enrutamiento entre sistemas autónomos en Internet."
+  },
+  {
+    "pregunta": "¿Qué mecanismo permite en IPv4 la identificación de subredes y hosts dentro de una red?",
+    "opciones": [
+      "Direcciones MAC",
+      "Máscaras de subred",
+      "Puertos TCP",
+      "Direcciones URL"
+    ],
+    "respuesta_correcta": "Máscaras de subred",
+    "_comentario": "Las máscaras de subred permiten distinguir la parte de red y la parte de host en una dirección IP."
+  },
+  {
+    "pregunta": "En el protocolo IP, ¿qué se entiende por MTU?",
+    "opciones": [
+      "Máximo Tiempo de Uso de una dirección IP",
+      "Mínima Transferencia Unificada",
+      "Unidad Máxima de Transmisión",
+      "Protocolo de Transferencia Multicast"
+    ],
+    "respuesta_correcta": "Unidad Máxima de Transmisión",
+    "_comentario": "La MTU (Maximum Transmission Unit) es el tamaño máximo de paquete que se puede transmitir en una red sin fragmentación."
+  },
+  {
+    "pregunta": "¿Qué técnica permite agrupar varias redes en una sola entrada de tabla de enrutamiento?",
+    "opciones": [
+      "Subnetting",
+      "Agregación o supernetting",
+      "Traducción de direcciones de red",
+      "Enrutamiento estático"
+    ],
+    "respuesta_correcta": "Agregación o supernetting",
+    "_comentario": "La agregación o supernetting combina múltiples redes en una sola para simplificar las tablas de enrutamiento."
+  },
+  {
+    "pregunta": "¿Qué es un sistema autónomo (AS) en el contexto de redes?",
+    "opciones": [
+      "Un dispositivo que funciona independientemente en la red",
+      "Un grupo de redes bajo una misma administración y políticas de enrutamiento",
+      "Un protocolo de enrutamiento específico para pequeñas redes",
+      "Una dirección IP privada utilizada para pruebas"
+    ],
+    "respuesta_correcta": "Un grupo de redes bajo una misma administración y políticas de enrutamiento",
+    "_comentario": "Un AS es un conjunto de redes gestionadas por una entidad administrativa común y que comparten un esquema de enrutamiento."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un protocolo de enrutamiento por vector de distancia?",
+    "opciones": ["RIP", "OSPF", "IS-IS", "ARP"],
+    "respuesta_correcta": "RIP",
+    "_comentario": "RIP (Routing Information Protocol) es un protocolo de enrutamiento por vector de distancia que utiliza el conteo de saltos como métrica."
+  },
+  {
+    "pregunta": "¿Qué significa CIDR en el contexto de redes IP?",
+    "opciones": [
+      "Clasificación de Dominios en Redes",
+      "Enrutamiento Jerárquico Interno",
+      "Notación de Direcciones IP de Clase",
+      "Enrutamiento Inter-Dominio Sin Clase"
+    ],
+    "respuesta_correcta": "Enrutamiento Inter-Dominio Sin Clase",
+    "_comentario": "CIDR (Classless Inter-Domain Routing) es un método para asignar direcciones IP y enrutamiento independiente de las clases tradicionales."
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza mensajes 'echo request' y 'echo reply' para probar la conectividad?",
+    "opciones": ["ICMP", "TCP", "UDP", "SMTP"],
+    "respuesta_correcta": "ICMP",
+    "_comentario": "ICMP utiliza mensajes 'echo request' y 'echo reply', como en el comando 'ping', para verificar la conectividad entre dispositivos."
+  },
+  {
+    "pregunta": "En IPv6, ¿cómo se representa una dirección 'link-local'?",
+    "opciones": [
+      "Empieza con 'fe80::'",
+      "Empieza con '2001::'",
+      "Empieza con 'ff00::'",
+      "Empieza con '::1'"
+    ],
+    "respuesta_correcta": "Empieza con 'fe80::'",
+    "_comentario": "Las direcciones 'link-local' en IPv6 comienzan con 'fe80::' y son válidas solo en el enlace local."
+  },
+  {
+    "pregunta": "¿Qué función cumple el protocolo NAT en una red?",
+    "opciones": [
+      "Asignar nombres de dominio a direcciones IP",
+      "Convertir direcciones privadas en públicas y viceversa",
+      "Controlar el acceso al medio en redes inalámbricas",
+      "Establecer túneles seguros entre redes"
+    ],
+    "respuesta_correcta": "Convertir direcciones privadas en públicas y viceversa",
+    "_comentario": "NAT (Network Address Translation) traduce direcciones privadas a públicas, permitiendo que múltiples dispositivos compartan una dirección IP pública."
+  },
+  {
+    "pregunta": "¿Qué es el protocolo MPLS y para qué se utiliza?",
+    "opciones": [
+      "Un protocolo de enrutamiento para redes de área local",
+      "Una técnica para acelerar el enrutamiento utilizando etiquetas",
+      "Un protocolo para comunicación en tiempo real",
+      "Un método de autenticación en redes inalámbricas"
+    ],
+    "respuesta_correcta": "Una técnica para acelerar el enrutamiento utilizando etiquetas",
+    "_comentario": "MPLS (Multiprotocol Label Switching) utiliza etiquetas para dirigir paquetes a través de una red, mejorando la velocidad y eficiencia del enrutamiento."
+  },
+  {
+    "pregunta": "En enrutamiento, ¿qué es una ruta por defecto?",
+    "opciones": [
+      "La ruta menos preferida en la tabla de enrutamiento",
+      "Una ruta que coincide con todos los destinos desconocidos",
+      "La ruta que se utiliza cuando todas las demás fallan",
+      "Una ruta estática configurada manualmente"
+    ],
+    "respuesta_correcta": "Una ruta que coincide con todos los destinos desconocidos",
+    "_comentario": "La ruta por defecto se utiliza para dirigir paquetes cuyo destino no coincide con ninguna otra entrada en la tabla de enrutamiento."
+  },
+  {
+    "pregunta": "¿Qué campo en el encabezado IPv4 indica si un paquete ha sido fragmentado?",
+    "opciones": [
+      "Identificación",
+      "Desplazamiento de fragmento",
+      "Flags",
+      "Protocolo"
+    ],
+    "respuesta_correcta": "Flags",
+    "_comentario": "El campo 'Flags' incluye bits que indican si el paquete puede ser fragmentado y si es el último fragmento."
+  },
+  {
+    "pregunta": "¿Cuál es la principal diferencia entre un router y un switch?",
+    "opciones": [
+      "Los switches operan en la capa de red y los routers en la capa de enlace",
+      "Los routers conectan redes diferentes, los switches conectan dispositivos en la misma red",
+      "Los routers no pueden filtrar tráfico, los switches sí",
+      "No hay diferencias, ambos realizan las mismas funciones"
+    ],
+    "respuesta_correcta": "Los routers conectan redes diferentes, los switches conectan dispositivos en la misma red",
+    "_comentario": "Los routers operan en la capa de red y se utilizan para conectar diferentes redes, mientras que los switches operan en la capa de enlace y conectan dispositivos dentro de la misma red."
+  },
+  {
+    "pregunta": "En el contexto de IPv6, ¿qué son los 'flow labels'?",
+    "opciones": [
+      "Etiquetas utilizadas para identificar flujos de datos específicos",
+      "Direcciones de multicast especiales",
+      "Campos para la fragmentación de paquetes",
+      "Opciones obsoletas de protocolos antiguos"
+    ],
+    "respuesta_correcta": "Etiquetas utilizadas para identificar flujos de datos específicos",
+    "_comentario": "El campo 'Flow Label' en IPv6 permite que los routers identifiquen y manejen flujos de datos especiales para proporcionar calidad de servicio."
+  },
+  {
+    "pregunta": "¿Qué protocolo permite obtener información del hardware de red y sus configuraciones mediante una red IP?",
+    "opciones": ["SMTP", "SNMP", "FTP", "Telnet"],
+    "respuesta_correcta": "SNMP",
+    "_comentario": "SNMP (Simple Network Management Protocol) se utiliza para recopilar y organizar información sobre dispositivos en redes IP."
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de la capa de enlace de datos en el modelo OSI?",
+    "opciones": [
+      "Proporcionar enrutamiento entre redes",
+      "Gestionar el acceso al medio físico y la detección de errores",
+      "Ofrecer servicios de aplicación al usuario final",
+      "Establecer sesiones entre diferentes aplicaciones"
+    ],
+    "respuesta_correcta": "Gestionar el acceso al medio físico y la detección de errores",
+    "_comentario": "La capa de enlace de datos se encarga del control del acceso al medio y de asegurar que los datos se transmitan correctamente, manejando la detección y corrección de errores."
+  },
+  {
+    "pregunta": "¿Qué método de acceso al medio utiliza Ethernet en redes cableadas?",
+    "opciones": ["TDMA", "CSMA/CD", "Token Ring", "ALOHA"],
+    "respuesta_correcta": "CSMA/CD",
+    "_comentario": "Ethernet utiliza CSMA/CD (Acceso Múltiple con Escucha de Portadora y Detección de Colisiones) para gestionar el acceso al medio compartido y detectar colisiones."
+  },
+  {
+    "pregunta": "En una red Ethernet, ¿qué ocurre cuando dos estaciones transmiten datos al mismo tiempo?",
+    "opciones": [
+      "La red prioriza una transmisión sobre la otra",
+      "Se produce una colisión y ambas estaciones deben retransmitir después de un tiempo aleatorio",
+      "Los datos se combinan y llegan corruptos al destino",
+      "Las estaciones pasan a un modo de baja velocidad"
+    ],
+    "respuesta_correcta": "Se produce una colisión y ambas estaciones deben retransmitir después de un tiempo aleatorio",
+    "_comentario": "En CSMA/CD, cuando se detecta una colisión, las estaciones involucradas esperan un tiempo aleatorio antes de intentar retransmitir."
+  },
+  {
+    "pregunta": "¿Qué es una dirección MAC?",
+    "opciones": [
+      "Una dirección lógica asignada por el protocolo IP",
+      "Una dirección física única asignada a una interfaz de red",
+      "Un identificador de sesión en la capa de transporte",
+      "Una dirección utilizada para el enrutamiento entre redes"
+    ],
+    "respuesta_correcta": "Una dirección física única asignada a una interfaz de red",
+    "_comentario": "La dirección MAC (Media Access Control) es un identificador único de 48 bits asignado a cada dispositivo de red para su identificación en la capa de enlace."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes estándares define las redes inalámbricas Wi-Fi?",
+    "opciones": ["IEEE 802.3", "IEEE 802.11", "IEEE 802.5", "IEEE 802.15"],
+    "respuesta_correcta": "IEEE 802.11",
+    "_comentario": "El estándar IEEE 802.11 especifica las características de las redes inalámbricas Wi-Fi en la capa física y de enlace."
+  },
+  {
+    "pregunta": "En el control de acceso al medio, ¿qué significa CSMA/CA y dónde se utiliza?",
+    "opciones": [
+      "Acceso Múltiple con Escucha de Portadora y Detección de Colisiones; utilizado en Ethernet",
+      "Acceso Múltiple por División de Código; utilizado en redes celulares",
+      "Acceso Múltiple con Escucha de Portadora y Evitación de Colisiones; utilizado en Wi-Fi",
+      "Acceso Múltiple por División de Tiempo; utilizado en redes satelitales"
+    ],
+    "respuesta_correcta": "Acceso Múltiple con Escucha de Portadora y Evitación de Colisiones; utilizado en Wi-Fi",
+    "_comentario": "CSMA/CA se utiliza en redes Wi-Fi para evitar colisiones debido a la naturaleza inalámbrica del medio, ya que no es posible detectarlas fácilmente."
+  },
+  {
+    "pregunta": "¿Qué dispositivo de red opera en la capa de enlace y puede segmentar dominios de colisión?",
+    "opciones": ["Repetidor", "Hub", "Switch", "Router"],
+    "respuesta_correcta": "Switch",
+    "_comentario": "Un switch opera en la capa de enlace y puede reducir colisiones al segmentar la red en dominios de colisión individuales para cada puerto."
+  },
+  {
+    "pregunta": "¿Cuál es la utilidad principal de las VLAN (Virtual Local Area Networks)?",
+    "opciones": [
+      "Aumentar el ancho de banda total de la red",
+      "Permitir que dispositivos en diferentes redes físicas se comporten como una sola red lógica",
+      "Proporcionar acceso inalámbrico seguro a una red",
+      "Convertir direcciones IP privadas en públicas"
+    ],
+    "respuesta_correcta": "Permitir que dispositivos en diferentes redes físicas se comporten como una sola red lógica",
+    "_comentario": "Las VLAN permiten crear redes lógicas independientes dentro de una misma infraestructura física, facilitando la segmentación y seguridad de la red."
+  },
+  {
+    "pregunta": "En Ethernet, ¿cuál es el tamaño máximo de una trama estándar sin considerar bits de preámbulo y delimitadores?",
+    "opciones": ["64 bytes", "128 bytes", "1518 bytes", "9000 bytes"],
+    "respuesta_correcta": "1518 bytes",
+    "_comentario": "El tamaño máximo de una trama Ethernet estándar es de 1518 bytes, incluyendo todas las cabeceras y datos."
+  },
+  {
+    "pregunta": "¿Qué técnica se utiliza para detectar y corregir errores en la trama de una red de área local?",
+    "opciones": [
+      "Checksum en el encabezado IP",
+      "Control de redundancia cíclica (CRC)",
+      "Protocolo de ventanas deslizantes",
+      "Algoritmo de Dijkstra"
+    ],
+    "respuesta_correcta": "Control de redundancia cíclica (CRC)",
+    "_comentario": "CRC es un método utilizado en la capa de enlace para detectar errores en los datos transmitidos y solicitar retransmisiones si es necesario."
+  },
+  {
+    "pregunta": "¿Qué protocolo permite la asociación de una dirección IP con una dirección MAC en una red local?",
+    "opciones": ["ARP", "RARP", "ICMP", "DHCP"],
+    "respuesta_correcta": "ARP",
+    "_comentario": "El Protocolo de Resolución de Direcciones (ARP) permite obtener la dirección MAC correspondiente a una determinada dirección IP en una red local."
+  },
+  {
+    "pregunta": "En una red inalámbrica, ¿qué función cumple un punto de acceso (Access Point)?",
+    "opciones": [
+      "Amplificar la señal para extender el alcance",
+      "Enrutador entre redes locales e Internet",
+      "Interconectar dispositivos inalámbricos y cableados dentro de la misma red",
+      "Proporcionar direcciones IP a los dispositivos conectados"
+    ],
+    "respuesta_correcta": "Interconectar dispositivos inalámbricos y cableados dentro de la misma red",
+    "_comentario": "El punto de acceso actúa como un puente entre dispositivos inalámbricos y la red cableada, permitiendo la comunicación entre ambos."
+  },
+  {
+    "pregunta": "¿Qué es un dominio de colisión en redes Ethernet?",
+    "opciones": [
+      "Un conjunto de dispositivos donde las tramas pueden colisionar",
+      "Una red lógica que comparte el mismo dominio de broadcast",
+      "La zona de cobertura de un punto de acceso inalámbrico",
+      "El rango de direcciones IP asignadas a una red"
+    ],
+    "respuesta_correcta": "Un conjunto de dispositivos donde las tramas pueden colisionar",
+    "_comentario": "Un dominio de colisión es una sección de la red Ethernet donde las señales pueden interferir entre sí, resultando en colisiones."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre Full-Duplex Ethernet es correcta?",
+    "opciones": [
+      "Permite la transmisión y recepción de datos simultáneamente sin colisiones",
+      "Requiere el uso de hubs en la red",
+      "Es menos eficiente que Half-Duplex Ethernet",
+      "Utiliza CSMA/CD para el acceso al medio"
+    ],
+    "respuesta_correcta": "Permite la transmisión y recepción de datos simultáneamente sin colisiones",
+    "_comentario": "En Full-Duplex Ethernet, los dispositivos pueden enviar y recibir datos al mismo tiempo sin preocuparse por colisiones, ya que se utilizan canales separados."
+  },
+  {
+    "pregunta": "¿Qué función realiza un puente (bridge) en una red de computadoras?",
+    "opciones": [
+      "Conecta redes de diferentes arquitecturas",
+      "Interconecta segmentos de red en la capa de enlace y filtra tráfico",
+      "Proporciona servicios de nombre de dominio",
+      "Encamina paquetes entre redes diferentes en la capa de red"
+    ],
+    "respuesta_correcta": "Interconecta segmentos de red en la capa de enlace y filtra tráfico",
+    "_comentario": "Un puente opera en la capa de enlace, conectando segmentos de red y filtrando el tráfico basado en direcciones MAC."
+  },
+  {
+    "pregunta": "¿Cuál es el propósito del protocolo Spanning Tree (STP) en redes Ethernet?",
+    "opciones": [
+      "Encontrar la ruta más corta entre dos nodos",
+      "Permitir la comunicación en redes inalámbricas",
+      "Evitar bucles de comunicación en redes con topologías redundantes",
+      "Asignar direcciones IP dinámicamente a los dispositivos"
+    ],
+    "respuesta_correcta": "Evitar bucles de comunicación en redes con topologías redundantes",
+    "_comentario": "STP previene bucles en las redes Ethernet con caminos redundantes, desactivando enlaces redundantes para mantener una topología libre de bucles."
+  },
+  {
+    "pregunta": "En el contexto de las redes, ¿qué es una trama?",
+    "opciones": [
+      "Un paquete de datos en la capa de red",
+      "Una unidad de datos en la capa de enlace",
+      "Un mensaje en la capa de aplicación",
+      "Un segmento de datos en la capa de transporte"
+    ],
+    "respuesta_correcta": "Una unidad de datos en la capa de enlace",
+    "_comentario": "Una trama es la unidad básica de transmisión de datos en la capa de enlace, que incluye encabezados y campos específicos para la transmisión."
+  },
+  {
+    "pregunta": "¿Qué técnica permite la transmisión de múltiples señales digitales a través de un solo medio compartido?",
+    "opciones": [
+      "Multiplexación por división de frecuencia (FDM)",
+      "Multiplexación por división de tiempo (TDM)",
+      "Modulación de amplitud (AM)",
+      "Modulación por desplazamiento de fase (PSK)"
+    ],
+    "respuesta_correcta": "Multiplexación por división de tiempo (TDM)",
+    "_comentario": "TDM divide el tiempo en ranuras y asigna cada una a una señal diferente, permitiendo múltiples transmisiones a través del mismo medio."
+  },
+  {
+    "pregunta": "¿Qué estándar de Ethernet soporta velocidades de hasta 10 Gbps?",
+    "opciones": ["10Base-T", "100Base-TX", "1000Base-T", "10GBase-T"],
+    "respuesta_correcta": "10GBase-T",
+    "_comentario": "El estándar 10GBase-T permite velocidades de 10 Gbps sobre cableado de cobre de par trenzado de categoría 6a o superior."
+  },
+  {
+    "pregunta": "¿Qué método utiliza Token Ring para controlar el acceso al medio?",
+    "opciones": [
+      "CSMA/CD",
+      "Paso de testigo (Token Passing)",
+      "ALOHA",
+      "Detección de portadora con espera de tiempo aleatorio"
+    ],
+    "respuesta_correcta": "Paso de testigo (Token Passing)",
+    "_comentario": "Token Ring utiliza un token que circula entre las estaciones; solo la estación que posee el token puede transmitir."
+  },
+  {
+    "pregunta": "En una comunicación Wi-Fi, ¿qué es el SSID?",
+    "opciones": [
+      "El identificador único de la estación base",
+      "El nombre de la red inalámbrica",
+      "Un protocolo de seguridad para redes inalámbricas",
+      "La dirección MAC del router"
+    ],
+    "respuesta_correcta": "El nombre de la red inalámbrica",
+    "_comentario": "El SSID (Service Set Identifier) es el nombre asignado a una red Wi-Fi para identificarla entre las disponibles."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un protocolo de control de enlace de datos utilizado en redes punto a punto?",
+    "opciones": ["PPP", "HTTP", "FTP", "SMTP"],
+    "respuesta_correcta": "PPP",
+    "_comentario": "PPP (Point-to-Point Protocol) es utilizado para establecer una conexión directa entre dos nodos en una red, proporcionando autenticación y compresión opcional."
+  },
+  {
+    "pregunta": "En las redes Ethernet, ¿qué es el preámbulo en una trama?",
+    "opciones": [
+      "Una sección que contiene la dirección MAC de destino",
+      "Un patrón de bits utilizados para la sincronización",
+      "El campo que indica el tipo de protocolo encapsulado",
+      "Un espacio reservado para datos de seguridad"
+    ],
+    "respuesta_correcta": "Un patrón de bits utilizados para la sincronización",
+    "_comentario": "El preámbulo es una secuencia de 7 bytes que permite a las interfaces de red sincronizarse antes de recibir los datos reales."
+  },
+  {
+    "pregunta": "¿Qué es la multiplexación por división de longitud de onda (WDM) y dónde se utiliza?",
+    "opciones": [
+      "Es una técnica usada en cables de cobre para incrementar el ancho de banda",
+      "Es una forma de modulación en comunicaciones satelitales",
+      "Es una técnica que combina múltiples señales ópticas en una sola fibra óptica",
+      "Es un método para codificar información en señales inalámbricas"
+    ],
+    "respuesta_correcta": "Es una técnica que combina múltiples señales ópticas en una sola fibra óptica",
+    "_comentario": "WDM permite transmitir múltiples señales a diferentes longitudes de onda por una misma fibra óptica, aumentando su capacidad."
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre un switch y un hub?",
+    "opciones": [
+      "Un hub opera en la capa de red, un switch en la capa física",
+      "Un switch envía datos solo al puerto de destino, un hub transmite a todos los puertos",
+      "Un hub pueden manejar tramas Ethernet, un switch solo paquetes IP",
+      "No hay diferencias significativas entre ambos dispositivos"
+    ],
+    "respuesta_correcta": "Un switch envía datos solo al puerto de destino, un hub transmite a todos los puertos",
+    "_comentario": "Un switch es más eficiente ya que envía los datos directamente al puerto correspondiente, reduciendo colisiones y tráfico innecesario."
+  },
+  {
+    "pregunta": "En redes, ¿qué es el protocolo HDLC?",
+    "opciones": [
+      "Un protocolo de control de enlace de datos orientado a bit",
+      "Un protocolo de enrutamiento dinámico de Internet",
+      "Un estándar de compresión de datos",
+      "Un método de acceso al medio inalámbrico"
+    ],
+    "respuesta_correcta": "Un protocolo de control de enlace de datos orientado a bit",
+    "_comentario": "HDLC (High-Level Data Link Control) es un protocolo sincrónico orientado a bit utilizado en enlaces punto a punto y multipunto."
+  },
+  {
+    "pregunta": "¿Qué utilidad tiene la técnica de control de flujo en la capa de enlace?",
+    "opciones": [
+      "Evitar que el emisor sature al receptor enviando datos demasiado rápido",
+      "Regular la velocidad de transmisión en función de la congestión de la red",
+      "Permitir la transmisión simultánea de múltiples señales",
+      "Corregir errores en los datos transmitidos"
+    ],
+    "respuesta_correcta": "Evitar que el emisor sature al receptor enviando datos demasiado rápido",
+    "_comentario": "El control de flujo asegura que el receptor pueda procesar los datos a la velocidad que llegan, evitando pérdida de información."
+  },
+  {
+    "pregunta": "En una red Ethernet, ¿qué función tiene el campo Tipo/Longitud en la trama?",
+    "opciones": [
+      "Indica la dirección MAC del destinatario",
+      "Especifica el protocolo de nivel superior encapsulado o la longitud de la trama",
+      "Contiene información para el control de flujo",
+      "Almacena datos de usuario"
+    ],
+    "respuesta_correcta": "Especifica el protocolo de nivel superior encapsulado o la longitud de la trama",
+    "_comentario": "El campo Tipo/Longitud indica si el contenido es un determinado protocolo (como IP) o la longitud de la trama en algunos estándares."
+  },
+  {
+    "pregunta": "¿Qué es el efecto de desvanecimiento (fading) en comunicaciones inalámbricas?",
+    "opciones": [
+      "La atenuación de la señal debido a la distancia",
+      "La interferencia producida por otros dispositivos",
+      "Las variaciones rápidas de la amplitud de la señal debido al entorno",
+      "La dispersión de la señal en múltiples caminos"
+    ],
+    "respuesta_correcta": "Las variaciones rápidas de la amplitud de la señal debido al entorno",
+    "_comentario": "El desvanecimiento es una fluctuación en la intensidad de la señal causada por factores como el movimiento o obstáculos en el entorno."
+  },
+  {
+    "pregunta": "¿Qué es el protocolo MPLS y en qué capa opera?",
+    "opciones": [
+      "Un protocolo de encaminamiento dinámico que opera en la capa de red",
+      "Un protocolo de intercambio de etiquetas que opera entre la capa de enlace y red",
+      "Un protocolo de transporte seguro que opera en la capa de transporte",
+      "Un método de compresión de datos para transmisión eficiente"
+    ],
+    "respuesta_correcta": "Un protocolo de intercambio de etiquetas que opera entre la capa de enlace y red",
+    "_comentario": "MPLS (Multiprotocol Label Switching) asigna etiquetas a paquetes para dirigirlos eficientemente, funcionando entre las capas 2 y 3."
+  },
+  {
+    "pregunta": "¿Cuál es la principal ventaja de utilizar fibra óptica como medio de transmisión?",
+    "opciones": [
+      "Menor costo en comparación con el cable de cobre",
+      "Mayor facilidad de instalación",
+      "Ancho de banda mucho más amplio y menor atenuación de la señal",
+      "Inmunidad total a cualquier tipo de interferencia"
+    ],
+    "respuesta_correcta": "Ancho de banda mucho más amplio y menor atenuación de la señal",
+    "_comentario": "La fibra óptica ofrece altas velocidades de transmisión y puede cubrir largas distancias sin amplificación, además de ser resistente a las interferencias electromagnéticas."
+  },
+  {
+    "pregunta": "En el contexto de las comunicaciones, ¿qué es el 'throughput'?",
+    "opciones": [
+      "La latencia total de una red",
+      "El rendimiento efectivo de transferencia de datos a través de un canal",
+      "La cantidad de errores detectados en una transmisión",
+      "El tiempo que tarda un paquete en llegar a su destino"
+    ],
+    "respuesta_correcta": "El rendimiento efectivo de transferencia de datos a través de un canal",
+    "_comentario": "El 'throughput' mide la tasa a la cual los datos se transfieren exitosamente de un punto a otro en un período de tiempo."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un ejemplo de protocolo de capa física?",
+    "opciones": ["Ethernet", "USB", "TCP", "IP"],
+    "respuesta_correcta": "USB",
+    "_comentario": "USB (Universal Serial Bus) es un estándar que especifica protocolos de la capa física y de enlace para la comunicación entre dispositivos."
+  },
+  {
+    "pregunta": "En comunicaciones, ¿qué es la modulación?",
+    "opciones": [
+      "El proceso de multiplexar varias señales",
+      "La conversión de una señal digital en analógica para su transmisión",
+      "La división de un canal en múltiples subcanales",
+      "La detección y corrección de errores en los datos transmitidos"
+    ],
+    "respuesta_correcta": "La conversión de una señal digital en analógica para su transmisión",
+    "_comentario": "La modulación implica modificar una señal portadora para transmitir información digital o analógica a través de un medio."
+  },
+  {
+    "pregunta": "¿Qué capa del modelo OSI es responsable de la sincronización y control de diálogos entre aplicaciones?",
+    "opciones": [
+      "Capa de aplicación",
+      "Capa de sesión",
+      "Capa de transporte",
+      "Capa de presentación"
+    ],
+    "respuesta_correcta": "Capa de sesión",
+    "_comentario": "La capa de sesión gestiona y controla las conexiones entre aplicaciones, facilitando la comunicación ordenada y sincronizada."
+  },
+  {
+    "pregunta": "¿Qué representa el término 'attenuation' en transmisión de señales?",
+    "opciones": [
+      "El aumento de la potencia de la señal",
+      "La distorsión de la señal debido al ruido",
+      "La pérdida de fuerza de la señal a medida que viaja por el medio",
+      "El retraso de la señal causado por la congestión de red"
+    ],
+    "respuesta_correcta": "La pérdida de fuerza de la señal a medida que viaja por el medio",
+    "_comentario": "La atenuación es la disminución de la intensidad de la señal durante su transmisión, lo que puede afectar la calidad de la comunicación."
+  },
+  {
+    "pregunta": "¿Qué método de gestión de paquetes utiliza un enfoque de 'Last Input, First Output'?",
+    "opciones": ["FIFO", "LIFO", "Round Robin", "Sistemas con prioridad"],
+    "respuesta_correcta": "LIFO",
+    "_comentario": "El método LIFO prioriza el tráfico más reciente, siendo útil en aplicaciones de tiempo real, pero no es óptimo en términos generales."
+  },
+  {
+    "pregunta": "¿Cuál es la principal desventaja de los sistemas de gestión de prioridad en colas?",
+    "opciones": [
+      "No permite priorizar paquetes",
+      "Mayor complejidad de implementación",
+      "Las colas de menor prioridad pueden no ser atendidas nunca",
+      "Requiere sincronización adicional"
+    ],
+    "respuesta_correcta": "Las colas de menor prioridad pueden no ser atendidas nunca",
+    "_comentario": "Las colas con menos prioridad podrían quedarse sin procesar si las colas de mayor prioridad siempre tienen tráfico."
+  },
+  {
+    "pregunta": "¿Qué protocolo de transporte es considerado no fiable y no orientado a conexión?",
+    "opciones": ["TCP", "UDP", "FTP", "RTP"],
+    "respuesta_correcta": "UDP",
+    "_comentario": "El protocolo UDP es no fiable y no orientado a conexión, ofreciendo un servicio de mejor esfuerzo."
+  },
+  {
+    "pregunta": "¿Qué técnica utiliza el algoritmo de Naggle para mejorar la eficiencia?",
+    "opciones": [
+      "Incremento exponencial de la ventana",
+      "Reducción del tamaño de la ventana de congestión",
+      "Almacenamiento en buffer hasta recibir confirmaciones",
+      "Reenvío rápido de paquetes perdidos"
+    ],
+    "respuesta_correcta": "Almacenamiento en buffer hasta recibir confirmaciones",
+    "_comentario": "El algoritmo de Naggle reduce el gasto de ancho de banda al enviar datos en bloques más grandes."
+  },
+  {
+    "pregunta": "¿Qué tipo de crecimiento presenta la ventana de congestión durante el inicio lento?",
+    "opciones": ["Lineal", "Exponencial", "Constante", "Aleatorio"],
+    "respuesta_correcta": "Exponencial",
+    "_comentario": "Durante el inicio lento, el tamaño de la ventana de congestión crece de manera exponencial hasta alcanzar un umbral."
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza comúnmente para la transmisión de video en tiempo real?",
+    "opciones": ["RTP", "TCP", "FTP", "Telnet"],
+    "respuesta_correcta": "RTP",
+    "_comentario": "El protocolo RTP, ubicado sobre UDP, se usa para la transmisión en tiempo real de audio y video."
+  },
+  {
+    "pregunta": "¿Qué protocolo de transporte garantiza una entrega ordenada de información?",
+    "opciones": ["TCP", "UDP", "RTP", "RPC"],
+    "respuesta_correcta": "TCP",
+    "_comentario": "TCP garantiza una entrega ordenada y fiable de la información mediante mecanismos como la ventana deslizante."
+  },
+  {
+    "pregunta": "¿Qué método de encolamiento proporciona el mismo tiempo de procesamiento a todas las tareas?",
+    "opciones": ["FIFO", "LIFO", "Round Robin", "Sistemas con prioridad"],
+    "respuesta_correcta": "Round Robin",
+    "_comentario": "El encolamiento circular (Round Robin) asigna un tiempo equitativo de procesamiento a todas las tareas."
+  },
+  {
+    "pregunta": "¿Qué puerto se asocia al protocolo HTTPS?",
+    "opciones": ["53", "443", "80", "22"],
+    "respuesta_correcta": "443",
+    "_comentario": "El puerto 443 se utiliza comúnmente para conexiones HTTPS seguras."
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo del acuerdo de tres vías en TCP?",
+    "opciones": [
+      "Establecer un canal seguro de comunicación",
+      "Confirmar números de secuencia de inicio",
+      "Gestionar la congestión de la red",
+      "Sincronizar relojes entre los nodos"
+    ],
+    "respuesta_correcta": "Confirmar números de secuencia de inicio",
+    "_comentario": "El acuerdo de tres vías permite que emisor y receptor acuerden y confirmen los números de secuencia iniciales."
+  },
+  {
+    "pregunta": "¿Qué técnica de control de congestión detecta pérdidas de paquetes mediante RTO y ACKs repetidos?",
+    "opciones": [
+      "Recuperación rápida",
+      "Inicio lento",
+      "Retransmisión rápida",
+      "Asignaciones selectivas"
+    ],
+    "respuesta_correcta": "Retransmisión rápida",
+    "_comentario": "La retransmisión rápida se activa cuando se detectan pérdidas mediante temporizadores RTO y ACKs duplicados."
+  },
+  {
+    "pregunta": "¿Qué protocolo permite hacer llamadas a procedimientos remotos como si fueran locales?",
+    "opciones": ["TCP", "UDP", "RPC", "RTP"],
+    "respuesta_correcta": "RPC",
+    "_comentario": "RPC (Remote Procedure Call) permite que un procedimiento remoto sea invocado como uno local."
+  },
+  {
+    "pregunta": "¿Qué puerto se utiliza para el protocolo SSH?",
+    "opciones": ["21", "22", "23", "25"],
+    "respuesta_correcta": "22",
+    "_comentario": "El protocolo SSH utiliza el puerto 22 para comunicaciones seguras."
+  },
+  {
+    "pregunta": "¿Qué método de control de flujo permite al emisor enviar paquetes hasta un límite determinado por el receptor?",
+    "opciones": [
+      "Ventana deslizante",
+      "Parada y espera",
+      "Round Robin",
+      "LIFO"
+    ],
+    "respuesta_correcta": "Ventana deslizante",
+    "_comentario": "El método de ventana deslizante ajusta dinámicamente el flujo de paquetes entre emisor y receptor."
+  },
+  {
+    "pregunta": "¿Qué protocolo es más adecuado para aplicaciones como DNS o telefonía en Internet?",
+    "opciones": ["TCP", "UDP", "RTP", "FTP"],
+    "respuesta_correcta": "UDP",
+    "_comentario": "UDP es ideal para aplicaciones que requieren bajo retraso y tolerancia a pérdida de paquetes, como DNS y VoIP."
+  },
+  {
+    "pregunta": "¿Qué técnica de encolamiento permite priorizar el tráfico más reciente?",
+    "opciones": ["FIFO", "LIFO", "Round Robin", "Sistemas con prioridad"],
+    "respuesta_correcta": "LIFO",
+    "_comentario": "El método LIFO prioriza los paquetes más recientes, útil en ciertos escenarios de tiempo real."
+  },
+  {
+    "pregunta": "¿Qué campo en la cabecera UDP asegura la integridad del datagrama?",
+    "opciones": [
+      "Puerto de origen",
+      "Puerto de destino",
+      "Longitud",
+      "Suma de comprobación"
+    ],
+    "respuesta_correcta": "Suma de comprobación",
+    "_comentario": "La suma de comprobación en la cabecera UDP verifica la integridad de los datos transmitidos."
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza un sistema de ventana deslizante para el control de flujo?",
+    "opciones": ["TCP", "UDP", "RTP", "RPC"],
+    "respuesta_correcta": "TCP",
+    "_comentario": "TCP utiliza un sistema de ventana deslizante para gestionar el flujo de datos entre emisor y receptor."
+  },
+  {
+    "pregunta": "¿Qué método de gestión de colas prioriza los paquetes más recientes?",
+    "opciones": ["FIFO", "LIFO", "Round Robin", "Sistemas con prioridad"],
+    "respuesta_correcta": "LIFO",
+    "_comentario": "El método LIFO permite priorizar los paquetes más recientes, siendo útil en aplicaciones de tiempo real."
+  },
+  {
+    "pregunta": "¿Cuál es una característica del método FIFO en la gestión de colas?",
+    "opciones": [
+      "Prioriza el tráfico más reciente",
+      "Es simple de implementar",
+      "Evita la congestión de red",
+      "Es el más óptimo para QoS"
+    ],
+    "respuesta_correcta": "Es simple de implementar",
+    "_comentario": "El método FIFO es muy sencillo de implementar pero no es óptimo para QoS."
+  },
+  {
+    "pregunta": "¿Qué tipo de protocolo utiliza segmentos para establecer una conexión?",
+    "opciones": ["TCP", "UDP", "HTTP", "RTP"],
+    "respuesta_correcta": "TCP",
+    "_comentario": "TCP es un protocolo orientado a conexión que utiliza segmentos para el establecimiento, transferencia y cierre."
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza números de secuencia para garantizar la entrega ordenada?",
+    "opciones": ["UDP", "TCP", "RTP", "FTP"],
+    "respuesta_correcta": "TCP",
+    "_comentario": "TCP utiliza números de secuencia para garantizar que los segmentos se reciban en el orden correcto."
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de la capa de transporte?",
+    "opciones": [
+      "Garantizar la entrega física de los datos",
+      "Establecer comunicación lógica entre procesos",
+      "Determinar rutas óptimas en la red",
+      "Controlar el acceso al medio físico"
+    ],
+    "respuesta_correcta": "Establecer comunicación lógica entre procesos",
+    "_comentario": "La capa de transporte proporciona comunicación extremo a extremo entre procesos en diferentes hosts."
+  },
+  {
+    "pregunta": "¿Qué protocolo es más adecuado para servicios de baja latencia, como la telefonía por Internet?",
+    "opciones": ["TCP", "UDP", "HTTP", "FTP"],
+    "respuesta_correcta": "UDP",
+    "_comentario": "UDP es adecuado para servicios de baja latencia porque no utiliza mecanismos de confirmación, reduciendo el tráfico de red."
+  },
+  {
+    "pregunta": "¿Qué problema resuelve el Acuerdo de tres vías (Three-way handshake)?",
+    "opciones": [
+      "Control de errores",
+      "Establecimiento de conexión confiable",
+      "Liberación de la conexión",
+      "Reducción de la congestión"
+    ],
+    "respuesta_correcta": "Establecimiento de conexión confiable",
+    "_comentario": "El Three-way handshake asegura que emisor y receptor acuerden y confirmen números de inicio de secuencia antes de transmitir datos."
+  },
+  {
+    "pregunta": "¿Qué protocolo es no orientado a conexión?",
+    "opciones": ["TCP", "UDP", "SSH", "HTTP"],
+    "respuesta_correcta": "UDP",
+    "_comentario": "UDP es un protocolo no orientado a conexión y no garantiza la entrega ordenada de los datos."
+  },
+  {
+    "pregunta": "¿Qué técnica de control de flujo utiliza un tamaño de ventana ajustable?",
+    "opciones": ["Parada y espera", "Ventana deslizante", "LIFO", "FIFO"],
+    "respuesta_correcta": "Ventana deslizante",
+    "_comentario": "La técnica de ventana deslizante permite ajustar el tamaño de la ventana según la capacidad del receptor."
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza el puerto 443?",
+    "opciones": ["HTTP", "HTTPS", "FTP", "SMTP"],
+    "respuesta_correcta": "HTTPS",
+    "_comentario": "El puerto 443 es utilizado por HTTPS para comunicaciones seguras en la web."
+  },
+  {
+    "pregunta": "¿Qué método de gestión de colas asegura que todas las tareas reciban el mismo tiempo de procesamiento?",
+    "opciones": ["FIFO", "Round Robin", "Sistemas con prioridad", "LIFO"],
+    "respuesta_correcta": "Round Robin",
+    "_comentario": "El método Round Robin asigna el mismo tiempo de procesamiento a todas las tareas de forma equitativa."
+  },
+  {
+    "pregunta": "¿Qué tipo de servicio ofrece el protocolo UDP?",
+    "opciones": [
+      "Fiable y con entrega ordenada",
+      "Best effort",
+      "Garantizado y con confirmación",
+      "Orientado a conexión"
+    ],
+    "respuesta_correcta": "Best effort",
+    "_comentario": "UDP ofrece un servicio 'best effort', donde no garantiza la entrega ni el orden de los mensajes."
+  },
+  {
+    "pregunta": "¿Qué elemento de los protocolos de transporte indica el punto de acceso al servicio?",
+    "opciones": ["Socket", "Número de puerto", "Cabecera", "Dirección IP"],
+    "respuesta_correcta": "Número de puerto",
+    "_comentario": "El número de puerto identifica el punto de acceso al servicio de transporte en un host."
+  },
+  {
+    "pregunta": "¿Qué protocolo de transporte es más eficiente para aplicaciones de video bajo demanda?",
+    "opciones": ["TCP", "UDP", "FTP", "SMTP"],
+    "respuesta_correcta": "UDP",
+    "_comentario": "UDP es más eficiente para aplicaciones como video bajo demanda debido a su baja sobrecarga y latencia."
+  },
+  {
+    "pregunta": "¿Cuál es una de las principales causas de congestión en redes?",
+    "opciones": [
+      "Fallas en los routers",
+      "Capacidad limitada del receptor",
+      "Tamaño de ventana deslizante fijo",
+      "Cambio de protocolo"
+    ],
+    "respuesta_correcta": "Capacidad limitada del receptor",
+    "_comentario": "La capacidad limitada del receptor es una de las principales causas de congestión en redes."
+  },
+  {
+    "pregunta": "¿Qué hace el temporizador de persistencia en TCP?",
+    "opciones": [
+      "Evita la congestión inicial",
+      "Controla el tiempo de retransmisión",
+      "Fuerza una actualización del tamaño de ventana",
+      "Reduce el tráfico en la red"
+    ],
+    "respuesta_correcta": "Fuerza una actualización del tamaño de ventana",
+    "_comentario": "El temporizador de persistencia envía mensajes de sondeo para forzar la actualización del tamaño de ventana."
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza la técnica de ventanas deslizantes para controlar el flujo?",
+    "opciones": ["UDP", "TCP", "RTP", "FTP"],
+    "respuesta_correcta": "TCP",
+    "_comentario": "TCP utiliza ventanas deslizantes para controlar el flujo de datos entre emisor y receptor."
+  },
+  {
+    "pregunta": "¿Qué tipo de transmisión permite RTP?",
+    "opciones": [
+      "Unidifusión y multidifusión",
+      "Solo multidifusión",
+      "Solo unidifusión",
+      "Difusión masiva"
+    ],
+    "respuesta_correcta": "Unidifusión y multidifusión",
+    "_comentario": "RTP permite tanto unidifusión como multidifusión para la transmisión de audio y video en tiempo real."
+  },
+  {
+    "pregunta": "¿Qué ocurre cuando un paquete se pierde en TCP?",
+    "opciones": [
+      "El receptor envía una notificación al emisor",
+      "Se utiliza un temporizador para retransmitirlo",
+      "La conexión se cierra automáticamente",
+      "El paquete siguiente es descartado"
+    ],
+    "respuesta_correcta": "Se utiliza un temporizador para retransmitirlo",
+    "_comentario": "TCP utiliza temporizadores para retransmitir paquetes que no han sido reconocidos por el receptor."
+  },
+  {
+    "pregunta": "¿Qué característica tiene la cabecera UDP?",
+    "opciones": [
+      "Tiene un tamaño fijo de 20 bytes",
+      "Incluye un campo de suma de comprobación",
+      "Es específica para conexiones orientadas",
+      "No incluye número de puertos"
+    ],
+    "respuesta_correcta": "Incluye un campo de suma de comprobación",
+    "_comentario": "La cabecera UDP incluye un campo de suma de comprobación para verificar la integridad del datagrama."
+  },
+  {
+    "pregunta": "En la capa de enlace en la norma IEEE 802:",
+    "opciones": [
+      "Hay un LLC por cada protocolo de la capa MAC.",
+      "El control del flujo lo realiza la capa de control de enlace lógico.",
+      "El procesamiento de la dirección IP lo realiza la capa de control de enlace lógico.",
+      "Todas las respuestas anteriores son ciertas."
+    ],
+    "respuesta_correcta": "El control del flujo lo realiza la capa de control de enlace lógico."
+  },
+  {
+    "pregunta": "El control del flujo en redes LAN",
+    "opciones": [
+      "Lo realiza la subcapa de control de enlace lógico",
+      "Lo realizan tanto la subcapa de control de acceso al medio como la de control de enlace lógico",
+      "No se realizar control de flujo",
+      "Lo realiza la subcapa de control de acceso al medio"
+    ],
+    "respuesta_correcta": "Lo realizan tanto la subcapa de control de acceso al medio como la de control de enlace lógico",
+    "_comentario": "El control del flujo en redes LAN es un proceso colaborativo entre la subcapa de control de acceso al medio (MAC) y la subcapa de control de enlace lógico (LLC), asegurando una transmisión de datos eficiente y coordinada."
+  },
+  {
+    "pregunta": "El proceso de segmentación se realiza",
+    "opciones": [
+      "En la capa Internet",
+      "En la capa de transporte",
+      "En la capa física",
+      "En la capa de acceso a la red"
+    ],
+    "respuesta_correcta": "En la capa de transporte",
+    "_comentario": "La segmentación, que implica dividir los datos de la aplicación en segmentos más pequeños para su transmisión, se lleva a cabo en la capa de transporte. Esto facilita el manejo eficiente de los datos en la red."
+  },
+  {
+    "pregunta": "El proceso de encapsulación se realiza",
+    "opciones": [
+      "En la capa de transporte",
+      "En la capa de red",
+      "En la capa de enlace",
+      "En la capa de aplicación"
+    ],
+    "respuesta_correcta": "En la capa de enlace",
+    "_comentario": "La encapsulación, que implica agregar encabezados y pies de datos a los paquetes de datos, se lleva a cabo en la capa de enlace. Esto permite que los datos se transmitan de manera eficiente a través de la red."
+  },
+  {
+    "pregunta": "El proceso de direccionamiento se realiza",
+    "opciones": [
+      "En la capa de transporte",
+      "En la capa de red",
+      "En la capa de enlace",
+      "En la capa de aplicación"
+    ],
+    "respuesta_correcta": "En la capa de red",
+    "_comentario": "El direccionamiento, que implica asignar direcciones IP a los dispositivos en la red, se lleva a cabo en la capa de red. Esto permite que los datos se enruten de manera eficiente a través de la red."
+  },
+  {
+    "pregunta": "El proceso de multiplexación se realiza",
+    "opciones": [
+      "En la capa de transporte",
+      "En la capa de red",
+      "En la capa de enlace",
+      "En la capa de aplicación"
+    ],
+    "respuesta_correcta": "En la capa de transporte",
+    "_comentario": "La multiplexación, que implica combinar múltiples flujos de datos en un solo canal de comunicación, se lleva a cabo en la capa de transporte mediante el uso de puertos de origen y destino. Esto permite una transmisión eficiente de datos en la red."
+  },
+  {
+    "pregunta": "El proceso de enrutamiento se realiza",
+    "opciones": [
+      "En la capa de transporte",
+      "En la capa de red",
+      "En la capa de enlace",
+      "En la capa de aplicación"
+    ],
+    "respuesta_correcta": "En la capa de red",
+    "_comentario": "El enrutamiento, que implica determinar la mejor ruta para enviar los datos a través de la red, se lleva a cabo en la capa de red. Esto asegura que los datos lleguen a su destino de manera eficiente y oportuna."
+  },
+  {
+    "pregunta": "El proceso de control de flujo se realiza",
+    "opciones": [
+      "En la capa de transporte",
+      "En la capa de red",
+      "En la capa de enlace",
+      "En la capa de aplicación"
+    ],
+    "respuesta_correcta": "En la capa de transporte",
+    "_comentario": "El control de flujo, que implica regular la velocidad de transmisión de datos para evitar la congestión en la red, se lleva a cabo en la capa de transporte. Esto garantiza una transmisión eficiente y confiable de datos en la red."
+  },
+  {
+    "pregunta": "El proceso de control de errores se realiza",
+    "opciones": [
+      "En la capa de transporte",
+      "En la capa de red",
+      "En la capa de enlace",
+      "En la capa de aplicación",
+      "En las capas  enlace y de transporte"
+    ],
+    "respuesta_correcta": "En las capas  enlace y de transporte",
+    "_comentario": "El control de errores, que implica detectar y corregir errores en la transmisión de datos, se lleva a cabo en la capa de transporte. Esto garantiza una entrega confiable de datos en la red."
+  },
+  {
+    "pregunta": "La tabla de Encaminamiento:",
+    "opciones": [
+      "a) Indica el siguiente salto que debe realizar la información en base a la dirección IP de destino.",
+      "b) Predice el siguiente salto que debe realizar la información en base a la dirección física de destino.",
+      "c) La respuesta a es cierta y demás la tabla es cubierta por un algoritmo de control de flujo.",
+      "d) La respuesta b es cierta y además la tabla es cubierta por un algoritmo de encaminamiento."
+    ],
+    "respuesta_correcta": "a) Indica el siguiente salto que debe realizar la información en base a la dirección IP de destino."
+  },
+  {
+    "pregunta": "Respecto a los algoritmos de encaminamiento:",
+    "opciones": [
+      "En el encaminamiento estático se pueden utilizar datos dinámicos para calcular los costes de los enlaces entre los nodos de la red.",
+      "En los algoritmos de estado de enlace se utiliza inundación para propagar los costes de los enlaces entre nodos vecinos.",
+      "En los algoritmos de encaminamiento globales los nodos intercambian información de encaminamiento entre ellos, mientras que los algoritmos locales y descentralizados no la intercambian.",
+      "Ninguna de las respuestas anteriores es cierta."
+    ],
+    "respuesta_correcta": "En los algoritmos de estado de enlace se utiliza inundación para propagar los costes de los enlaces entre nodos vecinos."
+  },
+  {
+    "pregunta": "En el protocolo DHCP:",
+    "opciones": [
+      "La máquina que no tiene dirección IP difunde una petición a toda la red para buscar servidores que le proporcionen dicha dirección IP.",
+      "Todos los servidores que pueden ofrecer direcciones IP le envían una dirección IP a la máquina que hizo la solicitud.",
+      "La respuesta a es correcta y además la máquina que difunde la petición solo va a recibir la dirección IP de un servidor.",
+      "La respuesta a y b son ciertas."
+    ],
+    "respuesta_correcta": "La respuesta a y b son ciertas."
+  },
+  {
+    "pregunta": "Respecto a los métodos de control de congestión:",
+    "opciones": [
+      "En los paquetes reguladores, los routers situados entre el emisor y el router congestionado pueden almacenar parte del tráfico recibido para reducir el que se envía al router congestionado.",
+      "Cuando se utilizan paquetes reguladores salto a salto o bits de advertencia, la reducción de tráfico solo se realiza en el origen.",
+      "Las respuestas a y b son ciertas.",
+      "Ninguna de las respuestas anteriores es cierta."
+    ],
+    "respuesta_correcta": "Ninguna de las respuestas anteriores es cierta."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es un ejemplo de red de área local (LAN)?",
+    "opciones": [
+      "Red doméstica",
+      "Red de campus",
+      "Red global",
+      "Red de satélite"
+    ],
+    "respuesta_correcta": "Red de campus"
+  },
+  {
+    "pregunta": "¿Qué se necesita para el intercambio de información en una red de comunicación?",
+    "opciones": [
+      "Protocolos y estándares",
+      "Dispositivos móviles",
+      "Sistemas operativos",
+      "Conexiones Bluetooth"
+    ],
+    "respuesta_correcta": "Protocolos y estándares"
+  },
+  {
+    "pregunta": "¿Qué tipo de red abarca un país o continente?",
+    "opciones": ["PAN", "LAN", "MAN", "WAN"],
+    "respuesta_correcta": "WAN"
+  },
+  {
+    "pregunta": "En una red de conmutación de paquetes, ¿cómo se transmite la información?",
+    "opciones": [
+      "En paquetes de tamaño fijo",
+      "En una ruta física dedicada",
+      "En pequeños fragmentos llamados paquetes",
+      "En un solo mensaje completo"
+    ],
+    "respuesta_correcta": "En pequeños fragmentos llamados paquetes"
+  },
+  {
+    "pregunta": "¿Cuál es la función de la capa de transporte en la arquitectura TCP/IP?",
+    "opciones": [
+      "Proporcionar comunicación extremo-extremo",
+      "Codificar los bits en señales",
+      "Encaminar los paquetes a través de varias redes",
+      "Controlar el acceso al medio compartido"
+    ],
+    "respuesta_correcta": "Proporcionar comunicación extremo-extremo"
+  },
+  {
+    "pregunta": "En la clasificación de las redes por escala, ¿qué tipo de red conecta dispositivos en una misma habitación?",
+    "opciones": ["LAN", "MAN", "PAN", "WAN"],
+    "respuesta_correcta": "PAN"
+  },
+  {
+    "pregunta": "¿Cuál es una característica de las redes de difusión?",
+    "opciones": [
+      "Conexiones entre pares de dispositivos",
+      "Almacenamiento temporal de los paquetes",
+      "Medio compartido por varios dispositivos",
+      "Uso de enlaces cableados exclusivamente"
+    ],
+    "respuesta_correcta": "Medio compartido por varios dispositivos"
+  },
+  {
+    "pregunta": "¿Qué capa del modelo OSI define el formato de datos a intercambiar, incluyendo compresión y criptografía?",
+    "opciones": [
+      "Capa de red",
+      "Capa de presentación",
+      "Capa de transporte",
+      "Capa de enlace de datos"
+    ],
+    "respuesta_correcta": "Capa de presentación"
+  },
+  {
+    "pregunta": "En la arquitectura de protocolos, ¿qué proporciona cada capa a la capa superior?",
+    "opciones": [
+      "Servicios",
+      "Redundancia",
+      "Datos sin procesar",
+      "Acceso a hardware"
+    ],
+    "respuesta_correcta": "Servicios"
+  },
+  {
+    "pregunta": "¿Qué protocolo de la capa de aplicación se utiliza para la transferencia de correos electrónicos?",
+    "opciones": ["HTTP", "SMTP", "FTP", "DNS"],
+    "respuesta_correcta": "SMTP"
+  },
+  {
+    "pregunta": "¿Qué es una red de comunicación?",
+    "opciones": [
+      "Conjunto de enlaces y elementos de conmutación",
+      "Grupo de dispositivos móviles",
+      "Sistema operativo distribuido",
+      "Colección de programas informáticos"
+    ],
+    "respuesta_correcta": "Conjunto de enlaces y elementos de conmutación"
+  },
+  {
+    "pregunta": "¿Cuál es uno de los objetivos de las redes de computadores?",
+    "opciones": [
+      "Independencia del hardware",
+      "Compartición de recursos",
+      "Reducción del tamaño de los dispositivos",
+      "Aumento de la velocidad de procesamiento"
+    ],
+    "respuesta_correcta": "Compartición de recursos"
+  },
+  {
+    "pregunta": "¿Cómo se clasifican las redes según la topología?",
+    "opciones": [
+      "Estrella, anillo, árbol, bus",
+      "LAN, MAN, WAN",
+      "TCP/IP, OSI",
+      "IPv4, IPv6"
+    ],
+    "respuesta_correcta": "Estrella, anillo, árbol, bus"
+  },
+  {
+    "pregunta": "¿Cuál es una característica de las redes de difusión?",
+    "opciones": [
+      "Medio compartido por varios dispositivos",
+      "Conexiones entre pares de dispositivos",
+      "Uso exclusivo de fibra óptica",
+      "Enlaces dedicados"
+    ],
+    "respuesta_correcta": "Medio compartido por varios dispositivos"
+  },
+  {
+    "pregunta": "¿Qué tipo de red abarca un edificio o campus?",
+    "opciones": ["PAN", "LAN", "MAN", "WAN"],
+    "respuesta_correcta": "LAN"
+  },
+  {
+    "pregunta": "¿Qué capa de la arquitectura TCP/IP proporciona comunicación extremo-extremo?",
+    "opciones": [
+      "Capa de acceso a la red",
+      "Capa de transporte",
+      "Capa Internet",
+      "Capa de aplicación"
+    ],
+    "respuesta_correcta": "Capa de transporte"
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza en la capa de transporte del modelo TCP/IP?",
+    "opciones": ["HTTP", "IP", "TCP", "SMTP"],
+    "respuesta_correcta": "TCP"
+  },
+  {
+    "pregunta": "¿Qué tipo de red conecta dispositivos dentro de una ciudad?",
+    "opciones": ["PAN", "LAN", "MAN", "WAN"],
+    "respuesta_correcta": "MAN"
+  },
+  {
+    "pregunta": "En el modelo OSI, ¿qué capa se encarga de la compresión de datos y criptografía?",
+    "opciones": [
+      "Capa de red",
+      "Capa de transporte",
+      "Capa de presentación",
+      "Capa de enlace de datos"
+    ],
+    "respuesta_correcta": "Capa de presentación"
+  },
+  {
+    "pregunta": "¿Cuál es la unidad básica de información en la capa Internet del modelo TCP/IP?",
+    "opciones": ["Segmento", "Trama", "Datagrama", "Paquete"],
+    "respuesta_correcta": "Datagrama"
+  },
+  {
+    "pregunta": "¿Qué se necesita para poder intercambiar información en una red?",
+    "opciones": [
+      "Protocolos y estándares",
+      "Dispositivos móviles",
+      "Sistemas operativos",
+      "Conexiones Bluetooth"
+    ],
+    "respuesta_correcta": "Protocolos y estándares"
+  },
+  {
+    "pregunta": "¿Cuál es una característica de las redes punto a punto?",
+    "opciones": [
+      "Medio compartido",
+      "Almacenamiento temporal de paquetes",
+      "Dirección de destino incluida en la información",
+      "Uso exclusivo de conexiones inalámbricas"
+    ],
+    "respuesta_correcta": "Almacenamiento temporal de paquetes"
+  },
+  {
+    "pregunta": "¿Qué tipo de red se utiliza típicamente para conectar dispositivos de un solo usuario en una zona muy pequeña?",
+    "opciones": ["PAN", "LAN", "MAN", "WAN"],
+    "respuesta_correcta": "PAN"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes no es una capa del modelo OSI?",
+    "opciones": [
+      "Capa de aplicación",
+      "Capa de red",
+      "Capa de transporte",
+      "Capa de transmisión"
+    ],
+    "respuesta_correcta": "Capa de transmisión"
+  },
+  {
+    "pregunta": "¿Qué protocolo de la capa de aplicación se utiliza para la transferencia de archivos?",
+    "opciones": ["HTTP", "SMTP", "FTP", "DNS"],
+    "respuesta_correcta": "FTP"
+  },
+  {
+    "pregunta": "¿Cuál es una función de la capa de enlace de datos en la arquitectura TCP/IP?",
+    "opciones": [
+      "Encaminar paquetes a través de redes",
+      "Controlar el flujo de datos entre nodos",
+      "Proporcionar comunicación extremo-extremo",
+      "Codificar los bits en señales"
+    ],
+    "respuesta_correcta": "Controlar el flujo de datos entre nodos"
+  },
+  {
+    "pregunta": "¿Qué tipo de red abarca un continente?",
+    "opciones": ["PAN", "LAN", "MAN", "WAN"],
+    "respuesta_correcta": "WAN"
+  },
+  {
+    "pregunta": "¿Qué define la capa de presentación en el modelo OSI?",
+    "opciones": [
+      "El formato de datos a intercambiar",
+      "El control de flujo entre nodos",
+      "La codificación de bits en señales",
+      "La sincronización de datos"
+    ],
+    "respuesta_correcta": "El formato de datos a intercambiar"
+  },
+  {
+    "pregunta": "¿Qué tipo de red utiliza una ruta física dedicada entre los extremos de la comunicación?",
+    "opciones": [
+      "Red de conmutación de paquetes",
+      "Red de conmutación de mensajes",
+      "Red de conmutación de circuitos",
+      "Red de difusión"
+    ],
+    "respuesta_correcta": "Red de conmutación de circuitos"
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza para la resolución de nombres de dominio?",
+    "opciones": ["HTTP", "SMTP", "FTP", "DNS"],
+    "respuesta_correcta": "DNS"
+  },
+  {
+    "pregunta": "¿Cuál es la unidad básica de información en la capa de acceso a la red del modelo TCP/IP?",
+    "opciones": ["Segmento", "Trama", "Datagrama", "Paquete"],
+    "respuesta_correcta": "Trama"
+  },
+  {
+    "pregunta": "¿Qué tipo de red abarca un país?",
+    "opciones": ["PAN", "LAN", "MAN", "WAN"],
+    "respuesta_correcta": "WAN"
+  },
+  {
+    "pregunta": "¿Qué capa del modelo OSI se encarga del enrutamiento de datos entre redes?",
+    "opciones": [
+      "Capa de transporte",
+      "Capa de enlace de datos",
+      "Capa de red",
+      "Capa de aplicación"
+    ],
+    "respuesta_correcta": "Capa de red"
+  },
+  {
+    "pregunta": "¿Qué tipo de red no se establece una ruta dedicada inicialmente y transmite los mensajes de un nodo a otro?",
+    "opciones": [
+      "Red de conmutación de paquetes",
+      "Red de conmutación de mensajes",
+      "Red de conmutación de circuitos",
+      "Red de difusión"
+    ],
+    "respuesta_correcta": "Red de conmutación de mensajes"
+  },
+  {
+    "pregunta": "¿Cuál es la unidad básica de información en la capa de transporte del modelo TCP/IP cuando se usa TCP?",
+    "opciones": ["Segmento", "Trama", "Datagrama", "Mensaje"],
+    "respuesta_correcta": "Segmento"
+  },
+  {
+    "pregunta": "¿Qué capa del modelo OSI se encarga de las tareas de sincronización para el intercambio de datos?",
+    "opciones": [
+      "Capa de presentación",
+      "Capa de transporte",
+      "Capa de sesión",
+      "Capa de aplicación"
+    ],
+    "respuesta_correcta": "Capa de sesión"
+  },
+  {
+    "pregunta": "¿Cuál es una función de la capa de acceso a la red en la arquitectura TCP/IP?",
+    "opciones": [
+      "Proporcionar comunicación extremo-extremo",
+      "Controlar el acceso al medio compartido",
+      "Encaminar paquetes a través de redes",
+      "Codificar los bits en señales"
+    ],
+    "respuesta_correcta": "Controlar el acceso al medio compartido"
+  },
+  {
+    "pregunta": "¿Qué tipo de red utiliza pequeñas unidades de información llamadas paquetes?",
+    "opciones": [
+      "Red de conmutación de mensajes",
+      "Red de conmutación de circuitos",
+      "Red de difusión",
+      "Red de conmutación de paquetes"
+    ],
+    "respuesta_correcta": "Red de conmutación de paquetes"
+  },
+  {
+    "pregunta": "¿Qué protocolo de la capa de transporte del modelo TCP/IP no garantiza la entrega de datos?",
+    "opciones": ["TCP", "UDP", "IP", "SMTP"],
+    "respuesta_correcta": "UDP"
+  },
+  {
+    "pregunta": "¿Qué capa del modelo OSI se encarga de especificar la naturaleza de las señales a enviar?",
+    "opciones": [
+      "Capa de red",
+      "Capa de enlace de datos",
+      "Capa física",
+      "Capa de transporte"
+    ],
+    "respuesta_correcta": "Capa física"
+  },
+  {
+    "pregunta": "El estándar IEEE 802.11:",
+    "opciones": [
+      "Utiliza una técnica de contienda como elemento de acceso al medio.",
+      "Obliga a que todas las estaciones se conecten a un punto de acceso.",
+      "Permite a una estación escuchar y transmitir información simultáneamente.",
+      "No utiliza confirmaciones de recepción."
+    ],
+    "respuesta_correcta": "Utiliza una técnica de contienda como elemento de acceso al medio.",
+    "_comentario": "El estándar IEEE 802.11 utiliza una técnica de contienda, como CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance), para gestionar el acceso al medio compartido en redes inalámbricas."
+  },
+  {
+    "pregunta": "La capacidad del canal se define como:",
+    "opciones": [
+      "El ancho de banda máximo del canal.",
+      "El número máximo de niveles que se pueden enviar por el canal.",
+      "La relación entre el ancho de banda y la velocidad de transmisión.",
+      "La tasa máxima de información que se puede enviar por la línea."
+    ],
+    "respuesta_correcta": "La tasa máxima de información que se puede enviar por la línea.",
+    "_comentario": "La capacidad del canal, según la teoría de la información, se define como la tasa máxima de información que se puede transmitir sin errores a través de un canal de comunicación, generalmente medida en bits por segundo."
+  },
+  {
+    "pregunta": "El protocolo TCP:",
+    "opciones": [
+      "Utiliza asentimientos para controlar el flujo de información.",
+      "Puede detectar duplicados utilizando la suma de comprobación.",
+      "Utiliza reenvíos cuando considera que los segmentos se han perdido.",
+      "Utiliza tanto reenvíos como asentimientos para controlar el flujo y la pérdida de paquetes."
+    ],
+    "respuesta_correcta": "Utiliza tanto reenvíos como asentimientos para controlar el flujo y la pérdida de paquetes.",
+    "_comentario": "El protocolo TCP utiliza tanto los reenvíos (cuando se detecta pérdida de segmentos) como los asentimientos (ACKs) para garantizar un control efectivo del flujo y la recuperación de datos perdidos, además de implementar un sistema de ventana deslizante."
+  },
+  {
+    "pregunta": "Respecto al tráfico en el control de acceso al medio en el nivel de enlace:",
+    "opciones": [
+      "El tráfico fuente es siempre igual al tráfico cursado.",
+      "El tráfico que circula por la red puede ser mayor que el tráfico fuente.",
+      "El tráfico que circula por la red es siempre igual al tráfico fuente.",
+      "Las demás respuestas son incorrectas."
+    ],
+    "respuesta_correcta": "El tráfico que circula por la red puede ser mayor que el tráfico fuente.",
+    "_comentario": "En el control de acceso al medio, el tráfico que circula por la red puede incluir retransmisiones, encabezados adicionales y otras señales, lo que lo hace mayor que el tráfico fuente original."
+  },
+  {
+    "pregunta": "En la cabecera de los mensajes TCP:",
+    "opciones": [
+      "Se incluye el puerto y la IP de destino.",
+      "Incluye el valor del último byte recibido.",
+      "Se incluyen varios bits que no tienen asignada ninguna función.",
+      "Tiene un tamaño constante."
+    ],
+    "respuesta_correcta": "Se incluyen varios bits que no tienen asignada ninguna función.",
+    "_comentario": "En la cabecera TCP, existen varios bits de reserva que no tienen asignada una función específica en la actualidad y están reservados para posibles usos futuros. Además, el campo 'options' hace que la cabecera tenga tamaño variable."
+  },
+  {
+    "pregunta": "Los algoritmos de vector de distancias:",
+    "opciones": [
+      "Son extremadamente robustos.",
+      "Establecen rutas fijas.",
+      "Pueden sufrir el problema de la cuenta al infinito.",
+      "Envían a todos los nodos todos los paquetes."
+    ],
+    "respuesta_correcta": "Pueden sufrir el problema de la cuenta al infinito.",
+    "_comentario": "Los algoritmos de vector de distancias, como RIP, pueden experimentar el problema de la cuenta al infinito, donde las rutas se actualizan incorrectamente debido a una convergencia lenta en situaciones de fallos de red."
+  },
+  {
+    "pregunta": "El intervalo de contención en Ethernet:",
+    "opciones": [
+      "Es igual al tiempo de propagación del canal.",
+      "Es el tiempo que permite detectar a una estación que se ha producido una colisión.",
+      "Las demás respuestas son incorrectas.",
+      "Es el tiempo que se espera antes de retransmitir una trama."
+    ],
+    "respuesta_correcta": "Las demás respuestas son incorrectas.",
+    "_comentario": "El intervalo de contención en Ethernet corresponde a dos veces el tiempo de propagación del canal, ya que este tiempo es necesario para asegurar que las colisiones sean detectadas en la red."
+  },
+  {
+    "pregunta": "Los métodos de control de congestión activos de nivel de red:",
+    "opciones": [
+      "Monitorizan el tamaño de la ventana deslizante.",
+      "Ante la congestión, descartan solo los últimos paquetes en llegar.",
+      "Envían paquetes reguladores de tráfico.",
+      "Informan solo a los extremos cuando se produce congestión."
+    ],
+    "respuesta_correcta": "Ante la congestión, descartan solo los últimos paquetes en llegar.",
+    "_comentario": "En métodos de control de congestión activos, se descartan los últimos paquetes en llegar para aliviar la carga de la red y evitar que se saturen los nodos intermedios, optimizando así el rendimiento general."
+  },
+  {
+    "pregunta": "¿Cuándo se crea una entrada en la tabla MAC y qué se almacena?",
+    "opciones": [
+      "Cada vez que se retransmite una trama se almacena la dirección de destino y el puerto por el que se retransmite.",
+      "Cada vez que se recibe una trama se almacena la dirección de destino y el puerto por el que se recibe.",
+      "Cada vez que se recibe una trama se almacena la dirección de origen y el puerto por el que se recibe.",
+      "Cada vez que se retransmite una trama se almacena la dirección de origen y el puerto por el que se retransmite."
+    ],
+    "respuesta_correcta": "Cada vez que se recibe una trama se almacena la dirección de origen y el puerto por el que se recibe.",
+    "_comentario": "En una tabla MAC, una entrada se crea al recibir una trama. La dirección de origen de la trama y el puerto de entrada se almacenan para asociar la dirección MAC con el puerto correcto."
+  },
+  {
+    "pregunta": "En la conmutación LAN en un switch ¿Cuándo se filtra una trama?",
+    "opciones": [
+      "Cuando no se conoce el puerto asociado a la dirección física destino.",
+      "Cuando no se conoce el puerto asociado a la dirección física origen.",
+      "Cuando la dirección destino es unicast y el puerto de salida es el mismo por el que entró.",
+      "Cuando la dirección es broadcast."
+    ],
+    "respuesta_correcta": "Cuando la dirección destino es unicast y el puerto de salida es el mismo por el que entró.",
+    "_comentario": "En un switch, una trama se filtra cuando el puerto de destino coincide con el puerto de origen, evitando retransmitirla innecesariamente en un puerto redundante."
+  },
+  {
+    "pregunta": "¿Cuándo se retransmite una trama por todos los puertos en la técnica del árbol de expansión?",
+    "opciones": [
+      "Sólo cuando la dirección destino de la trama es broadcast.",
+      "Cuando la dirección destino de la trama es unicast y no tiene entrada en la tabla MAC o cuando es broadcast.",
+      "Cuando la dirección origen es la misma que la destino.",
+      "Sólo cuando la dirección destino de la trama es unicast y no tiene una entrada en la tabla MAC."
+    ],
+    "respuesta_correcta": "Cuando la dirección destino de la trama es unicast y no tiene entrada en la tabla MAC o cuando es broadcast.",
+    "_comentario": "En la técnica del árbol de expansión, una trama se retransmite por todos los puertos si no existe una entrada en la tabla MAC para la dirección destino o si la dirección es broadcast."
+  },
+  {
+    "pregunta": "En una LAN utilizando el protocolo Ethernet se han producido 11 colisiones seguidas, por lo que:",
+    "opciones": [
+      "Se transmite un error a las capas superiores.",
+      "El número de ranuras a utilizar es 2048.",
+      "En el protocolo Ethernet no se pueden producir colisiones.",
+      "El número de ranuras a utilizar es 1024."
+    ],
+    "respuesta_correcta": "El número de ranuras a utilizar es 2048.",
+    "_comentario": "En el protocolo Ethernet, cuando se producen múltiples colisiones consecutivas, el número de ranuras se calcula como 2^n, donde n es el número de colisiones. Para 11 colisiones, se utiliza 2^{11} = 2048 ranuras."
+  },
+  {
+    "pregunta": "Los dispositivos que siempre retransmiten la información por todos puertos excepto por el que entró son:",
+    "opciones": [
+      "Hubs",
+      "Routers",
+      "Switches y routers",
+      "Switches"
+    ],
+    "respuesta_correcta": "Hubs",
+    "_comentario": "Los hubs son dispositivos de red de la capa física que siempre retransmiten la información recibida a todos los puertos excepto al puerto de origen. A diferencia de los switches y routers, no tienen capacidad de direccionamiento ni filtrado."
+  },
+  {
+    "pregunta": "Los elementos de conmutación...",
+    "opciones": [
+      "Son las máquinas donde los usuarios ejecutan sus programas",
+      "Procesan los datos de entrada para determinar la línea de salida",
+      "Sólo pueden estar conectados a otros elementos de conmutación",
+      "Las opciones b) y c) son ciertas"
+    ],
+    "respuesta_correcta": "Las opciones b) y c) son ciertas",
+    "_comentario": "Los elementos de conmutación son dispositivos que procesan datos de entrada para determinar la línea de salida (opción b) y generalmente se conectan a otros elementos de conmutación para formar una red eficiente (opción c)."
+  },
+  {
+    "pregunta": "¿Qué capas de la arquitectura están presentes en los encaminadores?",
+    "opciones": [
+      "Física, enlace de datos, red, transporte y aplicación",
+      "Enlace de datos, red y aplicación",
+      "Física, enlace de datos y red",
+      "Física, enlace de datos, red y transporte"
+    ],
+    "respuesta_correcta": "Física, enlace de datos y red",
+    "_comentario": "Los encaminadores (routers) operan en las capas física, enlace de datos y red del modelo OSI. Se encargan del encaminamiento de paquetes a través de redes basándose en direcciones IP (capa de red)."
+  },
+  {
+    "pregunta": "Señala cuál de las siguientes funciones no se llevan a cabo en la capa de enlace.",
+    "opciones": [
+      "Gestión del establecimiento de la conexión entre extremos del enlace.",
+      "Del noseke de las tramas a partir de las noseke.",
+      "Controlar el flujo de las tramas para no saturar a los conectores.",
+      "Elección del siguiente enlace al que enviar la información."
+    ],
+    "respuesta_correcta": "Elección del siguiente enlace al que enviar la información.",
+    "_comentario": "La elección del siguiente enlace al que enviar la información es una función que pertenece a capas superiores, como la capa de red, y no a la capa de enlace, que se encarga principalmente del control de tramas y flujo."
+  },
+  {
+    "pregunta": "Los algoritmos de estado de enlace:",
+    "opciones": [
+      "Pueden sufrir el problema de la cuenta al infinito.",
+      "Envían los datagramas por la cola de menor longitud.",
+      "Necesitan descubrir a sus vecinos y establecer el camino hasta cada uno de ellos.",
+      "Necesita conocer el tamaño máximo de la red."
+    ],
+    "respuesta_correcta": "Necesitan descubrir a sus vecinos y establecer el camino hasta cada uno de ellos.",
+    "_comentario": "Los algoritmos de estado de enlace, como OSPF, requieren descubrir a sus vecinos y calcular el mejor camino hacia cada destino basándose en el estado actual de la red. No sufren el problema de la cuenta al infinito, que es característico de los algoritmos de vector de distancia."
+  },
+  {
+    "pregunta": "La técnica de asentimiento selectivo:",
+    "opciones": [
+      "Permite a UDP recuperar paquetes que lleguen fuera de orden.",
+      "No es compatible con los algoritmos TCP Reno y TCP Tahoe.",
+      "Facilita la asignación de paquetes que han llegado fuera de orden.",
+      "Sirve para adaptar la velocidad de envío a la velocidad máxima de la red."
+    ],
+    "respuesta_correcta": "Facilita la asignación de paquetes que han llegado fuera de orden.",
+    "_comentario": "La técnica de asentimiento selectivo (Selective Acknowledgment, SACK) permite al receptor notificar qué paquetes han llegado correctamente, facilitando la retransmisión solo de los que se han perdido, sin necesidad de enviar todos de nuevo."
+  },
+  {
+    "pregunta": "El protocolo SNMP:",
+    "opciones": [
+      "Está principalmente planificado para realizar streaming de servidores multimedia.",
+      "Se utiliza para la gestión de red.",
+      "Se utiliza para la gestión de correo electrónico.",
+      "Implementa servicios de directorio."
+    ],
+    "respuesta_correcta": "Se utiliza para la gestión de red.",
+    "_comentario": "El protocolo SNMP (Simple Network Management Protocol) es utilizado para la administración y monitoreo de redes, permitiendo la gestión de dispositivos como routers, switches y servidores."
+  }
+]

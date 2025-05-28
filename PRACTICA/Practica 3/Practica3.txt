@@ -1,0 +1,71 @@
+Dividir una red en subredes ayuda a evitar desperdiciar direcciones IP, y 
+ayuda a un proceso de routing más eficiente
+• Se tiene la red de la figura mostrada, dividida en tres sedes
+• Cada sede necesita un número distinto de direcciones IP
+• Se dispone de la red 192.168.16.0/20, la cual se debe subdividir de 
+acuerdo a las necesidades planteadas
+
+Paso 1: Calcula las direcciones de red y las máscaras de subred para cada una 
+de las subredes que es necesario crear, utilizando VLSM
+
+Red A-> 300 direcciones
+	Rango: 192.168.16.0 - 192.168.17.255
+	Máscara: /23 (255.255.254.0)
+	Número de direcciones utilizables: 510
+
+Red C-> 120 direcciones
+	Rango: 192.168.18.0 - 192.168.18.127
+	Máscara: /25 (255.255.255.128)
+	Número de direcciones utilizables: 126
+
+Red B-> 30 direcciones
+	Rango: 192.168.18.128 - 192.168.18.159
+	Máscara: /27 (255.255.255.224)
+	Número de direcciones utilizables: 30
+
+Red 1-3 -> 2 direcciones
+	Rango: 192.168.18.160 - 192.168.18.163
+	Máscara: /30 (255.255.255.252)
+	Número de direcciones utilizables: 2
+
+Red 2-3 -> 2 direcciones
+	Rango: 192.168.18.164 - 192.168.18.167
+	Máscara: /30 (255.255.255.252)
+	Número de direcciones utilizables: 2
+
+-----------------------------------------------------------------------------------------
+• Haz ping desde PC A1 a la interfaz G0/1 de Router3. ¿Funciona?
+	Si
+
+• Haz ping desde PC C1 a la interfaz G0/1 de Router3. ¿Funciona?
+	Si
+
+• Ahora haz ping desde PC B1 a la interfaz G0/1 de Router3. ¿Funciona? ¿Por 
+qué?
+	No, ya que no tenemos designadas puertas de ultimo recurso.
+
+• Haz ping desde los mismos PCs pero hacia el interfaz G0/2 de Router3
+	PC A1 -> No
+	PC C1 -> Si
+	PC B1 -> Si
+
+• Elimina aquellas entradas de rutas que resulten redundantes
+• Comprueba si funcionan los pings que antes fallaban:
+	• PC B1 → G0/1 de R3
+		Si
+	• PC A1 → G0/2 de R3
+		Si
+
+------------------------------------------------------------------------------------------
+Ejercicio 1
+
+1. R3-SW3, la interfaz G0/2 no estaba encendida, port status = On
+2. R1-R3, la interfaz G0/1 no tiene la misma red, R3 -> 10.0.0.14/30
+3. R1, la direccion esta mal en el router y no es la misma que el gateway, R1 -> 196.35.1.1
+
+------------------------------------------------------------------------------------------
+Ejercicio 2
+
+1. PC2-R2, la mascara de red en R2 esta mal, la ponemos a /24
+2. R2, no tiene una ruta estatica a R0, la ponemos para 192.168.1.0
+3. R3, la direccion mac es la de broadcast, cambiamos esa direccion por una que no sea de broadcast

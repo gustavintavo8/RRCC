@@ -1,0 +1,22 @@
+1. Comprueba que todos los PCs pueden hacer ping a su puerta de enlace. 
+Revisa con el modo simulación que los mensajes llegan al destino. 
+En caso de que alguno no pueda, anota el error y corrígelo.
+
+	PC0 -> R0 --- No hace ping, ya que su IP era demasiado alta y ya no pertenecían a la misma red.
+
+2. Realiza pings entre los dos PCs y comprueba que todos responden. Si hay 
+alguna situación en la que no responden, localiza el error, anótalo y 
+corrígelo
+
+	PC1 -> PC0 -> No tenia la gateway ni el DNS configurados, pongo la dirección 20.20.20.157 en ambos
+	PC0 -> PC1 -> Nunca vamos a poder hacer ping, no deja entrar ninguna conexión
+
+3. En el router doméstico se encuentra abierto el puerto 9000 que reenvía las 
+peticiones al puerto 1000 del PC1. Comprueba que todo está 
+correctamente configurado y las peticiones llegan correctamente
+
+	La dirección a la que se envía es errónea, la dirección correcta ser 192.168.0.2 y no la 192.168.0.100
+	Hacemos un ping desde el web browser a la dirección http://20.20.20.158:9000
+
+
+

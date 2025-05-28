@@ -1,0 +1,38 @@
+Ejerciici1) 2.5 puntos total
+a) 0.75
+Diseña la red de la figura
+A1: 16 hosts
+A2: 13 hosts
+B: 2 hosts
+C: 32 hosts
+R1-R3: 2 hosts
+R3-R2: 2 hosts
+
+Router 2911, switch 2960.
+Tala subred | mascara | primera ip | ultima ip
+b) 0-75
+configura estaticamente los parametros de red en los pc y routers. Primera direccion a los PC y ultima al gateway.
+c) 1 punto
+Rutas de encaminamiento en los routers mas cortas posibles
+
+Ejer2) 2 puntos total
+scapy
+
+Ejer3) 2 puntos total
+Encuentra los errores y corrigelos, indicando el error y la solucion.
+
+Ejer4 ) 3.5 puntos total
+Diseña la red de la figura
+a) 0.75 puntos
+Asigna direccions IP del ranogo 10.100.200.0/24 a los dos servidores, el pc itnernet y la itnterfaz
+que conecta el router0 con el switch0.
+La red que conecta el r0 con el router maestro es una red cuya id es 160.160.160.160/30. Elige iua direccion que consideres correcta y asignala a la interfaz que conecta r0 con el router maestro
+b) 0.75 puntos
+activa y configura ftp un usuario con permisos de lustado y descarga. En DNS crea una entrada ftpexamen.info para permitir acceder al servidor FTP
+c) 1 punto
+Configura el router Maestr red local interna 20.21.22.224/28.
+Modifica el SSID por Wifi_RC. Conecta el pc local al router maestro a traves de ua conexion cableada y el poratil por wifi.
+PC local pon las rutas estaticas y el portatil con DHCP
+Configura manualmente los parametros de red del router maestro en su conexion hacia internet de manera que sus datos coincidad con los del apartado a
+d) 1 punto
+Para descargar del servidor FTP en el pc local el fichero asa923-k8.bin es necesario realizar una configuracion adicional. Hazla.
